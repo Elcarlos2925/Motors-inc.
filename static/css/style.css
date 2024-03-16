@@ -1,3 +1,17 @@
+/*TODO: Font*/
+@font-face {
+  font-family: 'Telegraf';
+  src: url('../assets/fonts/PPTelegraf-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Telegraf Bold';
+  src: url('../assets/fonts/PPTelegraf-UltraBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Telegraf UltraLight';
+  src: url('../assets/fonts/PPTelegraf-UltraLight.otf') format('opentype');
+}
+
 /*?Contenedor Principal*/
 .main-container{
     width: 100%;
@@ -58,10 +72,19 @@
     border: none;
 }
 
+.search-container input{
+  font-family: 'Telegraf UltraLight',sans-serif;
+  font-size:small;
+}
+
 .search-container .Search-input{
     width: 80%;
     height: 80%;
     border: none;
+}
+
+.search-container input{
+  font-family: 'Telegraf Bold', sans-serif;  
 }
 
 /*?Message Notifications Container*/
@@ -71,16 +94,25 @@
     grid-template-columns: 50% 50%;
     place-items: center;
 }
-.Employee-name-role{
 
+/*?Employee Name Role*/
+
+.Employee-name-role{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  place-items: start;
 }
 
 .Employee-name{
-    font-family: bold;
-    font-size: large
+    font-family: 'Telegraf Bold',sans-serif;
+    font-size:larger;
+    width: 100%;
 }
 
 .Employee-role{
+  margin-top: 10px;
+  width: 100%;
+  font-family: 'Telegraf';
     font-size: medium;
 }
 
@@ -119,16 +151,19 @@
     left: 0;
     z-index: 999;
   }
-  
+
   .navbar img{
    width: 200px;
    margin-top: 30px;
    margin-left: 25px;
   }
+
   .navbar ul {
     list-style-type: none;
+    font-family: 'Telegraf UltraBold', sans-serif;
+    margin-bottom: 30px;
   }
-  
+
   .navbar li{  
     display: flex;
     align-items: center;
@@ -137,9 +172,8 @@
   .navbar li a:hover{  
     background-color: #fff;
     color: #000;
-    
   }
-  
+
   .navbar a{
     text-decoration: none;
     color: #fff;
@@ -155,6 +189,33 @@
     padding-right: 10px;
   }
 
+  /*?Help Logout Container*/
+  .help-logout-container{
+    margin-top: auto;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50% 50%;
+  }
+
+  /*?Help Logout Container*/
+  .help-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  /*?Help Logout Container*/
+  .logout-container{
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .help, .logout{
+    font-family: 'Telegraf UltraLight',sans-serif;
+  }
+
+  /*? Footer*/
   footer {
     position: fixed;
     bottom: 0;
@@ -170,4 +231,6 @@
 
   footer p{
     margin-top: auto;
+    color: #fff;
+    font-family: 'Telegraf UltraLight', sans-serif;
   }
