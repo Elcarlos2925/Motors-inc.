@@ -11,4 +11,4 @@
 - Lozoya Avalos Carlos Abraham - 21211548
 - Beltran Vega René - 21211544
 
-<img src="https://github.com/Elcarlos2925/Motors-inc/blob/Carlos/integrantes.JPG" width="700" alt="integrantes del equipo" >
+<img src="https://github.com/Elcarlos2925/Motors-inc/blob/Carlos/" width="700" alt="integrantes del equipo" >
