@@ -134,12 +134,6 @@
     grid-template-columns: 50% 50%;
 }
 
-/*?Content Container*/
-.content-container{
-    width: 100%;
-    height: 100%;
-}
-
 /*?NavBar*/
 .navbar{
     background-color: #284b63;
@@ -233,4 +227,106 @@
     margin-top: auto;
     color: #fff;
     font-family: 'Telegraf UltraLight', sans-serif;
+    font-size: small;
+  }
+
+  /*?Content Container*/
+  .content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+  .title-container h1{
+    font-family: 'Telegraf Bold',sans-serif;
+  }
+
+  .quick-view-container, .Last-assigments-container{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .quick-view{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10px;
+  }
+
+  .quick-view-container h2{
+    font-family: 'Telegraf Bold', sans-serif;
+    margin-left: 10px;
+  }
+
+  .view{
+    background-color: #3C6E71;
+    display: grid;
+    place-items: center;
+    height: 150px;
+    width: 250px;
+    grid-template-rows: 45% 45% 10%;
+    border-radius: 15px;
+  }
+
+  .icon-title{
+    display: grid;
+    place-items: center;
+    width: 250px;
+    min-height: 90px;
+    border-radius: 15px;
+    min-width: 250px;
+    grid-template-columns: 20% 80%;
+  }
+
+  .icon{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+  }
+
+  .view h2{
+    font-family: 'Telegraf',sans-serif;
+    font-size: medium;
+    color: #fff;
+  }
+
+  .view p{
+    font-family: 'Telegraf Bold',sans-serif;
+    font-size: xx-large;
+    color: #fff;
+  }
+
+  .view .all-lines-general-pass-rate, .view .pending-maintenance-this-month{
+    color: #43C467;
+  }
+
+  .view a{
+    font-family: 'Telegraf',sans-serif;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .view .pending-assignments, .view .machines-nearly-full-storage{
+    color: #FF3131;
+  }
+
+/*?Last assigment*/
+
+  .Last-assigments-container{
+    min-height: 200px;
+  }
+
+  .Last-assigments-container h2{
+    font-family: 'Telegraf Bold', sans-serif;
+    margin-left: 10px;
   }
