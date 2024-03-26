@@ -36,12 +36,12 @@
     border-radius: 50%;
     background-color: white;
     margin-left: -30px;
-    position: absolute; /* Permite posicionar el icono de forma absoluta con respecto al contenedor */
+    position: fixed; /* Permite posicionar el icono de forma absoluta con respecto al contenedor */
     z-index: 9999999999;
 }
 
 .return-button i{
-  position: absolute; /* Permite posicionar el icono de forma absoluta con respecto al contenedor */
+  position: fixed; /* Permite posicionar el icono de forma absoluta con respecto al contenedor */
   z-index: 9999999999; /* Ajusta el orden de apilamiento, cuanto mayor sea, más arriba estará */
 }
 
