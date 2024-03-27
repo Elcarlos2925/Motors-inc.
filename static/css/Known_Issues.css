@@ -29,67 +29,62 @@
   .known-issues-container{
     display: grid;
     place-items: center;
-    place-content: center;
     background-color: #D9D9D9;
     border-radius: 15px;
     padding: 10px;
     margin-top: 10px;
+    min-height: 480px;
+    margin-bottom: 20px;
   }
+
   .known-issues-container h2{
     font-family: 'Telegraf Bold', sans-serif;
-    margin-right: 1000px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 15px;
+    margin-left: 15px;
   }
 
   .known-issues{
     display: grid;
     place-items: center;
-    place-content: center;
-    grid-template-columns: 25% 25% 25% 25%;
     padding: 10px;
   }
+
 /*? SEARCH*/
   .known-issues-search{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+    display: grid;
+    place-items: center;
     height: 50px;
     width: 900px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #fff;
     border-radius: 30px;
   }
 
   .known-issues-search input{
-    
-    height: 40px;
-    width: 840px;
+    height: 43px;
+    width: 845px;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 0px 30px 30px 0px;
     border: none;
+    font-family: 'Telegraf UltraLigth',sans-serif;
     font-size: 20px;
     text-align: center;
-    
-
-
+    margin: 0;
   }
+
   .known-issues-search button{
     height: 40px;
     width: 40px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: none;
     background-color: #284B63;
     color: #fff;
-
   }
 
   /*? CONTENIDO E ICONO*/
  .icon-search{
     margin-top: 40px;
-    font-size: 200px;
-    padding-bottom: 40px;
-
- }  
-
-
-  
+    font-size: 150px;
+    margin-bottom: 40px;
+ }

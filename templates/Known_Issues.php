@@ -28,7 +28,7 @@
         <?php echo "$sidebar";?>
         <!--CONTENDIO-->
         <div class="content-container">
-             <div class="title-container">
+            <div class="title-container">
                 <h1>Known Issues</h1>
             </div>
             <!--KNOWN ISSUES-->

@@ -85,10 +85,6 @@
     border: none;
 }
 
-.search-container input{
-  font-family: 'Telegraf Bold', sans-serif;  
-}
-
 /*?Message Notifications Container*/
 
 .message-notifications-container{
