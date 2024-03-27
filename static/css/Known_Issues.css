@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/PPTelegraf-Regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Telegraf Bold';
+    src: url('../assets/fonts/PPTelegraf-UltraBold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Telegraf UltraLight';
+    src: url('../assets/fonts/PPTelegraf-UltraLight.otf') format('opentype');
+  }
+
+  .title-container h1{
+    font-family: 'Telegraf Bold',sans-serif;
+  }
+
+  /*?Content Container*/
+  .content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+ /*? CONTENEDOR KNOWN ISSUES*/
+  .known-issues-container{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .known-issues-container h2{
+    font-family: 'Telegraf Bold', sans-serif;
+    margin-right: 1000px;
+  }
+
+  .known-issues{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 10px;
+  }
+/*? SEARCH*/
+  .known-issues-search{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 50px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 30px;
+  }
+
+  .known-issues-search input{
+    
+    height: 40px;
+    width: 840px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    
+
+
+  }
+  .known-issues-search button{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: #284B63;
+    color: #fff;
+
+  }
+
+  /*? CONTENIDO E ICONO*/
+ .icon-search{
+    margin-top: 40px;
+    font-size: 200px;
+    padding-bottom: 40px;
+
+ }  
+
+
+  
