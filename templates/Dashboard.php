@@ -1,5 +1,6 @@
 <?php
     include '../home/index.php';
+    include '../home/scripts.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,10 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../static/assets/icons/house-door-fill.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../static/assets/fontawesome-free-6.5.1-web/css/all.min.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/Dashboard.css">
-    <link rel="stylesheet" href="../static/css/table.css">
+    <!--? Cargar Css-->
+    <?php echo "$FontAwesome_css $Style_css $Dashboard_css $Table_css";?>
     <title>Dashboard</title>
 </head>
 <body>
@@ -222,5 +221,7 @@
         
     </div>
 
+    <!--? Cargar js-->
+    <?php echo "$SubMenu_js";?>
 </body>
 </html>

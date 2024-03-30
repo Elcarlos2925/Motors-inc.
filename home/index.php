@@ -1,5 +1,7 @@
 <?php
-include 'links.php';
+    include 'links.php';
+    include 'scripts.php';
+
     //? inicializar viariables
     $header='';
     $footer='';
@@ -138,6 +140,5 @@ include 'links.php';
                 </div>
             </div>
         </div>
-        <script src='../static/js/sub-menu.js'></script>
     ";
 ?>

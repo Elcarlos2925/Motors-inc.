@@ -1,0 +1,8 @@
+bootstrap == 5.3.3
+ClockPicker == 0.0.7
+DataTables == 2.0.3
+jQuery == 3.7.1
+popperjs/core == 2.11.8
+Moment.js == 2.30.1
+fullcalendar == 6.1.11
+fontawesome == 6.5.1
