@@ -132,56 +132,109 @@
     grid-template-columns: 50% 50%;
 }
 
-/*?NavBar*/
-.navbar{
+  /*? Sidebar*/
+  .sidebar{
     background-color: #284b63;
     color: #fff;
     width: 300px;
-    height: 100%;
+    min-height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999;
   }
 
-  .navbar img{
-   width: 200px;
-   margin-top: 30px;
-   margin-left: 25px;
+  .sidebar img{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+   }
+
+   .sidebar i{
+    padding-right: 10px;
   }
 
-  .navbar ul {
+  .sidebar .menu {
     list-style-type: none;
     font-family: 'Telegraf UltraBold', sans-serif;
     margin-bottom: 30px;
   }
 
-  .navbar li{  
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .sidebar .item{  
+    display: grid;
+    place-items: center;
   }
-  .navbar li a:hover{  
-    background-color: #fff;
+
+  .sidebar .item .icon-item{
+    margin-left: 25px;
+  }
+
+  .sidebar .item a:hover{  
+    background-color: #ffffff;
     color: #000;
   }
 
-  .navbar a{
+  .sidebar a, .sidebar p{
     text-decoration: none;
     color: #fff;
     display: block;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 10px;
     margin-top: 3px;
     height: 30px;
+    .sidebar p{font-family: 'Telegraf',sans-serif;}
   }
-  
-  .navbar i{
-    padding-right: 10px;
+  .sidebar p{
+    font-size: 20px;
+    margin: 0;
   }
 
-  /*?Help Logout Container*/
+  .sidebar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+  }
+
+  .sidebar .menu .item .sub-menu{
+    width: 100%;
+    background-color: #3C6E71;
+  }
+
+  .sidebar .menu .item .sub-menu a, .sidebar .menu .item .sub-menu p{
+    margin-left: 30px;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .sub-menu {
+    display: none;
+ }
+
+  .sub-menu.show {
+      display: block;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .sidebar hr{
+    height: 0.6px; /* Define el grosor de la línea */
+    background-color: rgb(200, 200, 200); /* Define el color de la línea */
+    border: none; /* Quita el borde */
+    margin: 10px 0; /* Ajusta el margen */
+  }
+
+
+
+
+
+
+
+   /*?Help Logout Container*/
   .help-logout-container{
     margin-top: auto;
     display: grid;
@@ -206,7 +259,6 @@
   .help, .logout{
     font-family: 'Telegraf UltraLight',sans-serif;
   }
-
   /*? Footer*/
   footer {
     position: fixed;
