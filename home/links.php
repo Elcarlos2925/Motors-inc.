@@ -1,4 +1,5 @@
 <?php
+//?Aqui se ponen los links de cada elemento y se cargan automaticamente en el sidebar
 $Dashboard='../templates/Dashboard.php';
 $Task_Assignment='';
 $Storage='';
@@ -18,7 +19,7 @@ $Equipment_Information='';
 $Equipment_Inventory='';
 $User='';
 $Add_User='';
-$Edit_User='';
+$Edit_User='../templates/Edit_User.php';
 $iFrame='';
 $Documentation='';
 $Help='';

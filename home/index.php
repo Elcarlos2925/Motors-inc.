@@ -7,30 +7,6 @@
     $footer='';
     $sidebar='';
 
-    //?Array para enlaces
-    $menu_items = array(
-        "Dashboard" => "#",
-        "Task Assignment" => "#",
-        "Storage" => "#",
-        "Pcbs's Location" => "#",
-        "Calendar & Events" => "#",
-        "Know Issues" => "#",
-        "ICT" => array(
-            "Item Undefined" => "#"
-        ),
-        "SPI & AOI" => array(
-            "Item Undefined" => "#"
-        ),
-        "Departament" => array(
-            "Item Undefined" => "#"
-        ),
-        "Management" => array(
-            "Item Undefined" => "#"
-        ),
-        "iFrame" => "#",
-        "Documentation" => "#"
-    );
-
     //?Dar valor de html al header
     $header="
         <header class='header-container'>
