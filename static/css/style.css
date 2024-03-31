@@ -36,13 +36,13 @@
     border-radius: 50%;
     background-color: white;
     margin-left: -30px;
-    position: fixed; /* Permite posicionar el icono de forma absoluta con respecto al contenedor */
+    position: fixed;
     z-index: 9999999999;
 }
 
 .return-button i{
-  position: fixed; /* Permite posicionar el icono de forma absoluta con respecto al contenedor */
-  z-index: 9999999999; /* Ajusta el orden de apilamiento, cuanto mayor sea, más arriba estará */
+  position: fixed;
+  z-index: 9999999999;
 }
 
 /*?Search Container*/
@@ -262,6 +262,7 @@
   /*? Footer*/
   footer {
     position: fixed;
+    z-index: 2;
     bottom: 0;
     left: 0;
     width: 100%;
