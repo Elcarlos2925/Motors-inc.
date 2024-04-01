@@ -27,23 +27,30 @@
                         <?php //?FORMULARIO AÑADIR USUARIO?>
                         <div class="add-user">
                             <form action="/agregar" method="">
-                                <label for="name">Name: </label> <?php //? Nombre?> 
-                                <input type="text" id="name-input" class="name-input" name="name" placeholder="Type the name">
-                                <br>
-                                <label for="name">Last Name: </label> <?php //? Apellido?>
-                                <input type="text" id="last-name-input" class="last-name-input" name="last-name" placeholder="Type the surname">
-                                <br>
-                                <label for="name">Username: </label><?php //? Usuario?>
-                                <input type="text" id="username-input" class="username-input" name="username" placeholder="Type the username">
-                                <br>
-                                <label for="name">Employee Id: </label> <?php //? Id de empleado?>
-                                <input type="text" id="employeeid-input" class="employeeid-input" name="employeeid" placeholder="Type the employee Id">
-                                <br>
-                                <label for="name">Password: </label> <?php //? Contraseña?>
-                                <input type="password" id="name-input" class="name-input" name="name" placeholder="Type the password">
-                                <br>
-                                <label for="name">Departament: </label> <?php //? Departamento?>
-                                <select name="departament" id="select-departament">
+                                <div class="centrar-cochinero-de-alexis">
+                                    <label for="name">Name: </label> <?php //? Nombre?> 
+                                    <input type="text" id="name-input" class="name-input" name="name" placeholder="Type the name">
+                                </div>
+                                <div class="centrar-cochinero-de-alexis">
+                                    <label for="name">Last Name: </label> <?php //? Apellido?>
+                                    <input type="text" id="last-name-input" class="last-name-input" name="last-name" placeholder="Type the surname">
+                                </div>
+                                <div class="centrar-cochinero-de-alexis">
+                                    <label for="name">Username: </label><?php //? Usuario?>
+                                    <input type="text" id="username-input" class="username-input" name="username" placeholder="Type the username">
+                                </div>
+                                <div class="centrar-cochinero-de-alexis">
+                                    <label for="name">Employee Id: </label> <?php //? Id de empleado?>
+                                    <input type="text" id="employeeid-input" class="employeeid-input" name="employeeid" placeholder="Type the employee Id">
+                                </div>
+                                <div class="centrar-cochinero-de-alexis">
+                                    <label for="name">Password: </label> <?php //? Contraseña?>
+                                    <input type="password" id="name-input" class="name-input" name="name" placeholder="Type the password">
+                                </div>
+                                <div class="centrar-cochinero-de-alexis">
+                                    <label for="name">Departament: </label> <?php //? Departamento?>
+                                    <select name="departament" id="select-departament">
+                                </div>
                                     <option value="">Select department</option>
                                     <option value="">..</option>
                                     <option value="">..</option>
