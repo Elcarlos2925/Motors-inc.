@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../assets/fonts/PPTelegraf-Regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Telegraf Bold';
+    src: url('../assets/fonts/PPTelegraf-UltraBold.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Telegraf UltraLight';
+    src: url('../assets/fonts/PPTelegraf-UltraLight.otf') format('opentype');
+  }
+
+  .title-container h1{
+    font-family: 'Telegraf Bold',sans-serif;
+  }
+
+.content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+.add-user-container{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 480px;
+    margin-bottom: 20px;
+}
+
+.add-user-container h2{
+    font-family: 'Telegraf Bold', sans-serif;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+/*? FORMULARIO*/
+.add-user{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    
+}
+
+.add-user form{
+    margin-top: 10px;
+    font-size: 23px;
+    font-family: 'Telegraf', sans-serif;
+}
+
+.add-user label, input, select{
+    margin-bottom: 20px;
+}
+
+
+.add-user input, .add-user select{
+    width: 600px;
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    border-color: #000 ;
+    
+}
