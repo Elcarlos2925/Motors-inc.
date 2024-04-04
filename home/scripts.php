@@ -12,6 +12,8 @@ $Calendar_Events_css="<link rel='stylesheet' href='../static/css/Calendar_Events
 $Bootstrap_css="<link rel='stylesheet' href='../static/css/bootstrap/bootstrap.min.css'>";
 $DataTables_css="<link rel='stylesheet' href='../static/css/datatables.min.css'>";
 $ClockPicker_css="<link rel='stylesheet' href='../static/css/bootstrap-clockpicker.css'>";
+$Equipment_Inventory_css="<link rel='stylesheet' href='../static/css/Equipment_Inventory.css'>";
+
 
 
 //?Script Js
