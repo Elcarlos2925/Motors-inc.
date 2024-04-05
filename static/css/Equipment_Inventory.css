@@ -2,12 +2,12 @@
     font-family: 'Telegraf';
     src: url('../assets/fonts/PPTelegraf-Regular.otf') format('opentype');
   }
-  
+
   @font-face {
     font-family: 'Telegraf Bold';
     src: url('../assets/fonts/PPTelegraf-UltraBold.otf') format('opentype');
   }
-  
+
   @font-face {
     font-family: 'Telegraf UltraLight';
     src: url('../assets/fonts/PPTelegraf-UltraLight.otf') format('opentype');
@@ -33,72 +33,81 @@
     margin-top: 10px;
     min-height: 480px;
     margin-bottom: 20px;
-    
-    
+    width: 1450px;
+    margin-right: 100px;
   }
 
   /*?BARA DE BUSQUEDA?*/
-.search-equipment-inventory{
-    display: grid;
-    place-items: end;
-    padding: 10px;
-    
-  }
-.search-inventory-container{
-    display: grid;
-    place-items: center;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 30px;
-    width: 251px;
-    height: 50px;
-    padding: 2px;
-
- }
-.Search-button{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: #284B63;
-    color: #fff;
+.search-container-equipment-inventory{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: end;
+  margin: 10px 10px auto auto !important;/** Top Right Bottom left*/
 }
-.Search-input{
-    border: none;
-    height: 160px;
-    width: 40px;
-}
- .search-inventory-container input{
-    width: 200px;
-    height: 30px;
-    border-radius: 2px;
-    font-size: 14px;
- }
 
- .search-inventory-container label{
-    font-size: 19px;
- }
+.search-container-equipment-inventory form{
+  height: 50px;
+  width: 250px;
+  display: grid;
+  border: 1px solid black;
+  place-items: center;
+  grid-template-columns: 50px 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.search-container-equipment-inventory .Search-button-equipment-inventory{
+  border-radius: 50%;
+  margin-left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #284B63;
+  color:#fff;
+  border: none;
+}
+
+.search-container-equipment-inventory input{
+font-family: 'Telegraf UltraLight',sans-serif;
+font-size:small;
+}
+
+.search-container-equipment-inventory .Search-input-equipment-inventory{
+  width: 80%;
+  height: 80%;
+  border: none;
+}
 
  /*?Menu de opciones?*/
  .menu-equipment-inventory{
-    padding-bottom: 0;
-    border-bottom: 2px solid #000;
-    padding: 5px 2px 0 1px;
+    display: grid;
+    place-items: start;
+    border-bottom: 0.5px solid black;
+  }
+
+ .menu-options{
+    width: 250px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
  }
+
  .menu-options button{
-    font-size: 17px;
-    background-color: #D9D9D9;
-
+    height: 40px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
 }
+
  .menu-options .inventory{
-    border: 2px solid #000;
-    border-bottom: 0px;
-
+    background-color: #fff;
  }
+
  .menu-options .modify-inventory{
-    border: 0;
-    
-
+    background-color: #D9D9D9;
  }
 
-
- 
+ table{
+  width: 90%;
+  margin-top: 10px;
+}

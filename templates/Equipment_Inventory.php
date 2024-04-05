@@ -28,17 +28,16 @@ include '../home/scripts.php';
             <?php//?Menú para ver o modificar inventario y la barra de busqueda?>
                 <div class="menu-equipment-inventory"><?php//?Menú para ver o modificar inventario ?>
                     <div class="menu-options">
-                        <button class="inventory">inventory</button>
+                        <button class="inventory">Inventory</button>
                         <button class="modify-inventory"> Modify Inventory</button>
                     </div>
                 </div>
-                <div class="search-equipment-inventory"><?php//?Barra de busqueda?>
-                    <div class="search-inventory-container">
-                        <form action='/buscar' method='get'>
-                            <button class='Search-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
-                            <input id='Search-input' class='Search-input' type='search' name='Search' placeholder='Search here...'>
-                        </form>   
-                    </div>
+                <div class='search-container-equipment-inventory'>
+                    <!--?Formulario Buscar-->
+                    <form action='/buscar' method='get'>
+                        <button class='Search-button-equipment-inventory' id='Search-equipment-inventory-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
+                        <input id='Search-input-equipment-inventory' class='Search-input-equipment-inventory' type='search' name='Search' placeholder='Search here...'>
+                    </form>
                 </div>
                 <div class="inventory-container">
                     <table class="table table-secondary table-hover">
@@ -80,7 +79,13 @@ include '../home/scripts.php';
                     </table>  
                 </div>
             </div>
-        </div> 
+        </div>
+
+        <?php //? FOOTER?>
+        <?php echo "$footer";?>
     </div>
+
+    <?php //? Cargar js?>
+    <?php echo "$SubMenu_js";?>
 </body>
 </html>
