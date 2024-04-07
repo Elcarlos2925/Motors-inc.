@@ -4,6 +4,7 @@
 $FontAwesome_css="<link rel='stylesheet' href='../static/assets/fontawesome-free-6.5.1-web/css/all.min.css'>";
 $Style_css="<link rel='stylesheet' href='../static/css/style.css'>";
 $Table_css="<link rel='stylesheet' href='../static/css/table.css'>";
+$Calendario_css="<link rel='stylesheet' href='../static/css/Calendario.css'>";
 $Dashboard_css="<link rel='stylesheet' href='../static/css/Dashboard.css'>";
 $Add_User_css="<link rel='stylesheet' href='../static/css/Add_User.css'>";
 $Edit_User_css="<link rel='stylesheet' href='../static/css/Edit_User.css'>";

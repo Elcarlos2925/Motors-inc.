@@ -36,8 +36,8 @@
             <div class='user-container'>
                 <!--?Contenedor de usuario-->
                 <div class='Employee-name-role'>
-                    <label for='' class='Employee-name' id=''>Employee Name</label><!--?Nombre de Empleado-->
-                    <label for='' class='Employee-role' id=''>Employee Role</label><!--?Rol de Empleado-->
+                    <p for='' class='Employee-name' id=''>Employee Name</p><!--?Nombre de Empleado-->
+                    <p for='' class='Employee-role' id=''>Employee Role</p><!--?Rol de Empleado-->
                 </div>
                 <div class='user-photo'>
                     <i class='fas fa-user fa-3x'></i>
