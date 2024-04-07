@@ -1,14 +1,56 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      events: '../home/ConnectionDB/Crud.php?action=list',
-      initialView: 'dayGridMonth',
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    events: '../home/ConnectionDB/Crud.php?action=list',
+    initialView: 'dayGridMonth',
+    dateClick: function(info) {
+      cleanForm();
+      $('#button-add').show();
+      $('#button-Modify').hide();
+      $('#button-delete').hide();
 
-      dateClick: function(info) {
-        //alert(info.dateStr)
-        $("#FormEvent").modal('show');
+      if (info.allDay) {
+        $('#Start-date').val(info.dateStr);
+        $('#End-date').val(info.dateStr);
+      } else {
+        let dateTime = info.dateStr.split("T");
+        $('#Start-date').val(dateTime[0]);
+        $('#End-date').val(dateTime[0]);
+        $('#Start-time').val(dateTime[1]);
+        $('#End-time').val(dateTime[1].substring(0,5));
       }
 
-    });
-    calendar.render();
+      $("#FormEvent").modal('show');
+    }
   });
+  calendar.render();
+
+  // Funciones para comunicarse con el servidor Ajax
+  function addRegister(register) {
+    $.ajax({
+      type: 'POST',
+      url: '../home/ConnectionDB/Crud.php?action=add',
+      data: register,
+      success: function(msg) {
+        calendar.fetchEvents();
+      },
+      error: function(error) {
+        alert("error adding event: " + error);
+      }
+    });
+  }
+  
+
+  // Función para limpiar el formulario
+  function cleanForm() {
+    $('#Id').val('');
+    $('#Title-task').val('');
+    $('#Start-date').val('');
+    $('#Start-time').val('');
+    $('#End-date').val('');
+    $('#End-time').val('');
+    $('#Description').val('');
+    $('#Background-color').val('#284B63');
+    $('#Text-color').val('#ffffff');
+  }
+});

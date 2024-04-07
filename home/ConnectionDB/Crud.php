@@ -21,7 +21,8 @@ switch ($_GET['action']) {
         echo json_encode($result);
         break;
 
-    /*case 'add':
+    case 'add':
+        $result = mysqli_query ($connection,
         "insert into events
         (title,
         descriptionEvent,
@@ -35,13 +36,12 @@ switch ($_GET['action']) {
         '$_POST[endEvent]',
         '$_POST[textColor]',
         '$_POST[backgroundColor]';
-        )";*/
-
-        echo "Add";
+        )");
+        echo json_encode($result);
         break;
 
     case 'modify':
-      /*"update events set
+      "update events set
         (title = ('$_POST[title]',
         descriptionEvent = '$_POST[descriptionEvent]',
         startEvent = '$_POST[startEvent]',
@@ -49,7 +49,7 @@ switch ($_GET['action']) {
         textColor = '$_POST[textColor]',
         backgroundColor) = '$_POST[backgroundColor]'
         where idEvent = $_POST[idEvent];
-        )";*/
+        )";
 
         echo "Modify";
         break;
