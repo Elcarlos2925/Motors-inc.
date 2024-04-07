@@ -138,11 +138,6 @@
         a username (email) and a password, depending on
         the assigned role will direct the user to the desired interface.
      </p>
-     <h4 align="justify" style="color:black;">- Computer storage monitoring</h4>
-     <p align="justify" style="color:black;">
-        The system must have a module that allows reading the data from the equipment
-        For space monitoring, this must be updated at least once a day.
-     </p>
      <h4 align="justify" style="color:black;">- Activity calendar</h4>
      <p align="justify" style="color:black;">
          The system must have an interactive calendar to be able to assign tasks,
