@@ -32,6 +32,7 @@ include '../home/ConnectionDB/Connection.php';
             </div>
             <div id='calendar'></div>
         </div>
+        
         <div class="modal fade" id="FormEvent" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
