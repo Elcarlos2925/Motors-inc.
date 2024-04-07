@@ -1,9 +1,5 @@
 <div align="center">
-    <h1 align="center" style="color:black;">⚙️ &nbsp; Motors Inc.</h1>
-</div>
-
-<div align="center">
-    <img src="https://github.com/Elcarlos2925/Motors-inc/blob/Carlos/static/assets/img/logo.jpeg" width="400" alt="logo del equipo" >
+    <img src="https://github.com/Elcarlos2925/Motors-inc/blob/Carlos/static/assets/img/logo.jpeg" width="90%" alt="logo del equipo" >
 </div>
 
 ## General Description
@@ -181,3 +177,15 @@
 [![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.5.1-228AE6?style=for-the-badge&logo=font-awesome&logoColor=white)](https://fontawesome.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.2.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 
+## Stats
+
+<table align="center" border="0">
+  <tr>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+    </td>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&repo=Motors-inc" alt="GitHub Streak Stats"/>
+    </td>
+  </tr>
+</table>
