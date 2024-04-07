@@ -2,7 +2,11 @@
     <h1 align="center" style="color:black;">⚙️ &nbsp; Motors Inc.</h1>
 </div>
 
-### General Description
+<div align="center">
+    <img src="https://github.com/Elcarlos2925/Motors-inc/blob/Carlos/static/assets/img/logo.jpeg" width="400" alt="logo del equipo" >
+</div>
+
+## General Description
 
 
 <div align="center">
