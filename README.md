@@ -174,13 +174,6 @@
 
 ## Stats
 
-<table align="center" border="0">
-  <tr>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-    </td>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&repo=Motors-inc" alt="GitHub Streak Stats"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&repo=Motors-inc" width="580px" alt="GitHub Streak Stats"/>
+</div>
