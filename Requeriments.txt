@@ -1,4 +1,5 @@
 bootstrap == 5.3.3
+bootstrap == 4.6.0
 ClockPicker == 0.0.7
 DataTables == 2.0.3
 jQuery == 3.7.1

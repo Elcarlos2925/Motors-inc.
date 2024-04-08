@@ -35,8 +35,8 @@ switch ($_GET['action']) {
         '$_POST[startEvent]',
         '$_POST[endEvent]',
         '$_POST[textColor]',
-        '$_POST[backgroundColor]';
-        )");
+        '$_POST[backgroundColor]');
+        ");
         echo json_encode($result);
         break;
 

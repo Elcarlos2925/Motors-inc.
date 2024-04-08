@@ -161,6 +161,7 @@
 [![VSCode](https://img.shields.io/badge/VSCode-%23007ACC.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-4.6.0-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![ClockPicker](https://img.shields.io/badge/ClockPicker-0.0.7-4FC08D?style=for-the-badge&logo=clockify&logoColor=white)](https://weareoutman.github.io/clockpicker/)
 [![DataTables](https://img.shields.io/badge/DataTables-2.0.3-007BFF?style=for-the-badge&logo=datatables&logoColor=white)](https://datatables.net/)
 

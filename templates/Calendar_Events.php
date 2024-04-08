@@ -119,8 +119,5 @@ include '../home/ConnectionDB/Connection.php';
         <?php echo "$footer";?>
     </div>
     <?php echo "$SubMenu_js $FullCalendar_js $Load_Calendar_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
-    <script>
-        $('.clockpicker').clockpicker()
-    </script>
 </body>
 </html>
