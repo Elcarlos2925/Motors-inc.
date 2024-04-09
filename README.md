@@ -172,9 +172,3 @@
 [![FullCalendar](https://img.shields.io/badge/FullCalendar-6.1.11-7952B3?style=for-the-badge&logo=fullcalendar&logoColor=white)](https://fullcalendar.io/)
 [![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.5.1-228AE6?style=for-the-badge&logo=font-awesome&logoColor=white)](https://fontawesome.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.2.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-
-## Stats
-
-<div align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Elcarlos2925&theme=dark&hide_border=true&include_all_commits=true&count_private=true&layout=compact&repo=Motors-inc" width="580px" alt="GitHub Streak Stats"/>
-</div>
