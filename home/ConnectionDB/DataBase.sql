@@ -1,27 +1,28 @@
-Create database Calendar;
-Use Calendar;
+Create database `Motors-inc`;
+Use `Motors-inc`;
 
 CREATE TABLE events (
-  idEvent int(11) NOT NULL,
-  tittle varchar(255) NOT NULL,
-  descriptionEvent text NOT NULL,
-  startEvent datetime NOT NULL,
-  endEvent datetime NOT NULL,
-  textColor varchar(7) NOT NULL,
-  backgroundColor varchar(7) NOT NULL
-)
+  `idEvent` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `descriptionEvent` text NOT NULL,
+  `startEvent` datetime NOT NULL,
+  `endEvent` datetime NOT NULL,
+  `textColor` varchar(7) NOT NULL,
+  `backgroundColor` varchar(7) NOT NULL
+);
 
-CREATE TABLE user (
+
+CREATE TABLE `user` (
   `idUser` int(11) NOT NULL,
   `username` varchar(99) NOT NULL,
   `name` varchar(255) NOT NULL,
   `subarea` varchar(255) NOT NULL,
   `role` varchar(255) NOT NULL,
   `phone` varchar(10) NOT NULL
-)
+);
 
-ALTER TABLE events ADD PRIMARY KEY (idEvent);
-ALTER TABLE user ADD PRIMARY KEY (idUser);
+ALTER TABLE events ADD PRIMARY KEY (`idEvent`);
+ALTER TABLE `user` ADD PRIMARY KEY (`idUser`);
 
 
 ALTER TABLE events MODIFY idEvent int(11) NOT NULL AUTO_INCREMENT;
