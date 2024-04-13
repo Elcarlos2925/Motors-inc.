@@ -14,6 +14,8 @@ $Bootstrap_css="<link rel='stylesheet' href='../static/css/bootstrap/bootstrap.m
 $DataTables_css="<link rel='stylesheet' href='../static/css/datatables.min.css'>";
 $ClockPicker_css="<link rel='stylesheet' href='../static/css/bootstrap-clockpicker.min.css'>";
 $Equipment_Inventory_css="<link rel='stylesheet' href='../static/css/Equipment_Inventory.css'>";
+$iFrame_css="<link rel='stylesheet' href='../static/css/iFrame.css'>";
+$ICT_Mantenaince_css="<link rel='stylesheet' href='../static/css/ICT_Mantenaince.css'>";
 
 
 
