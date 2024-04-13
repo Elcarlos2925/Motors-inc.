@@ -6,6 +6,7 @@ $Style_css="<link rel='stylesheet' href='../static/css/style.css'>";
 $Table_css="<link rel='stylesheet' href='../static/css/table.css'>";
 $Bootstrap_4_6_0_css="<link rel='stylesheet' href='../static/css/bootstrap.css'>";
 $Dashboard_css="<link rel='stylesheet' href='../static/css/Dashboard.css'>";
+$Pass_Rate_css="<link rel='stylesheet' href='../static/css/Pass_rate.css'>";
 $Add_User_css="<link rel='stylesheet' href='../static/css/Add_User.css'>";
 $Edit_User_css="<link rel='stylesheet' href='../static/css/Edit_User.css'>";
 $Know_Issues_css="<link rel='stylesheet' href='../static/css/Known_Issues.css'>";
