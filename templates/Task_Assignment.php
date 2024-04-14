@@ -49,9 +49,9 @@
                             <td>2024-04-01 01:00:00</td>
                             <td>2024-04-01 23:59:59</td>
                             <td>
-                                <button class="btn btn-success">Success</button>
-                                <button class="btn btn-warning">Modify</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-outline-success">Success</button>
+                                <button class="btn btn-outline-primary">Modify</button>
+                                <button class="btn btn-outline-danger">Delete</button>
                             </td>
                         </tr>
                         <tr>
@@ -61,9 +61,9 @@
                             <td>2024-04-02 00:00:01</td>
                             <td>2024-04-03 23:59:59</td>
                             <td>
-                                <button class="btn btn-success">Success</button>
-                                <button class="btn btn-warning">Modify</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-outline-success">Success</button>
+                                <button class="btn btn-outline-primary">Modify</button>
+                                <button class="btn btn-outline-danger">Delete</button>
                             </td>
                         </tr>
                         <tr>
@@ -73,14 +73,15 @@
                             <td>2024-04-09 12:10:00</td>
                             <td>2024-04-10 01:15:00</td>
                             <td>
-                                <button class="btn btn-success">Success</button>
-                                <button class="btn btn-warning">Modify</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-outline-success">Success</button>
+                                <button class="btn btn-outline-primary">Modify</button>
+                                <button class="btn btn-outline-danger">Delete</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <a href="<?php echo $Calendar_Events;?>" class="btn btn-primary btn-go-to-calendar float-right"><i class="icono"></i>Go to Calendar</a>
         </div>
 
         <?php //? FOOTER?>

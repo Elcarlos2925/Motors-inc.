@@ -35,3 +35,8 @@
     min-height: 130px;
     margin-bottom: 20px;
   }
+
+  .btn-go-to-calendar{
+    text-decoration: none;
+    font-family: 'Telegraf', sans-serif;
+  }
