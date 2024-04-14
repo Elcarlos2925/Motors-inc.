@@ -2,16 +2,15 @@
 //?Aqui se ponen los links de cada elemento y se cargan automaticamente en el sidebar
 $Dashboard='../templates/Dashboard.php';
 $Task_Assignment='';
-$Storage='';
 $Pcbs_Location='';
 $Calendar_Events='../templates/Calendar_Events.php';
 $Know_Issues='../templates/Known_Issues.php';
 $ICT='';
 $Fixtures_for_Models='';
 $ICS='';
-$Mantenaince='../templates/../templates/ICT_Mantenaince.php';
+$Mantenaince='../templates/ICT_Mantenaince.php';
 $Program_Backups='';
-$Pass_Rate='';
+$Pass_Rate='../templates/Pass-Rate.php';
 $SPI_AOI='';
 $Undefined_Item='';
 $Departament='';
