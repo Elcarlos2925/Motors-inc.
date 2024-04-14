@@ -5,6 +5,7 @@ $FontAwesome_css="<link rel='stylesheet' href='../static/assets/fontawesome-free
 $Style_css="<link rel='stylesheet' href='../static/css/style.css'>";
 $Bootstrap_4_6_0_css="<link rel='stylesheet' href='../static/css/bootstrap.css'>";
 $Dashboard_css="<link rel='stylesheet' href='../static/css/Dashboard.css'>";
+$Task_Assignment_css="<link rel='stylesheet' href='../static/css/task_assignment.css'>";
 $Pass_Rate_css="<link rel='stylesheet' href='../static/css/Pass_rate.css'>";
 $Add_User_css="<link rel='stylesheet' href='../static/css/Add_User.css'>";
 $Edit_User_css="<link rel='stylesheet' href='../static/css/Edit_User.css'>";
