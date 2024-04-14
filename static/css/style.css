@@ -280,3 +280,12 @@
     font-family: 'Telegraf UltraLight', sans-serif;
     font-size: small;
   }
+
+  .table thead{
+    text-align: center;
+    font-family: 'Telegraf Bold',sans-serif;
+  }
+  .table tbody{
+    text-align: center;
+    font-family: 'Telegraf',sans-serif;
+  }

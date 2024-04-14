@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Edit_User_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $Edit_User_css $Table_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Edit_User_css $Bootstrap_4_6_0_css";?>
     <title>Edit User</title>
 </head>
 <body>

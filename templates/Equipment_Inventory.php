@@ -10,7 +10,7 @@ include '../home/icons.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Equipment_Inventory_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $Equipment_Inventory_css $Table_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Equipment_Inventory_css $Bootstrap_4_6_0_css";?>
     <title>Equipment Inventory</title>
 </head>
 <body>

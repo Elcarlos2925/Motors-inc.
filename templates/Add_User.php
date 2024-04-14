@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Add_User_icon"; ?>
     <?php //? Cargar CSS ?>
-    <?php echo "$FontAwesome_css $Style_css $Add_User_css $Table_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Add_User_css $Bootstrap_4_6_0_css";?>
     <title>Add User</title>
 </head>
 <body>

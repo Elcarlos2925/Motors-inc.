@@ -3,7 +3,6 @@
 //?Script Css
 $FontAwesome_css="<link rel='stylesheet' href='../static/assets/fontawesome-free-6.5.1-web/css/all.min.css'>";
 $Style_css="<link rel='stylesheet' href='../static/css/style.css'>";
-$Table_css="<link rel='stylesheet' href='../static/css/table.css'>";
 $Bootstrap_4_6_0_css="<link rel='stylesheet' href='../static/css/bootstrap.css'>";
 $Dashboard_css="<link rel='stylesheet' href='../static/css/Dashboard.css'>";
 $Pass_Rate_css="<link rel='stylesheet' href='../static/css/Pass_rate.css'>";

@@ -34,8 +34,8 @@
     padding: 10px;
     margin-top: 10px;
     min-height: 480px;
-    margin-bottom: 20px;
-    width: 1164px;
+    margin-bottom: 30px;
+    width: 99%/*1164px*/;
     margin-right: 100px;
   }
  /*? Contenedor de las opciones*/

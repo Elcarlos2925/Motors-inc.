@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Pass_Rate_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $Pass_Rate_css $Table_css $Bootstrap_4_6_0_css $jQuery_js $ClockPicker_js $ClockPicker_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Pass_Rate_css $Bootstrap_4_6_0_css $Bootstrap_4_6_0_css $jQuery_js $ClockPicker_js $ClockPicker_css";?>
     <title>Pass Rate ITC</title>
 </head>
 <body>

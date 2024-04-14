@@ -11,7 +11,7 @@ include '../home/icons.php';
     <title>iFrame</title>
     <?php echo "$iFrame_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $iFrame_css $Table_css";?>
+    <?php echo "$FontAwesome_css $Style_css $iFrame_css $Bootstrap_4_6_0_css";?>
 </head>
 <body>
     <div class="main-container">

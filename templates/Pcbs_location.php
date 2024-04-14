@@ -9,7 +9,7 @@ include '../home/icons.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $Pcbs_location_css $Table_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Pcbs_location_css $Bootstrap_4_6_0_css";?>
     <title>PCB's Location</title>
 </head>
 <body>

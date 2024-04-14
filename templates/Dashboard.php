@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Dashboard_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $Dashboard_css $Table_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Dashboard_css $Bootstrap_4_6_0_css";?>
     <title>Dashboard</title>
 </head>
 <body>
