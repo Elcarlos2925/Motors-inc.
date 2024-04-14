@@ -24,11 +24,13 @@ include '../home/icons.php';
                 <h1>ICT Mantenaince</h1>
             </div>
             <div class="ict-mantenaince-container"><?php //? El contenedor principal de las 4 opciones?>
-                <div class="ict-options"><?php //? botones de las 4 opciones?>
-                    <button class="btn-calendar">Calendar</button> <?php //? OPCION 1?>
-                    <button class="btn-details">Details</button><?php //? OPCION 2?>
-                    <button class="btn-most-faulty-pins">Most faulty pins</button> <?php //? OPCION 3?>
-                    <button class="btn-total-cycles">Total cycles</button> <?php //? OPCION 4?>
+                <div class="menu-ict-option">
+                    <div class="ict-options"><?php //? botones de las 4 opciones?>
+                        <button class="btn-calendar">Calendar</button> <?php //? OPCION 1?>
+                        <button class="btn-details">Details</button><?php //? OPCION 2?>
+                        <button class="btn-most-faulty-pins">Most faulty pins</button> <?php //? OPCION 3?>
+                        <button class="btn-total-cycles">Total cycles</button> <?php //? OPCION 4?>
+                    </div>
                 </div>
                 <div class="options-container"><?php //? Contenedor principal de las 4 opciones?>
                     
@@ -58,8 +60,8 @@ include '../home/icons.php';
                             <tbody>
                                 <tr id="sinContenido">
                                     <td colspan="6">No data available in table</td>
-                                    </tbody>
                                 </tr>
+                            </tbody>
                             </table>
                     </div>
 
@@ -68,77 +70,97 @@ include '../home/icons.php';
                     <div class="title-options">
                         <h2>Most faulty pins</h2>
                     </div>    
-                    <form action="">
-                        <div class="form-container">
-                            <input type="text"  class="specific-fixure" placeholder="Specific fixure ID">
-                        </div>    
-                        <div class="form-container">
-                            <label for="">Number pins</label>
-                                <select name="number-pins">
-                                    <option value="" disabled selected>Select number of pins</option>
-                                    <option value="">..</option>
-                                    <option value="">..</option>
-                                    <option value="">..</option>
-                                </select>
-                        </div>
-                        <div class="form-container">
-                            <label for="">Chose a machine</label>
-                                <select name="number-pins">
-                                    <option value="" disabled selected>Select machine</option>
-                                    <option value="">..</option>
-                                    <option value="">..</option>
-                                    <option value="">..</option>
-                                </select>
-                        </div>
-                        <div class="form-container">
-                            <label for="">Date start: </label>
-                            <input id="f" type="date">
-                        </div>   
-                        <div class="form-container">
-                            <label for="">Date end: </label>
-                            <input type="date">
-                        </div>                     
-                    </form>
-                </div>
 
-                <?php //? Total cycles OPCION 4?>
-                <div class="ict-total-cycles-container">
-                    <div class="title-options">
-                        <h2>Total cycles </h2>
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col center">
+                                    <input type="text" id="specific-fixure" class="specific-fixure form-control" placeholder="Specific fixure ID">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="number-pins">Number pins</label>
+                                    <select name="number-pins" id="number-pins" class="form-control">
+                                        <option value="" disabled selected>Select number of pins</option>
+                                        <option value="">Undefined</option>
+                                        <option value="">Undefined</option>
+                                        <option value="">Undefined</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="chose-machine">Chose a machine</label>
+                                    <select name="chose-machine" id="chose-machine" class="form-control">
+                                        <option value="" disabled selected>Select machine</option>
+                                        <option value="">Undefined</option>
+                                        <option value="">Undefined</option>
+                                        <option value="">Undefined</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="Start-date">Start Date: </label>
+                                    <div class="input-group" data-autoclose="true">
+                                        <input type="date" id="Start-date" class="form-control" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group col">
+                                    <label for="End-date">End Date: </label>
+                                    <div class="input-group" data-autoclose="true">
+                                        <input type="date" id="End-date" class="form-control" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="button-add" class="btn btn-secondary float-right">Add</button>
+                        </form>
                     </div>
-                    <form action="">
-                        <div class="form-container">
-                            <input type="text"  class="specific-fixure" placeholder="Specific fixure ID">
-                        </div>    
-                        <div class="form-container">
-                            <label for="">Chose a machine</label>
-                                <select name="number-pins">
+    
+                    <?php //? Total cycles OPCION 4?>
+                    <div class="ict-total-cycles-container">
+                        <div class="title-options">
+                            <h2>Total cycles </h2>
+                        </div>
+                        <form action="">
+                        <div class="form-row">
+                                <div class="form-group col center">
+                                <input type="text"  id="specific-fixure"  class="form-control" placeholder="Specific fixure ID">
+                            </div>    
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="chose-machine">Chose a machine</label>
+                                <select name="chose-machine" id="chose-machine" class="form-control">
                                     <option value="" disabled selected>Select machine</option>
                                     <option value="">..</option>
                                     <option value="">..</option>
                                     <option value="">..</option>
                                 </select>
+                            </div>
                         </div>
-                        <div class="form-container">
-                            <label for="">Date start: </label>
-                            <input id="f" type="date">
-                        </div>   
-                        <div class="form-container">
-                            <label for="">Date end: </label>
-                            <input type="date">
-                        </div>                     
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label for="Start-date">Start Date: </label>
+                                <div class="input-group" data-autoclose="true">
+                                    <input type="date" id="Start-date" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group col">
+                                <label for="End-date">End Date: </label>
+                                <div class="input-group" data-autoclose="true">
+                                    <input type="date" id="End-date" class="form-control" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" id="button-add" class="btn btn-secondary float-right">Add</button>
                     </form>
                 </div>
             </div>
-
-                
        </div>
-            
     </div>
-       
+
         <?php //? FOOTER?>
         <?php echo "$footer";?>
-    </div>    
+    </div>
     <?php //? Cargar js?>
     <?php echo "$SubMenu_js";?>
 </body>

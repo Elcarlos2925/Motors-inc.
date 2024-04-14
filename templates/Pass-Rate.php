@@ -32,18 +32,18 @@
             
             <div class="menu-pass-rate"><?php//?Menú para ver o modificar inventario ?>
                 <div class="menu-options">
-                <button class="activate" id="btn-pass-rate-today" onclick="">
-                    Pass Rate Today
-                </button>
-                <button class="desactivate" id="btn-top-5-fails" onclick="">
-                    Top 5 Fails [All Current Models]
-                </button>
-                <button class="desactivate" id="btn-pass-rate-by-specific-date" onclick="">
-                    Pass Rate by Specific Date
-                </button>
-                <button class="desactivate" id="btn-top-5-fails-by-specific-date" onclick="">
-                    Top 5 Fails by Specific Date
-                </button>
+                    <button class="activate" id="btn-pass-rate-today" onclick="">
+                        Pass Rate Today
+                    </button>
+                    <button class="desactivate" id="btn-top-5-fails" onclick="">
+                        Top 5 Fails [All Current Models]
+                    </button>
+                    <button class="desactivate" id="btn-pass-rate-by-specific-date" onclick="">
+                        Pass Rate by Specific Date
+                    </button>
+                    <button class="desactivate" id="btn-top-5-fails-by-specific-date" onclick="">
+                        Top 5 Fails by Specific Date
+                    </button>
                 </div>
             </div>
 

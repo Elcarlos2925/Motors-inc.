@@ -79,7 +79,6 @@
     width: 50% !important;
 }
 
-
 .menu-pass-rate{
     display: grid;
     place-items: start;
@@ -97,7 +96,12 @@
     height: 40px;
     margin: 0;
     border: none;
+    font-size: 15px;
     cursor: pointer;
+}
+
+.menu-options button:hover{
+  background-color: #fff;
 }
 
  .menu-options .activate{

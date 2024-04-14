@@ -36,39 +36,38 @@
     min-height: 480px;
     margin-bottom: 30px;
     width: 99%/*1164px*/;
-    margin-right: 100px;
   }
  /*? Contenedor de las opciones*/
  .options-container{
     margin-top: 40px;
   }
   /*? Menú de ñas 4 opciones*/
+  .ict-mantenaince-container .menu-ict-option{
+    display: grid;
+    place-items: start;
+    border-bottom: 0.5px solid black;
+  }
 
   .ict-mantenaince-container .ict-options {
-    display: flex;
-    border-bottom: 1px solid #000 ;
+    width: 60%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 
   .ict-mantenaince-container .ict-options button {
-    width: 150px;
-    height: 30px;
+    height: 40px;
+    margin: 0;
     border: none;
-    font-size: 17px;
-    background-color: #D9D9D9;
-    
+    font-size: 15px;
+    cursor: pointer;
   }
   .ict-mantenaince-container .ict-options button:hover {
     background-color: #fff;
-    
-  }
-
-  /*? OPCION 1*/
-  .ict-calendar-container{
-    
   }
 
   /*? OPCIÓN 2 (Es el css de tabla así que no hice nada aquí xd)*/
- 
+
   /*?  Opcion 3 y 4*/
   .ict-most-faulty-pins-container, .ict-total-cycles-container {
     display: grid;
@@ -76,36 +75,24 @@
     width: 100%;
   }
   .ict-most-faulty-pins-container form, .ict-total-cycles-container form{
-    margin-top: 10px;
-    font-size: 23px;
+    font-size: 20px;
     font-family: 'Telegraf', sans-serif;
-    font-size: 22px;
-    width: 70%;
-    display: grid;
-    place-items: end;
+    width: 80%;
   }
-  .ict-most-faulty-pins-container label, .ict-most-faulty-pins-container input, .ict-most-faulty-pins-container select,
-  .ict-total-cycles-container label, .ict-total-cycles-container input, .ict-total-cycles-container select{
+  .ict-most-faulty-pins-container label,
+  .ict-most-faulty-pins-container input,
+  .ict-most-faulty-pins-container select,
+  .ict-total-cycles-container label,
+  .ict-total-cycles-container input,
+  .ict-total-cycles-container select{
     margin-bottom: 20px;
 }
-    
-  .ict-most-faulty-pins-container input, .ict-most-faulty-pins-container select,
-  .ict-total-cycles-container input, .ict-total-cycles-container select{
-    font-size: 22px;
-    width: 470px;
-    height: 40px;
-    text-align: center;
-    border: none;
-  }
-  .form-container{
-    width: 100%;
+
+  #specific-fixure{
+    width: 97%;
   }
 
-  .form-container input, .form-container select {
-    display: block; 
-    margin-left: 30%;
-    
+  .center{
+    display: grid;
+    place-items: center;
   }
- 
-  
-  
