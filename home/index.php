@@ -66,25 +66,14 @@
                 <div class='item'>
                     <a href='$ICT' class='sub-menu-btn'><i class='fa-solid fa-gear icon-item'></i>ICT<i class='fas fa-angle-right dropdown rotate'></i></a>
                     <div class='sub-menu'>
-                        <a class='sub-item' href='$Fixtures_for_Models'><i class='fa-solid fa-box icon-item'></i>Fixtures for Models</a>
-                        <a class='sub-item' href='$ICS'><i class='fa-solid fa-list-check icon-item'></i>ICS's</a>
                         <a class='sub-item' href='$Mantenaince'><i class='fa-solid fa-screwdriver-wrench icon-item'></i>Mantenaince</a>
-                        <a class='sub-item' href='$Program_Backups'><i class='fa-solid fa-floppy-disk icon-item'></i>Program Backups</a>
                         <a class='sub-item' href='$Pass_Rate'><i class='fa-solid fa-chart-line icon-item'></i>Pass Rate</a>
-                    </div>
-                </div>
-                <!--?Submenu SPI & AOI-->
-                <div class='item'>
-                    <a href='$SPI_AOI' class='sub-menu-btn'><i class='fa-solid fa-display icon-item'></i>SPI & AOI <i class='fas fa-angle-right dropdown rotate'></i></a>
-                    <div class='sub-menu'>
-                        <a class='sub-item' href='$Undefined_Item'><i class='fa-solid fa-spinner icon-item'></i>Undefined Item</a>
                     </div>
                 </div>
                 <!--?Submenu Departament-->
                 <div class='item'>
                     <a href='$Departament' class='sub-menu-btn'><i class='fa-solid fa-gauge icon-item'></i>Departament <i class='fas fa-angle-right dropdown rotate'></i></a>
                     <div class='sub-menu'>
-                    <a class='sub-item' href='$Equipment_Information'><i class='fa-solid fa-circle-info icon-item'></i>Equipment Information</a>
                     <a class='sub-item' href='$Equipment_Inventory'><i class='fa-solid fa-table-list icon-item'></i>Equipment Inventory</a>
                     </div>
                 </div>
@@ -99,7 +88,6 @@
                     </div>
                 </div>
                 <div class='item'><a href='$iFrame'><i class='fa-solid fa-code icon-item'></i>iFrame</a></div>
-                <div class='item'><a href='$Documentation'><i class='fa-solid fa-file icon-item'></i>Documentation</a></div>
             </div>
             
             <div class='help-logout-container'>
