@@ -1,13 +1,14 @@
 <?php
     include '../home/index.php';
     include '../home/scripts.php';
+    include '../home/icons.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../static/assets/icons/house-door-fill.svg" type="image/svg+xml">
+    <?php echo "$Edit_User_icon"; ?>
     <?php //? Cargar Css?>
     <?php echo "$FontAwesome_css $Style_css $Edit_User_css $Table_css";?>
     <title>Edit User</title>

@@ -3,6 +3,7 @@
 include '../home/index.php';
 include '../home/scripts.php';
 include '../home/ConnectionDB/Connection.php';
+include '../home/icons.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +11,7 @@ include '../home/ConnectionDB/Connection.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../static/assets/icons/house-door-fill.svg" type="image/svg+xml">
+    <?php echo "$Calendar_Events_icon"; ?>
     <?php //? Cargar Css ?>
     <?php echo "$FontAwesome_css $Style_css $Calendar_Events_css $Bootstrap_4_6_0_css $DataTables_css $jQuery_js $ClockPicker_js $ClockPicker_css";?>
 

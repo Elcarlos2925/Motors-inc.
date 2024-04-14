@@ -1,6 +1,7 @@
 <?php
 include '../home/index.php';
 include '../home/scripts.php';
+include '../home/icons.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +9,7 @@ include '../home/scripts.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFrame</title>
-    <link rel="icon" href="../static/assets/icons/house-door-fill.svg" type="image/svg+xml">
+    <?php echo "$iFrame_icon"; ?>
     <?php //? Cargar Css?>
     <?php echo "$FontAwesome_css $Style_css $iFrame_css $Table_css";?>
 </head>
