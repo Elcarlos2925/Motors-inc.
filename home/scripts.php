@@ -17,6 +17,7 @@ $ClockPicker_css="<link rel='stylesheet' href='../static/css/bootstrap-clockpick
 $Equipment_Inventory_css="<link rel='stylesheet' href='../static/css/Equipment_Inventory.css'>";
 $iFrame_css="<link rel='stylesheet' href='../static/css/iFrame.css'>";
 $ICT_Mantenaince_css="<link rel='stylesheet' href='../static/css/ICT_Mantenaince.css'>";
+$Pcbs_location_css="<link rel='stylesheet' href='../static/css/Pcbs_location.css'>";
 
 
 

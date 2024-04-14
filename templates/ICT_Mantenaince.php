@@ -10,7 +10,7 @@ include '../home/icons.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Mantenaince_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $ICT_Mantenaince_css $Table_css";?>
+    <?php echo "$FontAwesome_css $Style_css $ICT_Mantenaince_css $Table_css ";?>
     <title>ICT Mantenaince</title>
 </head>
 <body>
@@ -34,11 +34,16 @@ include '../home/icons.php';
                     
                 <?php //? Calendario del ict (OPCION 1)?>
                     <div class="ict-calendar-container">
-
+                        <div class="title-options">
+                            <h2>Calendar</h2>
+                        </div>
                     </div>
 
                     <?php //? Contenido de detalles (OPCION 2)?>
                     <div class="ict-details-container">
+                        <div class="title-options">
+                            <h2>Details</h2>
+                        </div>
                         <table class="table table-secondary table-hover">
                             <thead>
                                 <tr>
@@ -60,6 +65,9 @@ include '../home/icons.php';
 
                     <?php //? Most faulty pins (OPCION 3)?>
                 <div class="ict-most-faulty-pins-container">
+                    <div class="title-options">
+                        <h2>Most faulty pins</h2>
+                    </div>    
                     <form action="">
                         <div class="form-container">
                             <input type="text"  class="specific-fixure" placeholder="Specific fixure ID">
@@ -93,8 +101,33 @@ include '../home/icons.php';
                     </form>
                 </div>
 
-                
-                <div class="ict-total-cycles-container"><?php //? OPCION 4?>
+                <?php //? Total cycles OPCION 4?>
+                <div class="ict-total-cycles-container">
+                    <div class="title-options">
+                        <h2>Total cycles </h2>
+                    </div>
+                    <form action="">
+                        <div class="form-container">
+                            <input type="text"  class="specific-fixure" placeholder="Specific fixure ID">
+                        </div>    
+                        <div class="form-container">
+                            <label for="">Chose a machine</label>
+                                <select name="number-pins">
+                                    <option value="" disabled selected>Select machine</option>
+                                    <option value="">..</option>
+                                    <option value="">..</option>
+                                    <option value="">..</option>
+                                </select>
+                        </div>
+                        <div class="form-container">
+                            <label for="">Date start: </label>
+                            <input id="f" type="date">
+                        </div>   
+                        <div class="form-container">
+                            <label for="">Date end: </label>
+                            <input type="date">
+                        </div>                     
+                    </form>
                 </div>
             </div>
 

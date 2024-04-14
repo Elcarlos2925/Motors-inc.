@@ -16,7 +16,10 @@
   .title-container h1{
     font-family: 'Telegraf Bold',sans-serif;
   }
-
+  .title-options{
+    font-family: 'Telegraf Bold',sans-serif;
+    text-align: center;
+  }
   /*?Content Container*/
   .content-container{
     margin-left: 300px;
@@ -58,27 +61,36 @@
     background-color: #fff;
     
   }
+
+  /*? OPCION 1*/
+  .ict-calendar-container{
+    
+  }
+
+  /*? OPCIÓN 2 (Es el css de tabla así que no hice nada aquí xd)*/
  
-  /*?  Opcion 3*/
-  .ict-most-faulty-pins-container {
+  /*?  Opcion 3 y 4*/
+  .ict-most-faulty-pins-container, .ict-total-cycles-container {
     display: grid;
     place-items: center;
-    font-size: 22px;
-    width: 90%;
+    width: 100%;
   }
-  .ict-most-faulty-pins-container form{
+  .ict-most-faulty-pins-container form, .ict-total-cycles-container form{
     margin-top: 10px;
     font-size: 23px;
     font-family: 'Telegraf', sans-serif;
+    font-size: 22px;
     width: 70%;
     display: grid;
     place-items: end;
   }
-  .ict-most-faulty-pins-container label,.ict-most-faulty-pins-container input,.ict-most-faulty-pins-container select{
+  .ict-most-faulty-pins-container label, .ict-most-faulty-pins-container input, .ict-most-faulty-pins-container select,
+  .ict-total-cycles-container label, .ict-total-cycles-container input, .ict-total-cycles-container select{
     margin-bottom: 20px;
 }
     
-  .ict-most-faulty-pins-container input, .ict-most-faulty-pins-container select{
+  .ict-most-faulty-pins-container input, .ict-most-faulty-pins-container select,
+  .ict-total-cycles-container input, .ict-total-cycles-container select{
     font-size: 22px;
     width: 470px;
     height: 40px;

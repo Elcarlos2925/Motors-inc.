@@ -2,7 +2,7 @@
 //?Aqui se ponen los links de cada elemento y se cargan automaticamente en el sidebar
 $Dashboard='../templates/Dashboard.php';
 $Task_Assignment='';
-$Pcbs_Location='';
+$Pcbs_Location='../templates/Pcbs_location.php';
 $Calendar_Events='../templates/Calendar_Events.php';
 $Know_Issues='../templates/Known_Issues.php';
 $ICT='';
