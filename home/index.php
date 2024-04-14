@@ -22,17 +22,6 @@
                     <input id='Search-input' class='Search-input' type='search' name='Search' placeholder='Search here...'>
                 </form>
             </div>
-            <div class='message-notifications-container'>
-                <!--?Contenedores de mensajes y notificaciones-->
-                <div class='message-container'>
-                    <!--?Contenedor de mensajes-->
-                    <i class='fas fa-envelope fa-lg'></i>
-                </div>
-                <div class='notification-container'>
-                    <!--?Contenedor de notificaciones-->
-                    <i class='fas fa-bell fa-lg'></i>
-                </div>
-            </div>
             <div class='user-container'>
                 <!--?Contenedor de usuario-->
                 <div class='Employee-name-role'>

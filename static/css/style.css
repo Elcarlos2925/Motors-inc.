@@ -25,7 +25,7 @@
     height: 130px;
     margin-left: 300px;
     display: grid;
-    grid-template-columns: 45% 10% 45%;
+    grid-template-columns: 50% 50%;
 }
 
 /*?Return Button*/
@@ -83,14 +83,6 @@
     width: 80%;
     height: 80%;
     border: none;
-}
-
-/*?Message Notifications Container*/
-
-.message-notifications-container{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center;
 }
 
 /*?Employee Name Role*/
@@ -281,6 +273,12 @@
     font-size: small;
   }
 
+  .table{
+    border-top: 0 solid rgb(180, 183, 187);
+    border-bottom: 1px solid rgb(180, 183, 187);
+    border-right: 1px solid rgb(180, 183, 187);
+    border-left: 1px solid rgb(180, 183, 187);
+  }
   .table thead{
     text-align: center;
     font-family: 'Telegraf Bold',sans-serif;
