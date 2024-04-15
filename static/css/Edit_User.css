@@ -25,6 +25,13 @@
     font-family: 'Telegraf Bold',sans-serif;
   }
 
+  .table-container{
+    overflow-x: auto;
+    margin-top: 20px;
+    max-height: 500px;
+    overflow: auto;
+ }
+
   .edit-user-container{
     display: grid;
     place-items: center;

@@ -37,6 +37,7 @@
                     </form>
                 </div>
                 <div class="table-edit-user">
+                <div class="table-container">
                     <table class="table table-secondary table-hover">
                         <thead>
                             <tr>
@@ -193,6 +194,7 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
                 </div>
             </div>
         </div>

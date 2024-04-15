@@ -32,26 +32,26 @@ include '../home/icons.php';
                         <input id='Search-input-pcbs-location' class='Search-input-pcbs-location' type='search' name='Search' placeholder='Search here...'>
                     </form>
                 </div>
-                    <div class="pcbs-location-table">
-                        <table class="table table-secondary table-hover">
-                            <thead>
-                                <tr>
-                                    <td>Cliet</td>
-                                    <td>Model</td>
-                                    <td>Departament</td>
-                                    <td>Expiration Verification</td>
-                                    <td>Status</td>
-                                    <td>TitPCB typele</td>
-                                    <td>Position</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr id="sinContenido">
-                                    <td colspan="7">No data available in table</td>
-                                    </tbody>
-                                </tr>
-                            </table>
-                    </div>
+                <div class="table-container">
+                    <table class="table table-secondary table-hover">
+                        <thead>
+                            <tr>
+                                <td>Cliet</td>
+                                <td>Model</td>
+                                <td>Departament</td>
+                                <td>Expiration Verification</td>
+                                <td>Status</td>
+                                <td>TitPCB typele</td>
+                                <td>Position</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="sinContenido">
+                                <td colspan="7">No data available in table</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 

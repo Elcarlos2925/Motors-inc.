@@ -49,6 +49,7 @@
 
             <?php //?Pass Rate Today ?>
             <h3>Pass Rate Today</h3>
+            <div class="table-container">
                 <table class="table table-secondary table-hover">
                     <thead>
                         <tr>
@@ -96,9 +97,11 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
 
             <?php //?TOP 5 COMPONENT FAIL ?>
             <h3>Top 5 Component Fail E3-10119E30052</h3>
+            <div class="table-container">
                 <table class="table table-secondary table-hover">
                     <thead>
                         <tr>
@@ -151,7 +154,9 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
             <h3>Top 5 Component Fail E3-10129P17D21</h3>
+            <div class="table-container">
                 <table class="table table-secondary table-hover">
                     <thead>
                         <tr>
@@ -204,6 +209,7 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
         
             <?php //?Pass Rate by Specific Date ?>
             <h3>Pass Rate By Specific Date</h3>

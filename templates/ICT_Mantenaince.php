@@ -46,23 +46,25 @@ include '../home/icons.php';
                         <div class="title-options">
                             <h2>Details</h2>
                         </div>
-                        <table class="table table-secondary table-hover">
-                            <thead>
-                                <tr>
-                                    <td>Activity</td>
-                                    <td>Responsible</td>
-                                    <td>Start day</td>
-                                    <td>Limit day</td>
-                                    <td>Finished</td>
-                                    <td>Title</td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr id="sinContenido">
-                                    <td colspan="6">No data available in table</td>
-                                </tr>
-                            </tbody>
+                        <div class="table-container">
+                            <table class="table table-secondary table-hover">
+                                <thead>
+                                    <tr>
+                                        <td>Activity</td>
+                                        <td>Responsible</td>
+                                        <td>Start day</td>
+                                        <td>Limit day</td>
+                                        <td>Finished</td>
+                                        <td>Title</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="sinContenido">
+                                        <td colspan="6">No data available in table</td>
+                                    </tr>
+                                </tbody>
                             </table>
+                        </div>
                     </div>
 
                     <?php //? Most faulty pins (OPCION 3)?>

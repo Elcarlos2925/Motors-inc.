@@ -30,7 +30,7 @@
     border-radius: 15px;
     padding: 10px;
     margin-top: 10px;
-    min-height: 480px;
+    max-height: 660px;
     margin-bottom: 20px;
     width: 98%/*1164px*/;
     margin-right: 100px;
@@ -77,7 +77,9 @@
     border: none;
   }
 
-  /*? Contenido de pcbs location?*/
-  .pcbs-location-table{
+  .table-container{
+    overflow-x: auto;
     margin-top: 30px;
-  }
+    max-height: 560px;
+    overflow: auto;
+ }

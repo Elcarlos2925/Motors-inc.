@@ -30,58 +30,230 @@
             </div>
             <?php //?Task Assignment?>
             <div class="task-assignment-container">
-                <table class="table table-secondary table-hover">
-                    <thead>
-                        <tr>
-                            <td>Task</td><!--id-->
-                            <td>Details</td><!--DescriptionEvent-->
-                            <td>Assigned to</td><!--title-->
-                            <td>Start Date</td><!--StartDate-->
-                            <td>End Date</td><!--EndDate-->
-                            <td>Options</td><!--editar, eliminar, cumplida-->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Desarrollar casos de uso</td>
-                            <td>Odette Franco</td>
-                            <td>2024-04-01 01:00:00</td>
-                            <td>2024-04-01 23:59:59</td>
-                            <td>
-                                <button class="btn btn-outline-success">Success</button>
-                                <button class="btn btn-outline-primary">Modify</button>
-                                <button class="btn btn-outline-danger">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Revisar documentación</td>
-                            <td>Karla Trillo</td>
-                            <td>2024-04-02 00:00:01</td>
-                            <td>2024-04-03 23:59:59</td>
-                            <td>
-                                <button class="btn btn-outline-success">Success</button>
-                                <button class="btn btn-outline-primary">Modify</button>
-                                <button class="btn btn-outline-danger">Delete</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Terminar Vistas Pendientes</td>
-                            <td>Alexis Martinez</td>
-                            <td>2024-04-09 12:10:00</td>
-                            <td>2024-04-10 01:15:00</td>
-                            <td>
-                                <button class="btn btn-outline-success">Success</button>
-                                <button class="btn btn-outline-primary">Modify</button>
-                                <button class="btn btn-outline-danger">Delete</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="go-to-calendar-container">
+                    <a href="<?php echo $Calendar_Events;?>" class="btn btn-primary btn-go-to-calendar float-right"><i class="icono"></i>Go to Calendar</a>
+                </div>
+                <div class="table-container">
+                    <table class="table table-secondary table-hover">
+                        <thead>
+                            <tr>
+                                <td>Task</td><!--id-->
+                                <td>Details</td><!--DescriptionEvent-->
+                                <td>Assigned to</td><!--title-->
+                                <td>Start Date</td><!--StartDate-->
+                                <td>End Date</td><!--EndDate-->
+                                <td>Options</td><!--editar, eliminar, cumplida-->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Desarrollar casos de uso</td>
+                                <td>Odette Franco</td>
+                                <td>2024-04-01 01:00:00</td>
+                                <td>2024-04-01 23:59:59</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Revisar documentación</td>
+                                <td>Karla Trillo</td>
+                                <td>2024-04-02 00:00:01</td>
+                                <td>2024-04-03 23:59:59</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Terminar Vistas Pendientes</td>
+                                <td>Alexis Martinez</td>
+                                <td>2024-04-09 12:10:00</td>
+                                <td>2024-04-10 01:15:00</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Success</button>
+                                    <button class="btn btn-outline-primary">Modify</button>
+                                    <button class="btn btn-outline-danger">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <a href="<?php echo $Calendar_Events;?>" class="btn btn-primary btn-go-to-calendar float-right"><i class="icono"></i>Go to Calendar</a>
         </div>
 
         <?php //? FOOTER?>
