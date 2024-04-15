@@ -41,43 +41,286 @@ include '../home/icons.php';
                     </form>
                 </div>
                 <div class="inventory-container">
-                    <table class="table table-secondary table-hover">
-                        <thead>
-                        <tr>
-                            <td >Name</td>
-                            <td>Hostname</td>
-                            <td>IP Adress</td>
-                            <td>Classification</td>
-                            <td>Location</td>
-                            <td>Departament</td>
-                            <td>Assigned To</td>
-                            <td>Trademark</td>
-                            <td>Model</td>
-                            <td>CPU</td>
-                            <td>HDD Size</td>
-                            <td>RAM Size</td>
-                            <td>Service Tag</td>
-                            <td>Serial Number</td>
-                        </tr>
-                        </thead>
-                        
-                        <tr>
-                            <td>A0130</td>
-                            <td>A0130</td>
-                            <td>172.245.12</td>
-                            <td>Desktop</td>
-                            <td>Line 9</td>
-                            <td>Programming</td>
-                            <td>SMT</td>
-                            <td>DELL</td>
-                            <td>DELL</td>
-                            <td>Intel Core i7</td>
-                            <td>1TB</td>
-                            <td>3GB</td>
-                            <td>AAA</td>
-                            <td>AAA</td>
-                        </tr>
-                    </table>  
+                    <div class="table-container">
+                        <table class="table table-secondary table-hover">
+                            <thead>
+                            <tr>
+                                <td >Name</td>
+                                <td>Hostname</td>
+                                <td>IP Adress</td>
+                                <td>Classification</td>
+                                <td>Location</td>
+                                <td>Departament</td>
+                                <td>Assigned To</td>
+                                <td>Trademark</td>
+                                <td>Model</td>
+                                <td>CPU</td>
+                                <td>HDD Size</td>
+                                <td>RAM Size</td>
+                                <td>Service Tag</td>
+                                <td>Serial Number</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                                <tr>
+                                    <td>A0130</td>
+                                    <td>A0130</td>
+                                    <td>172.245.12</td>
+                                    <td>Desktop</td>
+                                    <td>Line 9</td>
+                                    <td>Programming</td>
+                                    <td>SMT</td>
+                                    <td>DELL</td>
+                                    <td>DELL</td>
+                                    <td>Intel Core i7</td>
+                                    <td>1TB</td>
+                                    <td>3GB</td>
+                                    <td>AAA</td>
+                                    <td>AAA</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
