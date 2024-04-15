@@ -31,5 +31,6 @@ $ClockPicker_js="<script src='../static/js/bootstrap-clockpicker.min.js'></scrip
 $Moment_js="<script src='../static/js/moment-with-locales.js'></script>";
 $FullCalendar_js="<script src='../static/fullcalendar-6.1.11/dist/index.global.js'></script>";
 $Load_Calendar_js="<script src='../static/js/Load_Calendar.js'></script>";
+$Back_Button_js="<script src='../static/js/back_button.js'></script>";
 
 ?>

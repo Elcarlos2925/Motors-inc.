@@ -13,7 +13,7 @@
             <!--?Header-->
             <div class='return-button'>
                 <!--?Return Button-->
-                <i id='' class='fas fa-arrow-alt-circle-left fa-2x'></i>
+                <i id='back-button' class='fas fa-arrow-alt-circle-left fa-2x'></i>
             </div>
             <div class='search-container'>
                 <!--?Formulario Buscar-->

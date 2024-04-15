@@ -59,7 +59,7 @@ include '../home/icons.php';
         <?php //? footer?>
         <?php echo "$footer";?>
         <?php //? Cargar js?>
-    <?php echo "$SubMenu_js";?>
-    </div>    
+    <?php echo "$SubMenu_js $Back_Button_js";?>
+    </div>
 </body>
 </html>

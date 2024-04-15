@@ -219,6 +219,6 @@
     </div>
 
     <?php //? Cargar js?>
-    <?php echo "$SubMenu_js";?>
+    <?php echo "$SubMenu_js $Back_Button_js";?>
 </body>
 </html>

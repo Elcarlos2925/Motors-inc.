@@ -119,6 +119,6 @@ include '../home/icons.php';
         <?php //?FOOTER ?>
         <?php echo "$footer";?>
     </div>
-    <?php echo "$SubMenu_js $FullCalendar_js $Load_Calendar_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
+    <?php echo "$SubMenu_js $Back_Button_js $FullCalendar_js $Load_Calendar_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
 </body>
 </html>
