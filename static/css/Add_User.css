@@ -30,7 +30,7 @@
     padding: 10px;
     margin-top: 10px;
     min-height: 480px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .add-user-container h2{
@@ -40,76 +40,23 @@
     margin-top: 15px;
     margin-left: 15px;
 }
-/*? FORMULARIO*/
+
+.move-rigth{
+  width: 100%;
+  text-align: end;
+  margin-top: 20px;
+}
+
 .add-user{
-    display: grid;
-    place-items: center;
-    padding: 10px;
-    
+  width: 100%;
 }
 
-.add-user form{
-    margin-top: 10px;
-    font-size: 23px;
-    font-family: 'Telegraf', sans-serif;
-    width: 100%;
-    display: grid;
-    place-items: center;
+.add-user-form{
+  margin-top: 20px;
+  font-family: 'Telegraf',sans-serif;
+  font-size: 20px;
+  width: 100%;
+  display:grid;
+  place-items: center;
+  margin-bottom: 10px;
 }
-
-.add-user label,.add-user input,.add-user select{
-    margin-bottom: 20px;
-}
-
-
-.add-user input, .add-user select{
-    width: 700px;
-    height: 30px;
-    text-align: center;
-    font-size: 20px;
-    background-color: #D9D9D9;
-    border-color: #000 ;
-    
-}
-
-.form-container{
-  width: 90%;
-}
-
-.form-container label{
-  margin-right: auto;
-}
-
-.form-container input, .form-container select {
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /*?BOTONES CANCELAR Y GUARDAR?*/
-
-.buttons-container{
-    margin-left: auto;
-
-}
-
-.buttons-container button{
-    width: 200px;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.buttons-container button i{
-    padding-right: 10px;
-    font-size: 25px;
-}
-.cancel{
-    background-color: #284B63;
-}
-.save{
-    background-color: #3C6E71;
-}
-
-
