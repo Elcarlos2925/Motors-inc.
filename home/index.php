@@ -76,13 +76,12 @@
                         <a class='sub-item' href='$Edit_User'><i class='fa-solid fa-user-pen icon-item'></i>Edit User</a>
                     </div>
                 </div>
-                <div class='item'><a href='$iFrame'><i class='fa-solid fa-code icon-item'></i>iFrame</a></div>
             </div>
             
             <div class='help-logout-container'>
                 <div class='help-container'>
                     <div class='help'>
-                        <a href='$Help'><i class='fa-solid fa-question'></i>Help</a>
+                        <a href='$Documentation'><i class='fa-solid fa-file icon-item'></i>Docs</a>
                     </div>
                 </div>
                 <div class='logout-container'>

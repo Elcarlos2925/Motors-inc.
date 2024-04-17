@@ -20,7 +20,6 @@ $User='';//?Esto es el encabezado del submenu
 $Add_User='../templates/Add_User.php';
 $Edit_User='../templates/Edit_User.php';
 $iFrame='../templates/iFrame.php';
-$Documentation='';//!Delete
-$Help='';//TODO: Quedara por ver
+$Documentation='https://github.com/Elcarlos2925/Motors-inc.git';
 $Logout='';//Cierra la sesion
 ?>
