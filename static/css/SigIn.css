@@ -13,34 +13,35 @@
     src: url('../assets/fonts/PPTelegraf-UltraLight.otf') format('opentype');
   }
 
-  body{
-    background-color: #D9D9D9;
-  }
+body{
+    background-color:  #D9D9D9;
+}
 
-  .main-container{
+.main-container{
     display: grid;
     place-items: center;
     min-height: 700px
-  }
+}
 
-  .main-container .form-logIn{
-    background-color:#284B63;
+.main-container .form-sigin{
     display: grid;
     place-items: center;
-    width: 500px;
-    height: 450px;
+    background-color:#284B63;
+    width: 550px;
+    height: 600px;
     border-radius: 30px;
   }
 
-  .main-container .form-logIn .form-row{
-    margin-bottom: 7px;
+  .main-container .form-sigin .form-row{
+    margin-bottom: 10px;
   }
-  
-  .main-container .form-logIn .form-row input{
+
+  .main-container .form-sigin .form-row input{
     font-family: 'Telegraf',sans-serif;
   }
 
-  .main-container .form-logIn, .main-container .form-logIn .form-group label{
+  .main-container .form-sigin, .main-container .form-sigin .form-group label{
     font-family: 'Telegraf',sans-serif;
     color: white;
+    font-size: 17px;
   }
