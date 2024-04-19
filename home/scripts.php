@@ -10,6 +10,7 @@ $Pass_Rate_css="<link rel='stylesheet' href='../static/css/Pass_rate.css'>";
 $Add_User_css="<link rel='stylesheet' href='../static/css/Add_User.css'>";
 $Edit_User_css="<link rel='stylesheet' href='../static/css/Edit_User.css'>";
 $Know_Issues_css="<link rel='stylesheet' href='../static/css/Known_Issues.css'>";
+$Log_In_css="<link rel='stylesheet' href='../static/css/Log_In.css'>";
 $Calendar_Events_css="<link rel='stylesheet' href='../static/css/Calendar_Events.css'>";
 $Bootstrap_css="<link rel='stylesheet' href='../static/css/bootstrap/bootstrap.min.css'>";
 $DataTables_css="<link rel='stylesheet' href='../static/css/datatables.min.css'>";
@@ -18,8 +19,6 @@ $Equipment_Inventory_css="<link rel='stylesheet' href='../static/css/Equipment_I
 $iFrame_css="<link rel='stylesheet' href='../static/css/iFrame.css'>";
 $ICT_Mantenaince_css="<link rel='stylesheet' href='../static/css/ICT_Mantenaince.css'>";
 $Pcbs_location_css="<link rel='stylesheet' href='../static/css/Pcbs_location.css'>";
-
-
 
 //?Script Js
 $SubMenu_js="<script src='../static/js/sub-menu.js'></script>";
