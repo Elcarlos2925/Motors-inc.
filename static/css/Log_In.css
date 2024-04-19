@@ -1,30 +1,13 @@
-@font-face {
-    font-family: 'Telegraf';
-    src: url('../assets/fonts/PPTelegraf-Regular.otf') format('opentype');
-  }
-  
-  @font-face {
-    font-family: 'Telegraf Bold';
-    src: url('../assets/fonts/PPTelegraf-UltraBold.otf') format('opentype');
-  }
-  
-  @font-face {
-    font-family: 'Telegraf UltraLight';
-    src: url('../assets/fonts/PPTelegraf-UltraLight.otf') format('opentype');
-  }
-
   body{
-    background-color: #D9D9D9;
-  }
-
-  .main-container{
+    background-color:var(--container-color);
     display: grid;
+    place-content: center;
     place-items: center;
-    min-height: 700px
+    height: 98vh;
   }
 
-  .main-container .form-logIn{
-    background-color:#284B63;
+  .form-logIn{
+    background-color:var(--primary-color);
     display: grid;
     place-items: center;
     width: 500px;
@@ -32,15 +15,15 @@
     border-radius: 30px;
   }
 
-  .main-container .form-logIn .form-row{
+  .form-logIn .form-row{
     margin-bottom: 7px;
   }
-  
-  .main-container .form-logIn .form-row input{
-    font-family: 'Telegraf',sans-serif;
+
+  .form-logIn .form-row input{
+    font-family:var(--font);
   }
 
-  .main-container .form-logIn, .main-container .form-logIn .form-group label{
-    font-family: 'Telegraf',sans-serif;
+  .form-logIn, .form-logIn .form-group label{
+    font-family:var(--font);
     color: white;
   }

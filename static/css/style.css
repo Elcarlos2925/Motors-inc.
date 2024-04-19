@@ -14,6 +14,22 @@
   src: url('../assets/fonts/PPTelegraf-UltraLight.otf') format('opentype');
 }
 
+:root{
+  --font-bold:'Telegraf Bold',sans-serif;
+  --font:'Telegraf',sans-serif;
+  --font-ultralight:'Telegraf UltraLight',sans-serif;
+  --primary-color:#284B63;
+  --secondary-color:#3C6E71/*#456d87*/;
+  --container-color:#D9D9D9;
+  --background-color:#fff;
+  --footer-color:#353535;
+  --container-width:98%;
+  --container-heigth:660px;
+
+  --size:1px;
+  --border: solid black;
+}
+
 /*?Contenedor Principal*/
 .main-container{
     width: 100%;
@@ -70,13 +86,13 @@
     margin-left: 0;
     width: 40px;
     height: 40px;
-    background-color: #3C6E71;
+    background-color: var(--secondary-color);
     color:#fff;
     border: none;
 }
 
 .search-container input{
-  font-family: 'Telegraf UltraLight',sans-serif;
+  font-family: var(--font-ultralight);
   font-size:small;
 }
 
@@ -95,7 +111,7 @@
 }
 
 .Employee-name{
-    font-family: 'Telegraf Bold',sans-serif;
+    font-family:var(--font-bold);
     font-size:larger;
     width: 100%;
 }
@@ -103,12 +119,12 @@
 .Employee-role{
   margin-top: 10px;
   width: 100%;
-  font-family: 'Telegraf';
+  font-family:var(--font);
     font-size: medium;
 }
 
 .user-photo{
-    background-color:#284B63;
+    background-color:var(--primary-color);
     color: #F2F2F2;
     display: grid;
     place-items: center;
@@ -127,7 +143,7 @@
 
   /*? Sidebar*/
   .sidebar{
-    background-color: #284b63;
+    background-color: var(--primary-color);
     color: #fff;
     width: 300px;
     min-height: 100%;
@@ -150,7 +166,7 @@
 
   .sidebar .menu {
     list-style-type: none;
-    font-family: 'Telegraf UltraBold', sans-serif;
+    font-family:var(--font);
     margin-bottom: 30px;
   }
 
@@ -164,20 +180,20 @@
   }
 
   .sidebar .item a:hover{  
-    background-color: #ffffff;
+    background-color: var(--background-color);
     color: #000;
   }
 
   .sidebar a, .sidebar p{
     text-decoration: none;
-    color: #fff;
+    color: var(--background-color);
     display: block;
     width: 100%;
     font-size: 18px;
     padding-top: 10px;
     margin-top: 3px;
     height: 30px;
-    .sidebar p{font-family: 'Telegraf',sans-serif;}
+    font-family: var(--font);
   }
   .sidebar p{
     font-size: 20px;
@@ -193,7 +209,7 @@
 
   .sidebar .menu .item .sub-menu{
     width: 100%;
-    background-color: #456d87;
+    background-color: var(--secundary-color);
   }
 
   .sidebar .menu .item .sub-menu a, .sidebar .menu .item .sub-menu p{
@@ -215,17 +231,11 @@
   }
 
   .sidebar hr{
-    height: 0.6px; /* Define el grosor de la línea */
-    background-color: rgb(200, 200, 200); /* Define el color de la línea */
-    border: none; /* Quita el borde */
-    margin: 10px 0; /* Ajusta el margen */
+    height: 0.6px;
+    background-color: rgb(200, 200, 200);
+    border: none;
+    margin: 10px 0;
   }
-
-
-
-
-
-
 
    /*?Help Logout Container*/
   .help-logout-container{
@@ -250,7 +260,7 @@
   }
 
   .help, .logout{
-    font-family: 'Telegraf UltraLight',sans-serif;
+    font-family: var(--font);
   }
   /*? Footer*/
   footer {
@@ -263,14 +273,14 @@
     padding: 15px;
     text-align: center;
     margin-left: 150px;
-    color: #fff;
-    background-color: #353535;
+    color: var(--background-color);
+    background-color: var(--footer-color);
   }
 
   footer p{
     margin-top: auto;
-    color: #fff;
-    font-family: 'Telegraf UltraLight', sans-serif;
+    color: var(--background-color);
+    font-family: var(--font-ultralight);
     font-size: small;
   }
 
@@ -280,11 +290,13 @@
     border-right: 1px solid rgb(180, 183, 187);
     border-left: 1px solid rgb(180, 183, 187);
   }
+
   .table thead{
     text-align: center;
-    font-family: 'Telegraf Bold',sans-serif;
+    font-family:var(--font-bold);
   }
+
   .table tbody{
     text-align: center;
-    font-family: 'Telegraf',sans-serif;
+    font-family: var(--font);
   }
