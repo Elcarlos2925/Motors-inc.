@@ -1,7 +1,9 @@
 <?php
     include '../home/index.php';
     include '../home/scripts.php';
+    include '../home/ConnectionDB/dashboard.php';
     include '../home/icons.php';
+    $pendingAssigment = countPending($connection);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,59 +35,33 @@
                 <div class="quick-view">
                     <div class="view">
                         <div class="icon-title">
-                            <?php //?Icono?>
-                            <div class="icon">
-                                <i class="fa-solid fa-gear"></i>
-                            </div>
                             <?php //?Titulo?>
                             <h2>ALL LINES GENERAL PASS RATE</h2>
                         </div>
                         <?php //?Status?>
                         <p class="all-lines-general-pass-rate">90%</p>
                         <?php //?more?>
-                        <a href="">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                        <a href="<?php echo "$Pass_Rate"; ?>">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
                     </div>
                     <div class="view">
                         <div class="icon-title">
-                            <?php //?Icono?>
-                            <div class="icon">
-                                <i class="fa-solid fa-gear"></i>
-                            </div>
                             <?php //?Titulo?>
                             <h2>PENDING ASSIGNMENTS</h2>
                         </div>
                         <?php //?Status?>
-                        <p class="pending-assignments">1</p>
+                        <p class="pending-assignments"><?php echo "$pendingAssigment";?></p>
                         <?php //?more?>
-                        <a href="">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                        <a href="<?php echo "$Task_Assignment"; ?>">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
                     </div>
                     <div class="view">
                         <div class="icon-title">
-                            <?php //?Icono?>
-                            <div class="icon">
-                                <i class="fa-solid fa-gear"></i>
-                            </div>
                             <?php //?Titulo?>
                             <h2>PENDING MAINTENANCE THIS MONTH</h2>
                         </div>
                         <?php //?Status?>
                         <p class="pending-maintenance-this-month">0</p>
                         <?php //?more?>
-                        <a href="">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
-                    </div>
-                    <div class="view">
-                        <div class="icon-title">
-                            <?php //?Icono?>
-                            <div class="icon">
-                                <i class="fa-solid fa-gear"></i>
-                            </div>
-                            <?php //?Titulo?>
-                            <h2>MACHINES NEARLY FULL STORAGE</h2>
-                        </div>
-                        <?php //?Status?>
-                        <p class="machines-nearly-full-storage">2</p>
-                        <?php //?more?>
-                        <a href="">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                        <a href="<?php echo "$Mantenaince"; ?>">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
                     </div>
                 </div>
             </div>

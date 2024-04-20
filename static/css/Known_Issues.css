@@ -14,7 +14,7 @@
   .known-issues-container{
     display: grid;
     place-items: center;
-    background-color:var(--primary-color);
+    background-color:var(--container-color);
     border-radius: 15px;
     padding: 10px;
     margin-top: 10px;

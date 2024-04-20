@@ -21,7 +21,7 @@
     display: grid;
     place-items: center;
     place-content: center;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
     padding: 10px;
   }
 
@@ -35,7 +35,7 @@
     display: grid;
     place-items: center;
     height: 150px;
-    width: 250px;
+    width: 280px;
     grid-template-rows: 45% 45% 10%;
     border-radius: 15px;
   }
@@ -47,16 +47,6 @@
     min-height: 90px;
     border-radius: 15px;
     min-width: 250px;
-    grid-template-columns: 20% 80%;
-  }
-
-  .icon{
-    background-color:var(--background-color);
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: grid;
-    place-items: center;
   }
 
   .view h2{

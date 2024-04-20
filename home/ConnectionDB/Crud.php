@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 
 require("Connection.php");
 
-$connection= returnConnection();
+$connection = returnConnection();
 
 switch ($_GET['action']) {
     case 'list':
@@ -59,5 +59,4 @@ switch ($_GET['action']) {
         echo "Delete";
         break;
 }
-
 ?>
