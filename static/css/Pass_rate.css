@@ -21,6 +21,7 @@
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 35px;
+    min-height: 480px;
 }
 
 .form-date-hour{
@@ -88,14 +89,6 @@
 .menu-options button:hover{
   background-color: var(--background-color);
 }
-
- .menu-options .activate{
-    background-color: var(--background-color);
- }
-
- .menu-options .desacivate{
-    background-color:var(--container-color);
- }
 
  .table-container{
   overflow-x: auto;
