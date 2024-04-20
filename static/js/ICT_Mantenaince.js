@@ -36,7 +36,26 @@ function showDetails(){
 }
 
 function showCalendar(){
-    window.location.href = "../templates/Calendar_Events.php"
+    document.querySelector('#content').innerHTML="";
+    const div = document.createElement("div");
+    div.innerHTML = `
+    <style>
+        #btn-calendar{
+            background-color:var(--background-color);
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('content');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+            });
+            calendar.render();
+        });
+    </script>`
+    document.querySelector('#content').append(div);
+    Calendar()
 }
 
 function showMostFaultyPins(){
@@ -149,4 +168,14 @@ function showTotalCycles(){
         </form>
     </div>`
     document.querySelector('#content').append(div);
+}
+
+function Calendar(){
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('content');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+        });
+        calendar.render();
+    });
 }

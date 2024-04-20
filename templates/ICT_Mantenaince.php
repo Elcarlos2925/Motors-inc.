@@ -10,7 +10,7 @@ include '../home/icons.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Mantenaince_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $ICT_Mantenaince_css $Bootstrap_4_6_0_css ";?>
+    <?php echo "$FontAwesome_css $Style_css $ICT_Mantenaince_css $Bootstrap_4_6_0_css $DataTables_css $jQuery_js $ClockPicker_js $ClockPicker_css";?>
     <title>ICT Mantenaince</title>
 </head>
 <body>
@@ -26,15 +26,15 @@ include '../home/icons.php';
             <div class="ict-mantenaince-container"><?php //? El contenedor principal de las 4 opciones?>
                 <div class="menu-ict-option">
                     <div class="ict-options"><?php //? botones de las 4 opciones?>
+                    <button class="btn-calendar" id="btn-calendar" onclick="showCalendar()">Calendar</button> <?php //? OPCION 1?>
                         <button class="btn-details" id="btn-details" onclick="showDetails()">Details</button><?php //? OPCION 2?>
                         <button class="btn-most-faulty-pins" id="btn-most-faulty-pins" onclick="showMostFaultyPins()">Most faulty pins</button> <?php //? OPCION 3?>
                         <button class="btn-total-cycles" id="btn-total-cycles" onclick="showTotalCycles()">Total cycles</button> <?php //? OPCION 4?>
-                        <button class="btn-calendar" id="btn-calendar" onclick="showCalendar()">Calendar</button> <?php //? OPCION 1?>
                     </div>
                 </div>
                 <div class="options-container" id="content"><?php //? Contenedor principal de las 4 opciones?>
-                <?php echo "$ICT_Mantenaince_js";?>
-                <script>showDetails()</script>
+                    <?php echo "$ICT_Mantenaince_js";?>
+                    <script>showCalendar()</script>
                 </div>
        </div>
     </div>
@@ -43,6 +43,6 @@ include '../home/icons.php';
         <?php echo "$footer";?>
     </div>
     <?php //? Cargar js?>
-    <?php echo "$SubMenu_js $Back_Button_js";?>
+    <?php echo "$SubMenu_js $Back_Button_js $FullCalendar_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
 </body>
 </html>
