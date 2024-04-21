@@ -21,3 +21,7 @@
   .fc-today-button{
     font-family:var(--font-ultralight) !important;
   }
+
+  .form-group label{
+    font-family: var(--font);
+  }

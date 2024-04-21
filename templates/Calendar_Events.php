@@ -49,7 +49,7 @@ include '../home/icons.php';
 
                         <div class="form-row">
                             <div class="form-group col-md-12">
-                                <label for="">Title Task: </label>
+                                <label for="">Assigned to: </label>
                                 <input type="text" id="Title-task" class="form-control" placeholder="">
                             </div>
                         </div>
@@ -91,18 +91,25 @@ include '../home/icons.php';
                                 });
                         </script>
 
-
-                        <div class="form-row">
-                            <label for="">Description: </label>
-                            <textarea name="" id="Description" class="form-control" rows="4"></textarea>
-                        </div>
-                        <div class="form-row">
-                            <label for="">Background Color: </label>
-                            <input type="color" value="#284B63" id="Background-color" class="form-control" style="height:36px;">
-                        </div>
-                        <div class="form-row">
-                            <label for="">Text Color: </label>
-                            <input type="color" value="#ffffff" id="Text-color" class="form-control" style="height:36px;">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <label for="">Details: </label>
+                                    <textarea name="" id="Description" class="form-control" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <label for="">Background Color: </label>
+                                    <input type="color" value="#284B63" id="Background-color" class="form-control" style="height:36px;">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <label for="">Text Color: </label>
+                                    <input type="color" value="#ffffff" id="Text-color" class="form-control" style="height:36px;">
+                                </div>
+                            </div>
                         </div>
 
                     </div>

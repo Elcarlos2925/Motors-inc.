@@ -51,6 +51,7 @@
                 <div class='item'><a href='$Pcbs_Location'><i class='fa-solid fa-microchip icon-item'></i>Pcbs's Location</a></div>
                 <div class='item'><a href='$Calendar_Events'><i class='fa-solid fa-calendar-days icon-item'></i>Calendar & Events</a></div>
                 <div class='item'><a href='$Know_Issues'><i class='fa-solid fa-magnifying-glass icon-item'></i>Know Issues</a></div>
+                <div class='item'><a class='sub-item' href='$Equipment_Inventory'><i class='fa-solid fa-table-list icon-item'></i>Equipment Inventory</a></div>
                 <!--?Submenu ICT-->
                 <div class='item'>
                     <a href='$ICT' class='sub-menu-btn'><i class='fa-solid fa-gear icon-item'></i>ICT<i class='fas fa-angle-right dropdown rotate'></i></a>
@@ -60,18 +61,10 @@
                     </div>
                 </div>
                 <!--?Submenu Departament-->
+                <!--?Submenu User-->
                 <div class='item'>
-                    <a href='$Departament' class='sub-menu-btn'><i class='fa-solid fa-gauge icon-item'></i>Departament <i class='fas fa-angle-right dropdown rotate'></i></a>
+                    <a href='' class='sub-menu-btn'><i class='fa-solid fa-user icon-item'></i>User<i class='fas fa-angle-right dropdown rotate'></i></a>
                     <div class='sub-menu'>
-                    <a class='sub-item' href='$Equipment_Inventory'><i class='fa-solid fa-table-list icon-item'></i>Equipment Inventory</a>
-                    </div>
-                </div>
-                <!--?Submenu Managment-->
-                <div class='item'>
-                    <a href='' class='sub-menu-btn'><i class='fa-solid fa-gauge icon-item'></i>Managment <i class='fas fa-angle-right dropdown rotate'></i></a>
-                    <div class='sub-menu'>
-                        <p class='sub-item' href='$User'><i class='fa-solid fa-user icon-item'></i>User</p>
-                        <hr class='line-division'>
                         <a class='sub-item' href='$Add_User'><i class='fa-solid fa-user-plus icon-item'></i>Add User</a>
                         <a class='sub-item' href='$Edit_User'><i class='fa-solid fa-user-pen icon-item'></i>Edit User</a>
                     </div>
