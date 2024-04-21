@@ -1,0 +1,81 @@
+Created Table
++---------------------------------------------------------+
+|Task Assignment = Events                                 |
++---------------------------------------------------------+
+| Task = id                                               |
+| Details = description                                   |
+| Assigned to = title                                     |
+| Start Date = concatenation to start time and start Date |
+| end Date = concatenation to end time and end Date       |
+| background color                                        |
+| text color                                              |
++---------------------------------------------------------+
+
+Last Assignment
+this is the consult to table Events where can see the colums id Task, Details and Assigned to
+SELECT * FROM events ORDER BY idEvent DESC LIMIT 10;
+
++-------------------------+
+| PCB's Location          |
++-------------------------+
+| Client                  |
+| Model                   |
+| Department              |
+| Expiration Verification |
+| Status                  |
+| TipPCB Typele           |
+| Position                |
++-------------------------+
+
++---------------------+
+| Equipment Inventory |
++---------------------+
+| Name                |
+| HostName            |
+| IP Adress           |
+| Classification      |
+| Location            |
+| Department          |
+| Assignment To       |
+| TradeMark           |
+| Model               |
+| CPU                 |
+| HDD Size            |
+| Ram Size            |
+| Service Tag         |
+| Serial Number       |
++---------------------+
+
++---------------------------+
+| ICT Mantenaince (Details) |
++---------------------------+
+| Activity                  |
+| Responsible               |
+| Start Day                 |
+| Limit Day                 |
+| Finished                  |
+| Title                     |
++---------------------------+
+
++-----------------------------+
+| Pass Rate Today             |
++-----------------------------+
+| Model                       |
+| Total Production            |
+| F.R.(rechazado)             |
+| OK (aprobado)               |
+| %Ng(Porcentaje de rechazo)  |
+| %OK(Porcentaje de aprobado) |
++-----------------------------+
+
++---------------+
+| Component ICT |
++---------------+
+| Total         |
+| Part          |
+| Tester ID     |
+| Refer Value   |
+| Tester Value  |
+| HPin          |
+| Lpin          |
++---------------+
