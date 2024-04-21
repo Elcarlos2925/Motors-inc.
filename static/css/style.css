@@ -238,10 +238,12 @@
 
    /*?Help Logout Container*/
   .help-logout-container{
-    margin-top: auto;
     display: grid;
     place-items: center;
+    width: 100%;
     grid-template-columns: 50% 50%;
+    position: absolute;
+    bottom: 55px;
   }
 
   /*?Help Logout Container*/
