@@ -74,7 +74,7 @@
                             <tr>
                                 <td>Task</td>
                                 <td>Details</td>
-                                <td>Created At</td>
+                                <td>Assignment to</td>
                             </tr>
                         </thead>
                         <tbody>
