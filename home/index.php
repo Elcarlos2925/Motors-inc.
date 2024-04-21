@@ -15,13 +15,6 @@
                 <!--?Return Button-->
                 <i id='back-button' class='fas fa-arrow-alt-circle-left fa-2x'></i>
             </div>
-            <div class='search-container'>
-                <!--?Formulario Buscar-->
-                <form action='/buscar' method='get'>
-                    <button class='Search-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
-                    <input id='Search-input' class='Search-input' type='search' name='Search' placeholder='Search here...'>
-                </form>
-            </div>
             <div class='user-container'>
                 <!--?Contenedor de usuario-->
                 <div class='Employee-name-role'>
