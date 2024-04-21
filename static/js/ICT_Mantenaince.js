@@ -43,19 +43,8 @@ function showCalendar(){
         #btn-calendar{
             background-color:var(--background-color);
         }
-    </style>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('content');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-            });
-            calendar.render();
-        });
-    </script>`
+    </style>`
     document.querySelector('#content').append(div);
-    Calendar()
 }
 
 function showMostFaultyPins(){
@@ -168,14 +157,4 @@ function showTotalCycles(){
         </form>
     </div>`
     document.querySelector('#content').append(div);
-}
-
-function Calendar(){
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('content');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth',
-        });
-        calendar.render();
-    });
 }
