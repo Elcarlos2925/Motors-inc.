@@ -96,3 +96,7 @@
   max-height: 450px;
   overflow: auto;
 }
+
+.chart{
+  max-width: 99%;
+}

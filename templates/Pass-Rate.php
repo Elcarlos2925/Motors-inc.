@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Pass_Rate_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $Pass_Rate_css $Bootstrap_4_6_0_css $Bootstrap_4_6_0_css $jQuery_js $ClockPicker_js $ClockPicker_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Pass_Rate_css $Bootstrap_4_6_0_css $Bootstrap_4_6_0_css $jQuery_js $ClockPicker_js $ClockPicker_css $ploty_js";?>
     <title>Pass Rate ICT</title>
 </head>
 <body>
@@ -45,7 +45,6 @@
                         </button>
                     </div>
                 </div>
-
                 <div id="content">
                     <?php echo "$Pass_rate_js";?>
                     <script>passRateToday()</script>
@@ -58,6 +57,6 @@
     </div>
 
     <?php //? Cargar js?>
-    <?php echo "$SubMenu_js $Back_Button_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
+    <?php echo "$SubMenu_js $graphic_js $Back_Button_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
 </body>
 </html>

@@ -168,6 +168,7 @@
 [![jQuery](https://img.shields.io/badge/jQuery-3.7.1-0769AD?style=for-the-badge&logo=jquery&logoColor=white)](https://jquery.com/)
 [![Popper.js](https://img.shields.io/badge/Popper.js-2.11.8-7952B3?style=for-the-badge&logo=popper.js&logoColor=white)](https://popper.js.org/docs/v2/)
 [![Moment.js](https://img.shields.io/badge/Moment.js-2.30.1-FF7F50?style=for-the-badge&logo=moment.js&logoColor=white)](https://momentjs.com/)
+[![Ploty.js](https://img.shields.io/badge/Moment.js-2.30.1-FF7F50?style=for-the-badge&logo=moment.js&logoColor=white)](https://plotly.com/javascript/)
 
 [![FullCalendar](https://img.shields.io/badge/FullCalendar-6.1.11-7952B3?style=for-the-badge&logo=fullcalendar&logoColor=white)](https://fullcalendar.io/)
 [![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.5.1-228AE6?style=for-the-badge&logo=font-awesome&logoColor=white)](https://fontawesome.com/)
