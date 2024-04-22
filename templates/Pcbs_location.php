@@ -47,7 +47,7 @@ include '../home/icons.php';
                             </tr>
                         </thead>
                         <tbody>
-                            <tr id="sinContenido">
+                            <tr>
                                 <td colspan="7">No data available in table</td>
                             </tr>
                         </tbody>

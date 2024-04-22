@@ -2,6 +2,7 @@
     include '../home/index.php';
     include '../home/scripts.php';
     include '../home/icons.php';
+    include '../home/ConnectionDB/task_assignment.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,42 +47,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Desarrollar casos de uso</td>
-                                <td>Odette Franco</td>
-                                <td>2024-04-01 01:00:00</td>
-                                <td>2024-04-01 23:59:59</td>
-                                <td>
-                                    <button class="btn btn-outline-success">Success</button>
-                                    <button class="btn btn-outline-primary">Modify</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Revisar documentación</td>
-                                <td>Karla Trillo</td>
-                                <td>2024-04-02 00:00:01</td>
-                                <td>2024-04-03 23:59:59</td>
-                                <td>
-                                    <button class="btn btn-outline-success">Success</button>
-                                    <button class="btn btn-outline-primary">Modify</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Terminar Vistas Pendientes</td>
-                                <td>Alexis Martinez</td>
-                                <td>2024-04-09 12:10:00</td>
-                                <td>2024-04-10 01:15:00</td>
-                                <td>
-                                    <button class="btn btn-outline-success">Success</button>
-                                    <button class="btn btn-outline-primary">Modify</button>
-                                    <button class="btn btn-outline-danger">Delete</button>
-                                </td>
-                            </tr>
+                            <?php TaskAssignment($connection);?>
                         </tbody>
                     </table>
                 </div>
