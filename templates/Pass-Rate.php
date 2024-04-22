@@ -2,6 +2,7 @@
     include '../home/index.php';
     include '../home/scripts.php';
     include '../home/icons.php';
+    include '../home/ConnectionDB/pass_rate.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,6 +46,9 @@
                         </button>
                     </div>
                 </div>
+                <div class="hide">
+                    <?php PassRateToday($connection)?>
+                </div>
                 <div id="content">
                     <?php echo "$Pass_rate_js";?>
                     <script>passRateToday()</script>
@@ -57,6 +61,6 @@
     </div>
 
     <?php //? Cargar js?>
-    <?php echo "$SubMenu_js $graphic_js $Back_Button_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
+    <?php echo "$SubMenu_js $Back_Button_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
 </body>
 </html>

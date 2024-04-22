@@ -7,124 +7,7 @@ function passRateToday(){
             background-color:var(--background-color);
         }
     </style>
-    <?php //?Pass Rate Today ?>
-            <h3>Pass Rate Today</h3>
-            <div class="table-container">
-                <table class="table table-secondary table-hover">
-                    <thead>
-                        <tr>
-                            <td>Model</td>
-                            <td>Total Production</td>
-                            <td>F.R</td>
-                            <td>Ok</td>
-                            <td>%Ng</td>
-                            <td>%Ok</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php//!Aqui va el cuerpo de la tabla?>
-                        <tr>
-                            <td>E3-10119E30052</td>
-                            <td>2964</td>
-                            <td>161</td>
-                            <td>2803</td>
-                            <td>2.43%</td>
-                            <td>97.57%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-10129P17D21</td>
-                            <td>1988</td>
-                            <td>0</td>
-                            <td>1988</td>
-                            <td>0%</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-23406AAJX</td>
-                            <td>1213</td>
-                            <td>4</td>
-                            <td>1209</td>
-                            <td>0.33%</td>
-                            <td>99.67%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-441-09-DB3B</td>
-                            <td>2596</td>
-                            <td>44</td>
-                            <td>2552</td>
-                            <td>1.69%</td>
-                            <td>98.31%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-949502-31CB</td>
-                            <td>162</td>
-                            <td>0</td>
-                            <td>162</td>
-                            <td>0%</td>
-                            <td>100%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-95018-154</td>
-                            <td>2304</td>
-                            <td>171</td>
-                            <td>2133</td>
-                            <td>7.42%</td>
-                            <td>92.58%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-0341B510BX</td>
-                            <td>4356</td>
-                            <td>54</td>
-                            <td>4302</td>
-                            <td>1.24%</td>
-                            <td>98.76%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-W343F01872</td>
-                            <td>20</td>
-                            <td>20</td>
-                            <td>0</td>
-                            <td>100%</td>
-                            <td>0%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-W343F04274</td>
-                            <td>824</td>
-                            <td>96</td>
-                            <td>728</td>
-                            <td>11.65%</td>
-                            <td>88.35%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-X001TL0382H</td>
-                            <td>2613</td>
-                            <td>32</td>
-                            <td>2581</td>
-                            <td>1.22%</td>
-                            <td>98.78%</td>
-                        </tr>
-                        <tr>
-                            <td>F3-X1T66895H7X</td>
-                            <td>1428</td>
-                            <td>44</td>
-                            <td>1384</td>
-                            <td>3.08%</td>
-                            <td>96.92%</td>
-                        </tr>
-                        <tr>
-                            <td>E3-X1T84791H17</td>
-                            <td>6</td>
-                            <td>0</td>
-                            <td>6</td>
-                            <td>0%</td>
-                            <td>100%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="chart" id="chart"></div>
-            <div class="chart" id="chart1"></div>
-            <div class="chart" id="chart2"></div>`
+    `
     document.querySelector('#content').append(div);
     graphic()
 }
@@ -135,6 +18,9 @@ function top5FailsAllCurrentModels(){
      <style>
         #btn-top-5-fails{
             background-color:var(--background-color);
+        }
+        .hide{
+            display:none;
         }
     </style>
     <?php //?TOP 5 COMPONENT FAIL ?>
@@ -258,6 +144,9 @@ function passRateBySpecificDate(){
         #btn-pass-rate-by-specific-date{
             background-color:var(--background-color);
         }
+        .hide{
+            display:none;
+        }
     </style>
     <?php //?Pass Rate by Specific Date ?>
             <h3>Pass Rate By Specific Date</h3>
@@ -293,6 +182,9 @@ function top5FailsBySpecificDate(){
      <style>
         #btn-top-5-fails-by-specific-date{
             background-color:var(--background-color);
+        }
+        .hide{
+            display:none;
         }
     </style>
     <?php //?Top 5 fails by Specific Date ?>
