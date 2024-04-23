@@ -27,12 +27,6 @@ include '../home/icons.php';
             </div>
             <div class="equipment-inventory-container">
             <?php//?Menú para ver o modificar inventario y la barra de busqueda?>
-                <div class="menu-equipment-inventory"><?php//?Menú para ver o modificar inventario ?>
-                    <div class="menu-options">
-                        <button class="inventory">Inventory</button>
-                        <button class="modify-inventory"> Modify Inventory</button>
-                    </div>
-                </div>
                 <div class='search-container-equipment-inventory'>
                     <!--?Formulario Buscar-->
                     <form action='/buscar' method='get'>
@@ -50,7 +44,7 @@ include '../home/icons.php';
                                 <td>IP Adress</td>
                                 <td>Classification</td>
                                 <td>Location</td>
-                                <td>Departament</td>
+                                <td>Department</td>
                                 <td>Assigned To</td>
                                 <td>Trademark</td>
                                 <td>Model</td>

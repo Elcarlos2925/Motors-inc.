@@ -82,9 +82,9 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group col-md-5">
-                                        <label for="privileges-input">Privileges: </label> <?php //? Privilegios?>
+                                        <label for="privileges-input">Role: </label> <?php //? Privilegios?>
                                         <select name="departament" id="privileges-input" class="form-control">
-                                            <option value="" disabled selected>Select privileges</option>
+                                            <option value="" disabled selected>Select role</option>
                                             <option value="">..</option>
                                             <option value="">..</option>
                                             <option value="">..</option>

@@ -35,7 +35,7 @@ function showDetails(){
     document.querySelector('#content').append(div);
 }
 
-function showCalendar(){
+function showPendingMaintenance(){
     document.querySelector('#content').innerHTML="";
     const div = document.createElement("div");
     div.innerHTML = `

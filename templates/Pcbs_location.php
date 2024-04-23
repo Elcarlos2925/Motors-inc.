@@ -27,11 +27,14 @@ include '../home/icons.php';
                 <h1>PCB's Location</h1>
             </div>
             <div class="pcbs-location-container">
-                <div class='search-container-pcbs-location'>
-                    <form action='/buscar' method='get'>
-                        <button class='Search-button-pcbs-location' id='Search-pcbs-locatiob-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
-                        <input id='Search-input-pcbs-location' class='Search-input-pcbs-location' type='search' name='Search' placeholder='Search here...'>
-                    </form>
+                <div class="center">
+                    <div class='search-container-pcbs-location'>
+                        <button class="btn btn-primary">+ add</button>
+                        <form action='/buscar' method='get'>
+                            <button class='Search-button-pcbs-location' id='Search-pcbs-locatiob-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
+                            <input id='Search-input-pcbs-location' class='Search-input-pcbs-location' type='search' name='Search' placeholder='Search here...'>
+                        </form>
+                    </div>
                 </div>
                 <div class="table-container">
                     <table class="table table-secondary table-hover">
