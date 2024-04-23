@@ -35,14 +35,8 @@
                         <button class="pass-rate-today" id="btn-pass-rate-today" onclick="passRateToday()">
                             Pass Rate Today
                         </button>
-                        <button class="top-5-fails" id="btn-top-5-fails" onclick="top5FailsAllCurrentModels()">
-                            Top 5 Fails [All Current Models]
-                        </button>
                         <button class="pass-rate-by-specific-date" id="btn-pass-rate-by-specific-date" onclick="passRateBySpecificDate()">
                             Pass Rate by Specific Date
-                        </button>
-                        <button class="top-5-fails-by-specific-date" id="btn-top-5-fails-by-specific-date" onclick="top5FailsBySpecificDate()">
-                            Top 5 Fails by Specific Date
                         </button>
                     </div>
                 </div>

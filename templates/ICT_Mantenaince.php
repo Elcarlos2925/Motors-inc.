@@ -26,10 +26,8 @@ include '../home/icons.php';
             <div class="ict-mantenaince-container"><?php //? El contenedor principal de las 4 opciones?>
                 <div class="menu-ict-option">
                     <div class="ict-options"><?php //? botones de las 4 opciones?>
-                    <button class="btn-calendar" id="btn-calendar" onclick="showCalendar()">Calendar</button> <?php //? OPCION 1?>
+                        <button class="btn-calendar" id="btn-calendar" onclick="showCalendar()">Calendar</button> <?php //? OPCION 1?>
                         <button class="btn-details" id="btn-details" onclick="showDetails()">Details</button><?php //? OPCION 2?>
-                        <button class="btn-most-faulty-pins" id="btn-most-faulty-pins" onclick="showMostFaultyPins()">Most faulty pins</button> <?php //? OPCION 3?>
-                        <button class="btn-total-cycles" id="btn-total-cycles" onclick="showTotalCycles()">Total cycles</button> <?php //? OPCION 4?>
                     </div>
                 </div>
                 <div class="options-container" id="content"><?php //? Contenedor principal de las 4 opciones?>
