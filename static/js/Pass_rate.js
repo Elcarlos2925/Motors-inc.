@@ -120,7 +120,7 @@ function graphic(){
         name: 'F.R.',
         type: 'bar',
         marker: {
-          color: 'red' // Color verde para la barra "OK"
+          color: 'red'
         }
       };
     
@@ -130,9 +130,9 @@ function graphic(){
         mode: 'lines',
         name: 'Target',
         line: {
-          color: 'blue', // Color de la línea objetivo
+          color: 'blue',
           width: 2,
-          dash: 'dot' // Tipo de línea punteada
+          dash: 'dot'
         }
       };
     
@@ -165,13 +165,13 @@ function graphic(){
             type: 'line',
             xref: 'paper',
             x0: 0,
-            y0: 90, // Posición en el eje y donde quieres que comience la línea punteada
+            y0: 90,
             x1: 1,
-            y1: 90, // Posición en el eje y donde quieres que termine la línea punteada
+            y1: 90,
             line: {
-              color: 'blue', // Color de la línea punteada
+              color: 'blue',
               width: 2,
-              dash: 'dot' // Tipo de línea punteada
+              dash: 'dot'
             }}]
       };
     
@@ -206,7 +206,7 @@ function graphic(){
         name: 'OK',
         type: 'bar',
         marker: {
-          color: 'green' // Color verde para la barra "OK"
+          color: 'green'
         }
       };
     
