@@ -30,6 +30,23 @@ CREATE TABLE `passRateToday` (
   `ok_percentage` varchar(6) NOT NULL
 );
 
+CREATE TABLE `equipmentInventory` (
+  `name` varchar(20) NOT NULL,
+  `hostName` varchar(20) NOT NULL,
+  `ipAdress` varchar(15) NOT NULL,
+  `classification` varchar(15) NOT NULL,
+  `location` varchar(10) NOT NULL,
+  `department` varchar(70) NOT NULL,
+  `assignedTo` varchar(50) NOT NULL,
+  `trademark` varchar(30) NOT NULL,
+  `model` varchar(30) NOT NULL,
+  `cpu` varchar(50) NOT NULL,
+  `hddSize` varchar(15) NOT NULL,
+  `ramSize` varchar(15) NOT NULL,
+  `serviceTag` varchar(10) NOT NULL,
+  `serialNumber` varchar(10) NOT NULL
+);
+
 ALTER TABLE events ADD PRIMARY KEY (`idEvent`);
 ALTER TABLE `user` ADD PRIMARY KEY (`idUser`);
 
@@ -62,3 +79,6 @@ INSERT INTO `user` (`idUser`, `username`, `name`, `subarea`, `role`, `phone`) VA
 (5, 'OmarM', 'Omar Mendez', 'Tics', 'Frontend', '6645678901'),
 (6, 'JulioM', 'Julio Martinez', 'Tics', 'Frontend', '6646789012'),
 (7, 'ReneB', 'Rene Beltran', 'Tics', 'Frontend', '6647890123');
+
+INSERT INTO equipmentInventory (name, hostName, ipAdress, classification, location, department, assignedTo, trademark, model, cpu, hddSize, ramSize, serviceTag, serialNumber)
+VALUES ('A0130', 'A0130', '172.245.12', 'Desktop', 'Line 9', 'Programming', 'SMT', 'DELL', 'DELL', 'Intel Core i7', '1TB', '3GB', 'AAA', 'AAA');
