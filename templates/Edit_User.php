@@ -1,8 +1,10 @@
 <?php
-    include '../home/index.php';
-    include '../home/scripts.php';
-    include '../home/icons.php';
-    include '../home/ConnectionDB/edit_user.php';
+include '../home/index.php';
+include '../home/scripts.php';
+include '../home/icons.php';
+include '../home/ConnectionDB/edit_user.php';
+//include '../home/ConnectionDB/search_user.php';
+//include '../home/ConnectionDB/db_connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,9 +34,9 @@
             <?php //?Edit user?>
             <div class="edit-user-container">
                 <div class="search-container">
-                    <form action='/buscar' method='get' class="Search-User">
-                       <button class='Search-button' id="Search-user-button" type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
-                       <input id='Search-input' class='Search-input' type='search' name='Search' placeholder='Search user here...'>
+                    <form form action='../home/ConnectionDB/search_user.php' method='get' class="Search-User" id="search-form">
+                         <button class='Search-button' id="Search-user-button" type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
+                         <input id='Search-input' class='Search-input' type='search' name='Search' placeholder='Search user here...'>
                     </form>
                 </div>
                 <div class="table-edit-user">
@@ -52,7 +54,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                           <?php EditUser($connection)?>
+                            <?php EditUser($connection)?>
                         </tbody>
                     </table>
                 </div>

@@ -56,3 +56,7 @@
     background-color: transparent; /* Establece el fondo del botón como transparente */
     cursor: pointer; /* Muestra el cursor como un puntero al pasar sobre el botón */
   }
+
+  .highlight {
+    background-color: #FFFF99; /* Cambia este color a tu preferencia */
+}
