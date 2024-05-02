@@ -59,16 +59,16 @@ function clockpicker(){
     })
 }
 
-function graphic(){
+function graphic(){/*
     var trace1 = {
         x: ['E3-10119E30052',
         'E3-10129P17D21',
-        'E3-23406AAJX',
+        'E33-23406AAJX',
         'E3-441-09-DB3B',
         'E3-949502-31CB',
         'E3-95018-154',
         'E3-0341B510BX ',
-        'E3-W343F01872',
+        'E3-W34F01872',
         'E3-W343F04274',
         'E3-X001TL0382H',
         'F3-X1T66895H7X',
@@ -176,7 +176,7 @@ function graphic(){
       };
     
       Plotly.newPlot('chart', data, layout);
-    
+    */
                                                                                 
       var trace4 = {
         x: ['E3-10119E30052',
