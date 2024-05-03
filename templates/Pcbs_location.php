@@ -2,6 +2,8 @@
 include '../home/index.php';
 include '../home/scripts.php';
 include '../home/icons.php';
+include '../home/ConnectionDB/pcbs_location.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -50,9 +52,7 @@ include '../home/icons.php';
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td colspan="7">No data available in table</td>
-                            </tr>
+                            <?php pcbsLocation($connection) ?>
                         </tbody>
                     </table>
                 </div>

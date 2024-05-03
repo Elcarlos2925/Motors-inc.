@@ -47,6 +47,16 @@ CREATE TABLE `equipmentInventory` (
   `serialNumber` varchar(10) NOT NULL
 );
 
+CREATE TABLE `pcbsLocation` (
+  `client` varchar(50),
+  `models` varchar(50),
+  `department` varchar(50),
+  `expirationVerification` varchar(50),
+  `status` boolean,
+  `tipPcbTypele` varchar(50),
+  `position` varchar(50)
+);
+
 ALTER TABLE events ADD PRIMARY KEY (`idEvent`);
 ALTER TABLE `user` ADD PRIMARY KEY (`idUser`);
 
