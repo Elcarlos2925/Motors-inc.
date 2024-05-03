@@ -58,31 +58,62 @@ function PassRateToday($connection){
                         echo "'" . $showResult['model'] . "',";
                     }}
             echo "],
-                y: ["
+                y: [";
             if (mysqli_num_rows($resultChart) > 0) {
                 while ($showResult = mysqli_fetch_array($resultChart)){
                         echo $showResult['ok_percentage'] . ",";
                     }}
-                    97.57,
-                    100,
-                    99.67,
-                    98.31,
-                    100,
-                    92.58,
-                    98.76,
-                    0,
-                    88.35,
-                    98.78,
-                    96.92,
-                    100],
+                    echo "],
                 name: 'OK',
                 type: 'bar',
                 marker: {
                   color: 'green' // Color verde para la barra 'OK'
                 }
               };
+              var data = [trace1];
             
-              var trace2 = {
+              var layout = {
+                barmode: 'stack',
+                title: 'Pass Rate Percentage %',
+                font:{
+                  family: 'Telegraf, sans-serif'
+                },
+                showlegend: true,
+                xaxis: {
+                  tickangle: -45
+                },
+                yaxis: {
+                  zeroline: true,
+                  gridwidth: 2,
+                  range: [0, 100]
+                },
+                bargap :0.50,
+                dragmode: false,
+                modebar: {
+                    displayModeBar: false
+                },
+                cursor: 'pointer',
+                plot_bgcolor: '#D9D9D9',
+                paper_bgcolor: '#D9D9D9',
+                shapes: [{
+                    type: 'line',
+                    xref: 'paper',
+                    x0: 0,
+                    y0: 90,
+                    x1: 1,
+                    y1: 90,
+                    line: {
+                      color: 'blue',
+                      width: 2,
+                      dash: 'dot'
+                    }}]
+              };
+            
+              Plotly.newPlot('chart', data, layout);
+              </script>
+              ";
+            
+              /*var trace2 = {
                 x: ['E3-10119E30052',
                 'E3-10129P17D21',
                 'E3-23406AAJX',
@@ -166,7 +197,6 @@ function PassRateToday($connection){
               };
             
               Plotly.newPlot('chart', data, layout);
-              </script>
-            ";
+              </script>*/
 }
 ?>
