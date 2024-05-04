@@ -21,6 +21,25 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       $("#FormEvent").modal('show')
+    },
+    //AQUÓ MODIFIQUÉ
+    eventClick: function (info){
+      $('#button-add').hide()
+      $('#button-Modify').show()
+      $('#button-delete').show()
+
+      $('#Id').val(info.event.id)
+      $('#Title-task').val(info.event.title)
+      $('#Description').val(info.event.extendedProps.descripcion);
+      $('#Start-date').val(moment(info.event.start).format("YYYY-MM-DD"))
+      $('#End-date').val(moment(info.event.end).format("YYYY-MM-DD"))
+      $('#Start-time').val(moment(info.event.start).format("HH:mm"))
+      $('#End-time').val(moment(info.event.end).format("HH:mm"))
+      $('#Background-color').val(info.event.backgroundColor)
+      $('#Text-color').val(info.event.textColor)
+      
+
+      $("#FormEvent").modal('show')
     }
   })
   calendar.render()
@@ -31,6 +50,18 @@ document.addEventListener('DOMContentLoaded', function() {
   $('#button-add').click(function(){
     let register = returnData()
     addRegister(register)
+    $('#FormEvent').modal('hide')
+  });
+
+  $('#button-Modify').click(function(){
+    let register =  returnData()
+    moidfyRegister(register)
+    $('#FormEvent').modal('hide')
+  });
+
+  $('#button-delete').click(function(){
+    let register =  returnData()
+    deleteRegister(register)
     $('#FormEvent').modal('hide')
   });
 
@@ -48,6 +79,36 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
   }
+
+  //AQUÍ MODIFIQUÉE
+  function moidfyRegister(register) {
+    $.ajax({
+      type: 'POST',
+      url: '../home/ConnectionDB/Crud.php?action=modify',
+      data: register,
+      success: function(msg) {
+          calendar.refetchEvents()
+      },
+      error: function(error) {
+        alert("error modify event: " + error)
+      }
+    })
+  }
+
+  function deleteRegister(register) {
+    $.ajax({
+      type: 'POST',
+      url: '../home/ConnectionDB/Crud.php?action=delete',
+      data: register,
+      success: function(msg) {
+          calendar.refetchEvents()
+      },
+      error: function(error) {
+        alert("error delete event: " + error)
+      }
+    })
+  }
+  
 
   // Función para limpiar el formulario
   function cleanForm () {

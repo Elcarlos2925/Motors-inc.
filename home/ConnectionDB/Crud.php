@@ -41,22 +41,25 @@ switch ($_GET['action']) {
         break;
 
     case 'modify':
-      "update events set
-        (title = ('$_POST[title]',
+       $result = mysqli_query ($connection,
+        "update events set
+        title = '$_POST[title]',
         descriptionEvent = '$_POST[descriptionEvent]',
         startEvent = '$_POST[startEvent]',
         endEvent = '$_POST[endEvent]',
         textColor = '$_POST[textColor]',
-        backgroundColor) = '$_POST[backgroundColor]'
-        where idEvent = $_POST[idEvent];
-        )";
-
-        echo "Modify";
+        backgroundColor = '$_POST[backgroundColor]'
+        where idEvent = $_POST[idEvent]");
+        echo json_encode($result);
+        
+        //echo "Modify";
         break;
 
     case 'delete':
-//        "delete from   where idEvent = $_POST[idEvent];";
-        echo "Delete";
+       $result = mysqli_query ($connection,"delete from events where idEvent = $_POST[idEvent]");
+       echo json_encode($result);
+
+       // echo "Delete";
         break;
 }
 ?>

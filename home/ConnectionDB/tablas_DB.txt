@@ -15,7 +15,7 @@ Last Assignment
 this is the consult to table Events where can see the colums id Task, Details and Assigned to
 SELECT * FROM events ORDER BY idEvent DESC LIMIT 10;
 
-+-------------------------+
++-------------------------+   ||||
 | PCB's Location          |
 +-------------------------+
 | Client                  |varchar (50) 
@@ -28,7 +28,7 @@ SELECT * FROM events ORDER BY idEvent DESC LIMIT 10;
 +-------------------------+
 
 +---------------------+
-| Equipment Inventory |                 
+| Equipment Inventory |        |||||         
 +---------------------+
 | Name                |
 | HostName            |
@@ -47,8 +47,8 @@ SELECT * FROM events ORDER BY idEvent DESC LIMIT 10;
 +---------------------+
 
 +---------------------------+
-| ICT Mantenaince (Details) |
-+---------------------------+
+| ICT Mantenaince (Details) | 
++---------------------------+ 
 | Activity                  |
 | Responsible               |
 | Start Day                 |
@@ -58,7 +58,7 @@ SELECT * FROM events ORDER BY idEvent DESC LIMIT 10;
 +---------------------------+
 
 +-----------------------------+
-| Pass Rate Today             |                 
+| Pass Rate Today             |    ||||             
 +-----------------------------+
 | Model                       |
 | Total Production            |
