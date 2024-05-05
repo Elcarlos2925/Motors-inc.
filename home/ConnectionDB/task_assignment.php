@@ -13,11 +13,6 @@ function TaskAssignment($connection){
             echo "<td>" . $showResult['title'] . "</td>";
             echo "<td>" . $showResult['startEvent'] . "</td>";
             echo "<td>" . $showResult['endEvent'] . "</td>";
-            echo "<td>" . "
-                        <button class='btn btn-outline-success'>Success</button>
-                        <button class='btn btn-outline-primary'>Modify</button>
-                        <button class='btn btn-outline-danger'>Delete</button>
-                           " . "</td>";
             echo "</tr>";
         }
     } else {

@@ -4,6 +4,7 @@
     include '../home/ConnectionDB/dashboard.php';
     include '../home/icons.php';
     $pendingAssigment = countPending($connection);
+    $percentage_pass_rate = passRatePercentage($connection);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +40,7 @@
                             <h2>ALL LINES GENERAL PASS RATE</h2>
                         </div>
                         <?php //?Status?>
-                        <p class="all-lines-general-pass-rate">90%</p>
+                        <p class="all-lines-general-pass-rate"><?php echo "$percentage_pass_rate"; ?>%</p>
                         <?php //?more?>
                         <a href="<?php echo "$Pass_Rate"; ?>">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
                     </div>

@@ -24,4 +24,21 @@ function LastAssigment($connection){
         </tr>";
     }
 }
+function passRatePercentage($connection){
+    $queryTotalProduction = "SELECT SUM(total_production) FROM passRateToday;";
+    $queryTotalFR = "SELECT SUM(fr) FROM passRateToday;";
+    $queryTotalOK = "SELECT SUM(ok) FROM passRateToday;";
+
+    $resultTotalProduction = mysqli_query($connection, $queryTotalProduction);
+    $resultTotalOK = mysqli_query($connection, $queryTotalOK);
+
+    $totalProduction = mysqli_fetch_array($resultTotalProduction)[0];
+    $totalOK = mysqli_fetch_array($resultTotalOK)[0];
+
+    $percentage = ($totalOK / $totalProduction) * 100;
+
+    $percentage = round($percentage);
+
+    return $percentage;
+}
 ?>

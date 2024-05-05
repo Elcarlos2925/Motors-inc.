@@ -43,7 +43,6 @@
                                 <td>Assigned to</td><!--title-->
                                 <td>Start Date</td><!--StartDate-->
                                 <td>End Date</td><!--EndDate-->
-                                <td>Options</td><!--editar, eliminar, cumplida-->
                             </tr>
                         </thead>
                         <tbody>
