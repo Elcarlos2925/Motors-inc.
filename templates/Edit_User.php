@@ -32,7 +32,7 @@ include '../home/ConnectionDB/edit_user.php';
             <?php //?Edit user?>
             <div class="edit-user-container">
                 <div class="search-container">
-                    <form action='../home/ConnectionDB/search_edit_user.php' method='get' class="Search-User" id="search-form">
+                    <form action='' method='get' class="Search-User" id="search-form">
                         <button class='Search-button' id="Search-user-button" type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
                         <input id='Search-input' class='Search-input' type='search' name='username' placeholder='Search user here...'>
                     </form>
@@ -51,8 +51,15 @@ include '../home/ConnectionDB/edit_user.php';
                                 <td>Options</td>
                             </tr>
                         </thead>
-                        <tbody>
-                            <?php EditUser($connection)?>
+                        <tbody id="tbody-edit-user">
+                        <?php
+                            if (isset($_GET['username'])) {
+                                $username = $_GET['username'];
+                                search_user($connection,$username);
+                            } else {
+                                EditUser($connection);
+                            }
+                        ?>
                         </tbody>
                     </table>
                 </div>
