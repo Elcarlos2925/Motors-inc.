@@ -72,7 +72,7 @@ SELECT * FROM events ORDER BY idEvent DESC LIMIT 10;
 | Component ICT |
 +---------------+
 | Total         |
-| Part          |
+| Part          |   
 | Tester ID     |
 | Refer Value   |
 | Tester Value  |

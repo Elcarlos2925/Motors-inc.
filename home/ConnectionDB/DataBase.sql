@@ -57,6 +57,8 @@ CREATE TABLE `pcbsLocation` (
   `position` varchar(50)
 );
 
+CREATE TABLE `ICT` 
+
 ALTER TABLE events ADD PRIMARY KEY (`idEvent`);
 ALTER TABLE `user` ADD PRIMARY KEY (`idUser`);
 
