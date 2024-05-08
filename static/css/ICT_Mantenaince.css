@@ -4,6 +4,9 @@
   .title-options{
     font-family:var(--font-bold);
     text-align: center;
+    display: grid;
+    place-items: center;
+    justify-content: end;
   }
   /*?Content Container*/
   .content-container{

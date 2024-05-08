@@ -23,16 +23,32 @@ include '../home/icons.php';
             <div class="title-container"><?php //? TITULO?>
                 <h1>ICT Mantenaince</h1>
             </div>
-            <div class="ict-mantenaince-container"><?php //? El contenedor principal de las 4 opciones?>
-                <div class="menu-ict-option">
-                    <div class="ict-options"><?php //? botones de las 4 opciones?>
-                        <button class="btn-calendar" id="btn-calendar" onclick="showPendingMaintenance()">Pending Maintenance</button> <?php //? OPCION 1?>
-                        <button class="btn-details" id="btn-details" onclick="showDetails()">Details</button><?php //? OPCION 2?>
+            <div class="ict-mantenaince-container">
+                <div class="options-container" id="content">
+                    <div class="ict-details-container">
+                        <div class="title-options">
+                            <button class="btn btn-outline-primary">+ add</button>
+                        </div>
+                        <div class="table-container">
+                            <table class="table table-secondary table-hover">
+                                <thead>
+                                    <tr>
+                                        <td>Activity</td>
+                                        <td>Responsible</td>
+                                        <td>Start day</td>
+                                        <td>Limit day</td>
+                                        <td>Finished</td>
+                                        <td>Title</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="sinContenido">
+                                        <td colspan="6">No data available in table</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="options-container" id="content"><?php //? Contenedor principal de las 4 opciones?>
-                    <?php echo "$ICT_Mantenaince_js";?>
-                    <script>showPendingMaintenance()</script>
                 </div>
        </div>
     </div>
