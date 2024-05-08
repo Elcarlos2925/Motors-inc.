@@ -4,7 +4,6 @@ $Dashboard='../templates/Dashboard.php';
 $Task_Assignment='../templates/Task_Assignment.php';
 $Pcbs_Location='../templates/Pcbs_location.php';
 $Calendar_Events='../templates/Calendar_Events.php';
-$Know_Issues='../templates/Known_Issues.php';
 $Log_In='../templates/LogIn.php';
 $Sig_In='../templates/SigIn.php';
 $ICT='';//?Esto es el encabezado del submenu

@@ -9,7 +9,6 @@ $Task_Assignment_css="<link rel='stylesheet' href='../static/css/task_assignment
 $Pass_Rate_css="<link rel='stylesheet' href='../static/css/Pass_rate.css'>";
 $Add_User_css="<link rel='stylesheet' href='../static/css/Add_User.css'>";
 $Edit_User_css="<link rel='stylesheet' href='../static/css/Edit_User.css'>";
-$Know_Issues_css="<link rel='stylesheet' href='../static/css/Known_Issues.css'>";
 $Log_In_css="<link rel='stylesheet' href='../static/css/Log_In.css'>";
 $Sig_In_css="<link rel='stylesheet' href='../static/css/SigIn.css'>";
 $Calendar_Events_css="<link rel='stylesheet' href='../static/css/Calendar_Events.css'>";

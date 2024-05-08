@@ -43,7 +43,6 @@
                 <div class='item'><a href='$Task_Assignment'><i class='fa-solid fa-list-check icon-item'></i>Task Assignment</a></div>
                 <div class='item'><a href='$Pcbs_Location'><i class='fa-solid fa-microchip icon-item'></i>Pcbs's Location</a></div>
                 <div class='item'><a href='$Calendar_Events'><i class='fa-solid fa-calendar-days icon-item'></i>Calendar & Events</a></div>
-                <div class='item'><a href='$Know_Issues'><i class='fa-solid fa-magnifying-glass icon-item'></i>Know Issues</a></div>
                 <div class='item'><a class='sub-item' href='$Equipment_Inventory'><i class='fa-solid fa-table-list icon-item'></i>Equipment Inventory</a></div>
                 <!--?Submenu ICT-->
                 <div class='item'>

@@ -4,7 +4,6 @@ $Dashboard_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-
 $Task_Assignment_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-web/svgs/solid/list-check.svg' type='image/svg+xml'>";
 $Pcbs_Location_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-web/svgs/solid/microchip.svg' type='image/svg+xml'>";
 $Calendar_Events_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-web/svgs/solid/calendar-day.svg' type='image/svg+xml'>";
-$Know_Issues_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-web/svgs/solid/magnifying-glass.svg' type='image/svg+xml'>";
 $ICT_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-web/svgs/solid/gear.svg' type='image/svg+xml'>";
 $Fixtures_for_Models_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-web/svgs/solid/box.svg' type='image/svg+xml'>";
 $ICS_icon="<link rel='icon' href='../static/assets/fontawesome-free-6.5.1-web/svgs/solid/list-check.svg' type='image/svg+xml'>";
