@@ -6,10 +6,24 @@ function modal(id, username, name, subarea, role, phone) {
     $('#select-subarea').val(subarea);
     $('#privileges-input').val(role);
     $('#phone-input').val(phone);
+
+    $('#button-add').hide()
+    $('#password-group').hide()
+    $('#button-Modify').show()
+    $('#button-delete').show()
+    $('#employeeid-group').show()
 }
 
+function modalAdd(){
+    clearVar()
+    $("#FormUser").modal('show')
+    $('#button-add').show()
+    $('#password-group').show()
+    $('#button-Modify').hide()
+    $('#employeeid-group').show()
+    $('#button-delete').hide()
+}
 function deleteUser(id){
-    // Realizar la solicitud AJAX para eliminar el registro
     $.ajax({
         type: 'POST',
         url: '../home/ConnectionDB/CrudUser.php?action=delete',
@@ -17,18 +31,24 @@ function deleteUser(id){
             idUser: id
         },
         success: function(response) {
-            // Manejar la respuesta del servidor aquí
-            console.log(response);
-            // Cerrar el modal después de eliminar
             $('#FormUser').modal('hide');
         },
         error: function(xhr) {
-            // Manejar errores aquí
             console.error(xhr.responseText);
         }
     });
     location.reload();
 }
+
+function clearVar() {
+    $('#employeeid-input').val('');
+    $('#username-input').val('');
+    $('#name-input').val('');
+    $('#select-subarea').val('');
+    $('#privileges-input').val('');
+    $('#phone-input').val('');
+}
+
 $(document).ready(function() {
 
     $('.Edit-user-btn').on('click', function() {
@@ -39,11 +59,9 @@ $(document).ready(function() {
         var role = $(this).closest('tr').find('td:eq(4)').text().trim();
         var phone = $(this).closest('tr').find('td:eq(5)').text().trim();
 
-        // Llamar a la función modal para cargar los datos en el modal
         modal(id, username, name, subarea, role, phone);
     });
 
-    // Función para cargar datos en el modal al hacer clic en el botón "Modify"
     $('#button-Modify').on('click', function() {
         var id = $('#employeeid-input').val();
         var username = $('#username-input').val();
@@ -52,7 +70,6 @@ $(document).ready(function() {
         var role = $('#privileges-input').val();
         var phone = $('#phone-input').val();
 
-        // Realizar la solicitud AJAX para modificar el registro
         $.ajax({
             type: 'POST',
             url: '../home/ConnectionDB/CrudUser.php?action=modify',
@@ -65,15 +82,41 @@ $(document).ready(function() {
                 phone: phone
             },
             success: function(response) {
-                // Manejar la respuesta del servidor aquí
-                console.log(response);
-                // Cerrar el modal después de modificar
                 $('#FormUser').modal('hide');
-                // Recargar la página
                 location.reload();
             },
             error: function(xhr) {
-                // Manejar errores aquí
+                console.error(xhr.responseText);
+            }
+        })
+    })
+
+    $('#button-add').on('click', function() {
+        var id = $('#employeeid-input').val();
+        var username = $('#username-input').val();
+        var name = $('#name-input').val();
+        var subarea = $('#select-subarea').val();
+        var role = $('#privileges-input').val();
+        var phone = $('#phone-input').val();
+        var password = $('#password-input').val();
+
+        $.ajax({
+            type: 'POST',
+            url: '../home/ConnectionDB/CrudUser.php?action=add',
+            data: {
+                idUser: id,
+                username: username,
+                name: name,
+                subarea: subarea,
+                role: role,
+                phone: phone,
+                password: password
+            },
+            success: function(response) {
+                $('#FormUser').modal('hide');
+                location.reload();
+            },
+            error: function(xhr) {
                 console.error(xhr.responseText);
             }
         })

@@ -11,11 +11,10 @@ include '../home/ConnectionDB/edit_user.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Edit_User_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$Edit_User_css $FontAwesome_css $Style_css $Calendar_Events_css $Bootstrap_4_6_0_css $DataTables_css $jQuery_js $ClockPicker_js $ClockPicker_css";?>
+    <?php echo "$Edit_User_css $Calendar_Events_css $FontAwesome_css $Style_css $Bootstrap_4_6_0_css $DataTables_css $jQuery_js";?>
     <title>Edit User</title>
 </head>
 <body>
-
     <?php //?Contenedor Principal?>
     <div class="main-container">
 
@@ -25,14 +24,14 @@ include '../home/ConnectionDB/edit_user.php';
         <?php echo "$sidebar";?>
 
         <?php //? CONTENIDO?>
-        <div class="content-container">
+        <div class="content-container-user">
             <div class="title-container">
                 <h1>Edit User</h1>
             </div>
             <?php //?Edit user?>
             <div class="edit-user-container">
                 <div class="search-container">
-                    <button class="btn btn-outline-primary">+ add</button>
+                    <button class="btn btn-outline-primary" onclick='modalAdd()'>+ add</button>
                     <form action='' method='get' class="Search-User" id="search-form">
                         <button class='Search-button' id="Search-user-button" type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
                         <input id='Search-input' class='Search-input' type='search' name='username' placeholder='Search user here...'>
@@ -79,7 +78,7 @@ include '../home/ConnectionDB/edit_user.php';
                     <div class="modal-body">
                         <div class="add-user">
                             <div class="form-row">
-                                <div class="form-group col-md-12">
+                                <div class="form-group col-md-12" id="employeeid-group">
                                     <label for="employeeid-input">Employee Id: </label> <?php //? Id de empleado?>
                                     <input type="text" id="employeeid-input" class="form-control" name="employeeid" placeholder="Type the employee Id">
                                 </div>
@@ -123,9 +122,16 @@ include '../home/ConnectionDB/edit_user.php';
                                     <input type="text" id="phone-input" class="form-control" name="phone" placeholder="Type the phone">
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12" id="password-group">
+                                    <label for="password-input">Password: </label> <?php //? Contraseña?>
+                                    <input type="input" id="password-input" class="form-control" name="password" placeholder="Type the password">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
+                        <button type="button" id="button-add" class="btn btn-success">Add</button>
                         <button type="button" id="button-Modify" class="btn btn-primary">Modify</button>
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
                     </div>

@@ -22,17 +22,21 @@ switch ($_GET['action']) {
 
     case 'add':
         $result = mysqli_query($connection,
-            "INSERT INTO user
-            (username,
-            name,
-            subarea,
-            role,
-            phone) VALUES
-            ('$_POST[username]',
+            "INSERT INTO `user`
+            (`idUser`,
+            `username`,
+            `name`,
+            `subarea`,
+            `role`,
+            `phone`,
+            `password`) VALUES
+            ('$_POST[idUser]',
+            '$_POST[username]',
             '$_POST[name]',
             '$_POST[subarea]',
             '$_POST[role]',
-            '$_POST[phone]');");
+            '$_POST[phone]',
+            '$_POST[password]');");
         echo json_encode($result);
         break;
 
