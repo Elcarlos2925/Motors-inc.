@@ -30,4 +30,33 @@ function EquipmentInventory($connection){
         </tr>";
     }
 }
+
+function search_EquipmentInventory($connection, $name){
+    $sql = "SELECT * FROM equipmentInventory WHERE name LIKE '%$name%'";
+    $result = $connection->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+            echo "<tr>";
+                echo "<td>" . $row['name'] . "</td>";
+                echo "<td>" . $row['hostName'] . "</td>";
+                echo "<td>" . $row['ipAdress'] . "</td>";
+                echo "<td>" . $row['classification'] . "</td>";
+                echo "<td>" . $row['location'] . "</td>";
+                echo "<td>" . $row['department'] . "</td>";
+                echo "<td>" . $row['assignedTo'] . "</td>";
+                echo "<td>" . $row['trademark'] . "</td>";
+                echo "<td>" . $row['model'] . "</td>";
+                echo "<td>" . $row['cpu'] . "</td>";
+                echo "<td>" . $row['hddSize'] . "</td>";
+                echo "<td>" . $row['ramSize'] . "</td>";
+                echo "<td>" . $row['serviceTag'] . "</td>";
+                echo "<td>" . $row['serialNumber'] . "</td>";
+            echo "</tr>";
+        }
+    } else {
+        echo "<tr>
+            <td colspan='14'>No data available in table</td>
+        </tr>";
+    }
+}
 ?>

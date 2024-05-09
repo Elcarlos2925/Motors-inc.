@@ -30,9 +30,9 @@ include '../home/ConnectionDB/equipment_inventory.php';
             <?php//?Menú para ver o modificar inventario y la barra de busqueda?>
                 <div class='search-container-equipment-inventory'>
                     <!--?Formulario Buscar-->
-                    <form action='/buscar' method='get'>
+                    <form action='' method='get'>
                         <button class='Search-button-equipment-inventory' id='Search-equipment-inventory-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
-                        <input id='Search-input-equipment-inventory' class='Search-input-equipment-inventory' type='search' name='Search' placeholder='Search here...'>
+                        <input id='Search-input-equipment-inventory' class='Search-input-equipment-inventory' type='search' name='name' placeholder='Search name here...'>
                     </form>
                 </div>
                 <div class="inventory-container">
@@ -57,7 +57,14 @@ include '../home/ConnectionDB/equipment_inventory.php';
                             </tr>
                             </thead>
                             <tbody>
-                            <?php EquipmentInventory($connection)?>
+                            <?php
+                                if (isset($_GET['name'])) {
+                                    $name = $_GET['name'];
+                                    search_EquipmentInventory($connection, $name);
+                                } else {
+                                    EquipmentInventory($connection);
+                                }
+                            ?>
                             </tbody>
                         </table>
                     </div>

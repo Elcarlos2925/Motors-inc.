@@ -31,9 +31,9 @@ include '../home/ConnectionDB/pcbs_location.php';
                 <div class="center">
                     <div class='search-container-pcbs-location'>
                         <button class="btn btn-outline-primary">+ add</button>
-                        <form action='/buscar' method='get'>
+                        <form action='' method='get'>
                             <button class='Search-button-pcbs-location' id='Search-pcbs-locatiob-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
-                            <input id='Search-input-pcbs-location' class='Search-input-pcbs-location' type='search' name='Search' placeholder='Search here...'>
+                            <input id='Search-input-pcbs-location' class='Search-input-pcbs-location' type='search' name='models' placeholder='Search model here...'>
                         </form>
                     </div>
                 </div>
@@ -51,14 +51,20 @@ include '../home/ConnectionDB/pcbs_location.php';
                             </tr>
                         </thead>
                         <tbody>
-                            <?php pcbsLocation($connection) ?>
+                            <?php
+                                if (isset($_GET['models'])) {
+                                    $models = $_GET['models'];
+                                    search_models($connection,$models);
+                                } else {
+                                    pcbsLocation($connection);
+                                }
+                            ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
 
-        
         <?php //? footer?>
         <?php echo "$footer";?>
         <?php //? Cargar js?>
