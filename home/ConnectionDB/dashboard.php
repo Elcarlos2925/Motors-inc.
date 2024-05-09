@@ -1,10 +1,18 @@
 <?php
 include("Connection.php");
 $connection = returnConnection();
+
 function countPending($connection){
     $Pending_Assigments = mysqli_query($connection,"SELECT COUNT(*) AS pendings FROM events;");
     $row = mysqli_fetch_assoc($Pending_Assigments);
     $pendings=$row['pendings'];
+    return ($pendings);
+}
+
+function countMantenaincePending($connection){
+    $mantenaincePending_Assigments = mysqli_query($connection,"SELECT COUNT(*) as num_rows FROM `ictMaintenaince` WHERE Finished = 1;");
+    $row = mysqli_fetch_assoc($mantenaincePending_Assigments);
+    $pendings=$row['num_rows'];
     return ($pendings);
 }
 function LastAssigment($connection){

@@ -5,6 +5,7 @@
     include '../home/icons.php';
     $pendingAssigment = countPending($connection);
     $percentage_pass_rate = passRatePercentage($connection);
+    $countMantenaincePending = countMantenaincePending($connection);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,10 +58,10 @@
                     <div class="view">
                         <div class="icon-title">
                             <?php //?Titulo?>
-                            <h2>PENDING MAINTENANCE THIS MONTH</h2>
+                            <h2>PENDING MAINTENANCE</h2>
                         </div>
                         <?php //?Status?>
-                        <p class="pending-maintenance-this-month">0</p>
+                        <p class="pending-maintenance-this-month"><?php echo "$countMantenaincePending"; ?></p>
                         <?php //?more?>
                         <a href="<?php echo "$Mantenaince"; ?>">more <i class="fa-solid fa-arrow-right fa-xs"></i></a>
                     </div>
