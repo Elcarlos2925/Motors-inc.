@@ -2,6 +2,7 @@
 include '../home/index.php';
 include '../home/scripts.php';
 include '../home/icons.php';
+include '../home/ConnectionDB/ict_mantenaince.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,9 +43,7 @@ include '../home/icons.php';
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr id="sinContenido">
-                                        <td colspan="6">No data available in table</td>
-                                    </tr>
+                                    <?php ictMaintenaince($connection);?>
                                 </tbody>
                             </table>
                         </div>

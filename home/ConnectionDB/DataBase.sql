@@ -57,6 +57,14 @@ CREATE TABLE `pcbsLocation` (
   `position` varchar(50)
 );
 
+CREATE TABLE `ictMaintenaince` (
+  Title varchar(300) NOT NULL,
+  Responsible varchar(100) NOT NULL,
+  Activity varchar(300) NOT NULL,
+  startDay datetime NOT NULL,
+  limitDay datetime NOT NULL,
+  Finished tinyint(1) NOT NULL
+);
 
 ALTER TABLE events ADD PRIMARY KEY (`idEvent`);
 ALTER TABLE `user` ADD PRIMARY KEY (`idUser`);
@@ -95,3 +103,9 @@ INSERT INTO equipmentInventory (name, hostName, ipAdress, classification, locati
 VALUES ('A0130', 'A0130', '172.245.12', 'Desktop', 'Line 9', 'Programming', 'SMT', 'DELL', 'DELL', 'Intel Core i7', '1TB', '3GB', 'AAA', 'AAA');
 
 INSERT INTO `pcbslocation`(`client`, `models`, `department`, `expirationVerification`, `status`, `tipPcbTypele`, `position`) VALUES ('BGM','E2-95018-154','AOI','24-01-2025','0','OK','Carro 2 POS #4')
+
+INSERT INTO `ictMaintenaince`(`Title`, `Responsible`, `Activity`, `startDay`, `limitDay`, `Finished`) VALUES
+('Fixtura ICTPB081903210074','Alexis Martinez','Mantenaince','2024-05-08 12:00:00','2024-05-09 12:00:00','1');
+
+INSERT INTO `ictMaintenaince`(`Title`, `Responsible`, `Activity`, `startDay`, `limitDay`, `Finished`) VALUES
+('Fixtura ICTPB081903210073','Carlos Lozoya','Mantenaince','2024-05-05 10:00:00','2024-05-06 11:00:00','0');
