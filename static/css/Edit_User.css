@@ -47,7 +47,8 @@
     width: 90%;
   }
 
-  button{
+  .Edit-user-btn,
+  .Delete-user-btn{
     background-size: contain; /* Ajusta el tamaño de la imagen para que quepa en el botón */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     width: 30px; /* Ajusta el ancho del botón según el tamaño de la imagen */

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar')
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    events: '../home/ConnectionDB/Crud.php?action=list',
+    events: '../home/ConnectionDB/CrudCalendar.php?action=list',
     initialView: 'dayGridMonth',
     dateClick: function(info) {
       cleanForm()
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   $('#button-Modify').click(function(){
     let register =  returnData()
-    moidfyRegister(register)
+    modifyRegister(register)
     $('#FormEvent').modal('hide')
   });
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function addRegister(register) {
     $.ajax({
       type: 'POST',
-      url: '../home/ConnectionDB/Crud.php?action=add',
+      url: '../home/ConnectionDB/CrudCalendar.php?action=add',
       data: register,
       success: function(msg) {
           calendar.refetchEvents()
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   //AQUÍ MODIFIQUÉE
-  function moidfyRegister(register) {
+  function modifyRegister(register) {
     $.ajax({
       type: 'POST',
-      url: '../home/ConnectionDB/Crud.php?action=modify',
+      url: '../home/ConnectionDB/CrudCalendar.php?action=modify',
       data: register,
       success: function(msg) {
           calendar.refetchEvents()
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function deleteRegister(register) {
     $.ajax({
       type: 'POST',
-      url: '../home/ConnectionDB/Crud.php?action=delete',
+      url: '../home/ConnectionDB/CrudCalendar.php?action=delete',
       data: register,
       success: function(msg) {
           calendar.refetchEvents()

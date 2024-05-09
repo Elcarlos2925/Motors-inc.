@@ -34,5 +34,6 @@ $FullCalendar_js="<script src='../static/fullcalendar-6.1.11/dist/index.global.j
 $Load_Calendar_js="<script src='../static/js/Load_Calendar.js'></script>";
 $Mantenaince_Calendar_js="<script src='../static/js/Mantenaince_Calendar.js'></script>";
 $Back_Button_js="<script src='../static/js/back_button.js'></script>";
+$Edit_User_Modal_js="<script src='../static/js/editUserModal.js'></script>";
 
 ?>
