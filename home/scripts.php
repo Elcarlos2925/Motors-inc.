@@ -24,7 +24,6 @@ $Pcbs_location_css="<link rel='stylesheet' href='../static/css/Pcbs_location.css
 $SubMenu_js="<script src='../static/js/sub-menu.js'></script>";
 $Pass_rate_js="<script src='../static/js/Pass_rate.js'></script>";
 $ploty_js="<script src='../static/js/plotly-2.31.1.min.js'></script>";
-$ICT_Mantenaince_js="<script src='../static/js/ICT_Mantenaince.js'></script>";
 $jQuery_js="<script src='../static/js/jquery-3.7.1.min.js'></script>";
 $Popper_js="<script src='../static/js/popper.min.js'></script>";
 $Bootstrap_js="<script src='../static/js/bootstrap/bootstrap.min.js'></script>";

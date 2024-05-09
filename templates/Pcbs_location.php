@@ -3,7 +3,6 @@ include '../home/index.php';
 include '../home/scripts.php';
 include '../home/icons.php';
 include '../home/ConnectionDB/pcbs_location.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +30,7 @@ include '../home/ConnectionDB/pcbs_location.php';
             <div class="pcbs-location-container">
                 <div class="center">
                     <div class='search-container-pcbs-location'>
-                        <button class="btn btn-primary">+ add</button>
+                        <button class="btn btn-outline-primary">+ add</button>
                         <form action='/buscar' method='get'>
                             <button class='Search-button-pcbs-location' id='Search-pcbs-locatiob-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
                             <input id='Search-input-pcbs-location' class='Search-input-pcbs-location' type='search' name='Search' placeholder='Search here...'>
@@ -44,7 +43,7 @@ include '../home/ConnectionDB/pcbs_location.php';
                             <tr>
                                 <td>Cliet</td>
                                 <td>Model</td>
-                                <td>Departament</td>
+                                <td>Department</td>
                                 <td>Expiration Verification</td>
                                 <td>Status</td>
                                 <td>TitPCB typele</td>

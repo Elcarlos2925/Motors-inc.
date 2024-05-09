@@ -6,7 +6,7 @@ function pcbsLocation($connection){
     $queryPcbsLocation = "SELECT * FROM pcbsLocation";
     $result = mysqli_query($connection, $queryPcbsLocation);
 
-    if(mysqli_num_rows($result) < 0){
+    if(mysqli_num_rows($result) > 0){
         while($showResult = mysqli_fetch_array($result)){
             echo "<tr>";
                 echo "<td>" . $showResult['client'] . "</td>";
