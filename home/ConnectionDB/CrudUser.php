@@ -39,12 +39,12 @@ switch ($_GET['action']) {
     case 'modify':
        $result = mysqli_query($connection,
             "UPDATE user SET
-            username = '$_POST[username]',
-            name = '$_POST[name]',
-            subarea = '$_POST[subarea]',
-            role = '$_POST[role]',
-            phone = '$_POST[phone]'
-            WHERE idUser = $_POST[idUser]");
+            `username` = '$_POST[username]',
+            `name` = '$_POST[name]',
+            `subarea` = '$_POST[subarea]',
+            `role` = '$_POST[role]',
+            `phone` = '$_POST[phone]'
+            WHERE `idUser` = '$_POST[idUser]';");
         echo json_encode($result);
         break;
 

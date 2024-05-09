@@ -18,7 +18,8 @@ CREATE TABLE `user` (
   `name` varchar(255) NOT NULL,
   `subarea` varchar(255) NOT NULL,
   `role` varchar(255) NOT NULL,
-  `phone` varchar(10) NOT NULL
+  `phone` varchar(10) NOT NULL,
+  `password` varchar(50) NOT NULL
 );
 
 CREATE TABLE `passRateToday` (
@@ -90,14 +91,14 @@ INSERT INTO `passRateToday` (`model`, `total_production`, `fr`, `ok`, `fr_percen
 ('F3-X1T66895H7X', 1428, 44, 1384, '3.08', '96.92'),
 ('E3-X1T84791H17', 6, 0, 6, '0', '100');
 
-INSERT INTO `user` (`idUser`, `username`, `name`, `subarea`, `role`, `phone`) VALUES
-(1, 'OdetteF', 'Odette Franco', 'Tics', 'Scrum Master', '6641234567'),
-(2, 'KarlaT', 'Karla Trillo', 'Tics', 'Product Owner', '6642345678'),
-(3, 'CarlosL', 'Carlos Lozoya', 'Tics', 'Backend', '6643456789'),
-(4, 'AlexisM', 'Alexis Martinez', 'Tics', 'Backend', '6644567890'),
-(5, 'OmarM', 'Omar Mendez', 'Tics', 'Frontend', '6645678901'),
-(6, 'JulioM', 'Julio Martinez', 'Tics', 'Frontend', '6646789012'),
-(7, 'ReneB', 'Rene Beltran', 'Tics', 'Frontend', '6647890123');
+INSERT INTO `user` (`idUser`, `username`, `name`, `subarea`, `role`, `phone`,`password`) VALUES
+(1, 'OdetteF', 'Odette Franco', 'Tics', 'Scrum Master', '6641234567','OdetteF'),
+(2, 'KarlaT', 'Karla Trillo', 'Tics', 'Product Owner', '6642345678','KarlaT'),
+(3, 'CarlosL', 'Carlos Lozoya', 'Tics', 'Backend', '6643456789','CarlosL'),
+(4, 'AlexisM', 'Alexis Martinez', 'Tics', 'Backend', '6644567890','AlexisM'),
+(5, 'OmarM', 'Omar Mendez', 'Tics', 'Frontend', '6645678901','OmarM'),
+(6, 'JulioM', 'Julio Martinez', 'Tics', 'Frontend', '6646789012','JulioM'),
+(7, 'ReneB', 'Rene Beltran', 'Tics', 'Frontend', '6647890123','ReneB');
 
 INSERT INTO equipmentInventory (name, hostName, ipAdress, classification, location, department, assignedTo, trademark, model, cpu, hddSize, ramSize, serviceTag, serialNumber)
 VALUES ('A0130', 'A0130', '172.245.12', 'Desktop', 'Line 9', 'Programming', 'SMT', 'DELL', 'DELL', 'Intel Core i7', '1TB', '3GB', 'AAA', 'AAA');

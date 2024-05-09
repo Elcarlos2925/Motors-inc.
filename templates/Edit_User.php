@@ -76,79 +76,56 @@ include '../home/ConnectionDB/edit_user.php';
                         </button>
                     </div>
                     <div class="modal-body">
-                        <input type="hidden" id="Id">
                         <div class="add-user">
-                                <div class="form-row">
-                                    <div class="form-group col-md-11">
-                                        <label for="name-input">Name: </label> <?php //? Nombre?>
-                                        <input type="text" id="name-input" class="form-control" name="name" placeholder="Type the name">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-11">
-                                        <label for="last-name-input">Last Name: </label> <?php //? Apellido?>
-                                        <input type="text" id="last-name-input" class="form-control" name="last-name" placeholder="Type the surname">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-11">
-                                        <label for="username-input">Username: </label><?php //? Usuario?>
-                                        <input type="text" id="username-input" class="form-control" name="username" placeholder="Type the username">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-11">
-                                        <label for="employeeid-input">Employee Id: </label> <?php //? Id de empleado?>
-                                        <input type="text" id="employeeid-input" class="form-control" name="employeeid" placeholder="Type the employee Id">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-11">
-                                        <label for="password-input">Password: </label> <?php //? Contraseña?>
-                                        <input type="password" id="password-input" class="form-control" name="name" placeholder="Type the password">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-5">
-                                        <label for="select-departament">Departament: </label> <?php //? Departamento?>
-                                        <select name="departament" id="select-departament" class="form-control">
-                                            <option value="" disabled selected>Select department</option>
-                                            <option value="">..</option>
-                                            <option value="">..</option>
-                                            <option value="">..</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="select-subarea">Subarea: </label> <?php //? subarea?>
-                                        <select name="subarea" id="select-subarea" class="form-control">
-                                            <option value="" disabled selected>Select subarea</option>
-                                            <option value="">..</option>
-                                            <option value="">..</option>
-                                            <option value="">..</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-5">
-                                        <label for="privileges-input">Role: </label> <?php //? Privilegios?>
-                                        <select name="departament" id="privileges-input" class="form-control">
-                                            <option value="" disabled selected>Select role</option>
-                                            <option value="">..</option>
-                                            <option value="">..</option>
-                                            <option value="">..</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-5">
-                                        <label for="phone-input">Phone: </label> <?php //? Contraseña?>
-                                        <input type="text" id="phone-input" class="form-control" name="phone" placeholder="Type the phone">
-                                    </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="employeeid-input">Employee Id: </label> <?php //? Id de empleado?>
+                                    <input type="text" id="employeeid-input" class="form-control" name="employeeid" placeholder="Type the employee Id">
                                 </div>
                             </div>
-
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="name-input">Name: </label> <?php //? Nombre?> 
+                                    <input type="text" id="name-input" class="form-control" name="name" placeholder="Type the name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="username-input">Username: </label><?php //? Usuario?>
+                                    <input type="text" id="username-input" class="form-control" name="username" placeholder="Type the username">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="select-subarea">Subarea: </label> <?php //? subarea?>
+                                    <select name="subarea" id="select-subarea" class="form-control">
+                                        <option value="" disabled selected>Select subarea</option>
+                                        <option value="Tics">Tics</option>
+                                        <option value="Informatica">Informatica</option>
+                                        <option value="Sistemas">Sistemas</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="privileges-input">Role: </label> <?php //? Privilegios?>
+                                    <select name="privileges" id="privileges-input" class="form-control">
+                                        <option value="" disabled selected>Select role</option>
+                                        <option value="Scrum Master">Scrum Master</option>
+                                        <option value="Product Owner">Product Owner</option>
+                                        <option value="Backend">Backend</option>
+                                        <option value="Frontend">Frontend</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="phone-input">Phone: </label> <?php //? Contraseña?>
+                                    <input type="text" id="phone-input" class="form-control" name="phone" placeholder="Type the phone">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" id="button-Modify" class="btn btn-primary">Modify</button>
-                        <button type="button" id="button-delete" class="btn btn-danger">Delete</button>
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
