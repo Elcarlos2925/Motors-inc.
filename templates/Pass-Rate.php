@@ -29,24 +29,7 @@
                 <h1>Pass Rate ICT</h1>
             </div>
             <div class="pass-rate-container">
-                <?php //?Options ?>
-                <div class="menu-pass-rate"><?php//?Menú para ver o modificar inventario ?>
-                    <div class="menu-options">
-                        <button class="pass-rate-today" id="btn-pass-rate-today" onclick="passRateToday()">
-                            Pass Rate Today
-                        </button>
-                        <button class="pass-rate-by-specific-date" id="btn-pass-rate-by-specific-date" onclick="passRateBySpecificDate()">
-                            Pass Rate by Specific Date
-                        </button>
-                    </div>
-                </div>
-                <div class="hide">
-                    <?php PassRateToday($connection)?>
-                </div>
-                <div id="content">
-                    <?php echo "$Pass_rate_js";?>
-                    <script>passRateToday()</script>
-                </div>
+                <?php PassRateToday($connection)?>
             </div>
         </div>
 

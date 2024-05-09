@@ -44,21 +44,13 @@
                 <div class='item'><a href='$Pcbs_Location'><i class='fa-solid fa-microchip icon-item'></i>Pcbs's Location</a></div>
                 <div class='item'><a href='$Calendar_Events'><i class='fa-solid fa-calendar-days icon-item'></i>Calendar & Events</a></div>
                 <div class='item'><a class='sub-item' href='$Equipment_Inventory'><i class='fa-solid fa-table-list icon-item'></i>Equipment Inventory</a></div>
+                <div class='item'><a class='sub-item' href='$Edit_User'><i class='fa-solid fa-user-pen icon-item'></i>Edit User</a></div>
                 <!--?Submenu ICT-->
                 <div class='item'>
                     <a href='$ICT' class='sub-menu-btn'><i class='fa-solid fa-gear icon-item'></i>ICT<i class='fas fa-angle-right dropdown rotate'></i></a>
                     <div class='sub-menu'>
                         <a class='sub-item' href='$Mantenaince'><i class='fa-solid fa-screwdriver-wrench icon-item'></i>Mantenaince</a>
                         <a class='sub-item' href='$Pass_Rate'><i class='fa-solid fa-chart-line icon-item'></i>Pass Rate</a>
-                    </div>
-                </div>
-                <!--?Submenu Departament-->
-                <!--?Submenu User-->
-                <div class='item'>
-                    <a href='' class='sub-menu-btn'><i class='fa-solid fa-user icon-item'></i>User<i class='fas fa-angle-right dropdown rotate'></i></a>
-                    <div class='sub-menu'>
-                        <a class='sub-item' href='$Add_User'><i class='fa-solid fa-user-plus icon-item'></i>Add User</a>
-                        <a class='sub-item' href='$Edit_User'><i class='fa-solid fa-user-pen icon-item'></i>Edit User</a>
                     </div>
                 </div>
             </div>
