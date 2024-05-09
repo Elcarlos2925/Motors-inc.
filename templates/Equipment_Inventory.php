@@ -11,7 +11,7 @@ include '../home/ConnectionDB/equipment_inventory.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Equipment_Inventory_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$FontAwesome_css $Style_css $Equipment_Inventory_css $Bootstrap_4_6_0_css";?>
+    <?php echo "$FontAwesome_css $Style_css $Equipment_Inventory_css $Pcbs_location_css $Bootstrap_4_6_0_css";?>
     <title>Equipment Inventory</title>
 </head>
 <body>
@@ -29,7 +29,7 @@ include '../home/ConnectionDB/equipment_inventory.php';
             <div class="equipment-inventory-container">
             <?php//?Menú para ver o modificar inventario y la barra de busqueda?>
                 <div class='search-container-equipment-inventory'>
-                    <!--?Formulario Buscar-->
+                    <button class="btn btn-outline-primary">+ add</button>
                     <form action='' method='get'>
                         <button class='Search-button-equipment-inventory' id='Search-equipment-inventory-button' type='submit'><i class='fa-solid fa-magnifying-glass'></i></button>
                         <input id='Search-input-equipment-inventory' class='Search-input-equipment-inventory' type='search' name='name' placeholder='Search name here...'>

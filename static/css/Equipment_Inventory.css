@@ -24,22 +24,23 @@
 
   /*?BARA DE BUSQUEDA?*/
 .search-container-equipment-inventory{
-  width: 100%;
-  height: 100%;
   display: grid;
-  place-items: end;
-  margin: 25px 10px auto auto !important;/** Top Right Bottom left*/
+  place-content: end;
+  margin: 10px 10px auto auto !important;/** Top Right Bottom left*/
+  grid-template-columns: 70px 270px;
+  margin-left: auto;
 }
 
 .search-container-equipment-inventory form{
   height: 50px;
-  width: 250px;
-  display: grid;
-  border: var(--size) var(--border);
-  place-items: center;
-  grid-template-columns: 50px 200px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 25px;
+    width: 250px;
+    display: grid;
+    border:var(--size) var(--border);
+    place-items: center;
+    grid-template-columns: 50px 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-left: auto;
 }
 
 .search-container-equipment-inventory .Search-button-equipment-inventory{
