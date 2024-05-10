@@ -103,7 +103,7 @@ INSERT INTO `user` (`idUser`, `username`, `name`, `subarea`, `role`, `phone`,`pa
 INSERT INTO equipmentInventory (name, hostName, ipAdress, classification, location, department, assignedTo, trademark, model, cpu, hddSize, ramSize, serviceTag, serialNumber)
 VALUES ('A0130', 'A0130', '172.245.12', 'Desktop', 'Line 9', 'Programming', 'SMT', 'DELL', 'DELL', 'Intel Core i7', '1TB', '3GB', 'AAA', 'AAA');
 
-INSERT INTO `pcbslocation`(`client`, `models`, `department`, `expirationVerification`, `status`, `tipPcbTypele`, `position`) VALUES ('BGM','E2-95018-154','AOI','24-01-2025','0','OK','Carro 2 POS #4')
+INSERT INTO `pcbslocation`(`client`, `models`, `department`, `expirationVerification`, `status`, `tipPcbTypele`, `position`) VALUES ('BGM','E2-95018-154','AOI','24-01-2025','0','OK','Carro 2 POS #4');
 
 INSERT INTO `ictMaintenaince`(`Title`, `Responsible`, `Activity`, `startDay`, `limitDay`, `Finished`) VALUES
 ('Fixtura ICTPB081903210074','Alexis Martinez','Mantenaince','2024-05-08 12:00:00','2024-05-09 12:00:00','1');

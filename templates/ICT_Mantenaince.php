@@ -63,19 +63,19 @@ include '../home/ConnectionDB/ict_mantenaince.php';
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="title-input">Title: </label><?php //? Usuario?>
-                                <input type="text" id="title-input" class="form-control" name="title" placeholder="Type the title">
+                                <input type="text" id="title-input" class="form-control" name="title" placeholder="Type the title" required minlength="1" maxlength="300">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12" id="employeeid-group">
                                 <label for="activity-input">Activity: </label> <?php //? Id de empleado?>
-                                <input type="text" id="activity-input" class="form-control" name="activity" placeholder="Type the activity">
+                                <input type="text" id="activity-input" class="form-control" name="activity" placeholder="Type the activity" required minlength="1" maxlength="300">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="responsible-input">Responsible: </label> <?php //? Nombre?> 
-                                <input type="text" id="responsible-input" class="form-control" name="responsible" placeholder="Type the responsible">
+                                <input type="text" id="responsible-input" class="form-control" name="responsible" placeholder="Type the responsible" required minlength="1" maxlength="100">
                             </div>
                         </div>
                         <div class="form-row">
@@ -109,7 +109,7 @@ include '../home/ConnectionDB/ict_mantenaince.php';
                         <div class="form-row">
                             <div class="form-group col-md-1">
                                 <label for="finished-input">Finished: </label> <?php //? Nombre?> 
-                                <input type="checkbox" id="finished-input" class="form-control" name="responsible" placeholder="Type the finished">
+                                <input type="checkbox" id="finished-input" class="form-control" name="responsible" placeholder="Type the finished" required minlength="1" maxlength="1">
                             </div>
                         </div>
                     </div>

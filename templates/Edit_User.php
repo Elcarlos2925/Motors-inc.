@@ -80,19 +80,19 @@ include '../home/ConnectionDB/edit_user.php';
                             <div class="form-row">
                                 <div class="form-group col-md-12" id="employeeid-group">
                                     <label for="employeeid-input">Employee Id: </label> <?php //? Id de empleado?>
-                                    <input type="text" id="employeeid-input" class="form-control" name="employeeid" placeholder="Type the employee Id">
+                                    <input type="number" id="employeeid-input" class="form-control" name="employeeid" placeholder="Type the employee Id" required minlength="1" maxlength="11">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="name-input">Name: </label> <?php //? Nombre?> 
-                                    <input type="text" id="name-input" class="form-control" name="name" placeholder="Type the name">
+                                    <input type="text" id="name-input" class="form-control" name="name" placeholder="Type the name" required minlength="1" maxlength="255">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="username-input">Username: </label><?php //? Usuario?>
-                                    <input type="text" id="username-input" class="form-control" name="username" placeholder="Type the username">
+                                    <input type="text" id="username-input" class="form-control" name="username" placeholder="Type the username" required minlength="1" maxlength="99">
                                 </div>
                             </div>
                             <div class="form-row">
@@ -119,13 +119,13 @@ include '../home/ConnectionDB/edit_user.php';
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <label for="phone-input">Phone: </label> <?php //? Contraseña?>
-                                    <input type="text" id="phone-input" class="form-control" name="phone" placeholder="Type the phone">
+                                    <input type="text" id="phone-input" class="form-control" name="phone" placeholder="Type the phone" required minlength="9" maxlength="10">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12" id="password-group">
                                     <label for="password-input">Password: </label> <?php //? Contraseña?>
-                                    <input type="input" id="password-input" class="form-control" name="password" placeholder="Type the password">
+                                    <input type="input" id="password-input" class="form-control" name="password" placeholder="Type the password" required minlength="1" maxlength="50">
                                 </div>
                             </div>
                         </div>
