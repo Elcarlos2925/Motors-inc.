@@ -13,7 +13,11 @@ function pcbsLocation($connection){
                 echo "<td>" . $showResult['models'] . "</td>";
                 echo "<td>" . $showResult['department'] . "</td>";
                 echo "<td>" . $showResult['expirationVerification'] . "</td>";
-                echo "<td>" . $showResult['status'] . "</td>";
+                if ($showResult['status'] == 1){
+                    echo "<td>" . "<i class='fas fa-check'></i>" . "</td>";
+                } else{
+                    echo "<td>" . "<i class='fas fa-times'></i>" . "</td>";
+                }
                 echo "<td>" . $showResult['tipPcbTypele'] . "</td>";
                 echo "<td>" . $showResult['position'] . "</td>";
             echo "</tr>";
