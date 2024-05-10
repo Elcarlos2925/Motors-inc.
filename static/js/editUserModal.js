@@ -20,7 +20,7 @@ function modalAdd(){
     $('#button-add').show()
     $('#password-group').show()
     $('#button-Modify').hide()
-    $('#employeeid-group').show()
+    $('#employeeid-group').hide()
     $('#button-delete').hide()
 }
 function deleteUser(id){
@@ -63,7 +63,6 @@ $(document).ready(function() {
     });
 
     $('#button-Modify').on('click', function() {
-        var id = $('#employeeid-input').val();
         var username = $('#username-input').val();
         var name = $('#name-input').val();
         var subarea = $('#select-subarea').val();
@@ -74,7 +73,6 @@ $(document).ready(function() {
             type: 'POST',
             url: '../home/ConnectionDB/CrudUser.php?action=modify',
             data: {
-                idUser: id,
                 username: username,
                 name: name,
                 subarea: subarea,

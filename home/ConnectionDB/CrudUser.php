@@ -21,6 +21,10 @@ switch ($_GET['action']) {
         break;
 
     case 'add':
+        $id_user = mysqli_query($connection, "SELECT MAX(idUser) + 1 AS next_id FROM user;");
+        $row = mysqli_fetch_assoc($id_user);
+        $id = $row['next_id'];
+
         $result = mysqli_query($connection,
             "INSERT INTO `user`
             (`idUser`,
@@ -30,7 +34,7 @@ switch ($_GET['action']) {
             `role`,
             `phone`,
             `password`) VALUES
-            ('$_POST[idUser]',
+            ('$id',
             '$_POST[username]',
             '$_POST[name]',
             '$_POST[subarea]',
