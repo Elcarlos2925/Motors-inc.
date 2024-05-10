@@ -10,7 +10,7 @@ function countPending($connection){
 }
 
 function countMantenaincePending($connection){
-    $mantenaincePending_Assigments = mysqli_query($connection,"SELECT COUNT(*) as num_rows FROM `ictMaintenaince` WHERE Finished = 1;");
+    $mantenaincePending_Assigments = mysqli_query($connection,"SELECT COUNT(*) as num_rows FROM `ictMaintenaince` WHERE Finished = 0;");
     $row = mysqli_fetch_assoc($mantenaincePending_Assigments);
     $pendings=$row['num_rows'];
     return ($pendings);
