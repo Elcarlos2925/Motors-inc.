@@ -28,7 +28,7 @@ switch ($_GET['action']) {
             models,
             department,
             expirationVerification,
-            status,
+            `status`,
             tipPcbTypele,
             position) VALUES
             ('$_POST[client]',

@@ -31,11 +31,11 @@ switch ($_GET['action']) {
     case 'add':
         $result = mysqli_query($connection,
             "INSERT INTO equipmentInventory
-            (name,
+            (`name`,
             hostName,
-            ipAddress,
+            ipAdress,
             classification,
-            location,
+            `location`,
             department,
             assignedTo,
             trademark,
@@ -47,7 +47,7 @@ switch ($_GET['action']) {
             serialNumber) VALUES
             ('$_POST[name]',
             '$_POST[hostName]',
-            '$_POST[ipAddress]',
+            '$_POST[ipAdress]',
             '$_POST[classification]',
             '$_POST[location]',
             '$_POST[department]',

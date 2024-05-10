@@ -11,7 +11,7 @@ include '../home/ConnectionDB/ict_mantenaince.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo "$Mantenaince_icon"; ?>
     <?php //? Cargar Css?>
-    <?php echo "$ICT_Mantenaince_css $Calendar_Events_css $FontAwesome_css $Style_css $Bootstrap_4_6_0_css $DataTables_css $jQuery_js";?>
+    <?php echo "$ICT_Mantenaince_css $Calendar_Events_css $FontAwesome_css $Style_css $Bootstrap_4_6_0_css $DataTables_css $jQuery_js $ClockPicker_js $ClockPicker_css";?>
     <title>ICT Mantenaince</title>
 </head>
 <body>
@@ -28,7 +28,7 @@ include '../home/ConnectionDB/ict_mantenaince.php';
                 <div class="options-container" id="content">
                     <div class="ict-details-container">
                         <div class="title-options">
-                            <button class="btn btn-outline-primary">+ add</button>
+                            <button class="btn btn-outline-primary" onclick='modalAdd()'>+ add</button>
                         </div>
                         <div class="table-container">
                             <table class="table table-secondary table-hover">
@@ -50,9 +50,8 @@ include '../home/ConnectionDB/ict_mantenaince.php';
                     </div>
                 </div>
        </div>
-    </div>
 
-    <div class="modal fade" id="FormUser" tabindex="-1" role="dialog">
+       <div class="modal fade" id="FormMantenaince" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -61,72 +60,73 @@ include '../home/ConnectionDB/ict_mantenaince.php';
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="add-user">
-                            <div class="form-row">
-                                <div class="form-group col-md-12" id="employeeid-group">
-                                    <label for="employeeid-input">Employee Id: </label> <?php //? Id de empleado?>
-                                    <input type="text" id="employeeid-input" class="form-control" name="employeeid" placeholder="Type the employee Id">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="title-input">Title: </label><?php //? Usuario?>
+                                <input type="text" id="title-input" class="form-control" name="title" placeholder="Type the title">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12" id="employeeid-group">
+                                <label for="activity-input">Activity: </label> <?php //? Id de empleado?>
+                                <input type="text" id="activity-input" class="form-control" name="activity" placeholder="Type the activity">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="responsible-input">Responsible: </label> <?php //? Nombre?> 
+                                <input type="text" id="responsible-input" class="form-control" name="responsible" placeholder="Type the responsible">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="">Start Date: </label>
+                                <div class="input-group" data-autoclose="true">
+                                    <input type="date" id="Start-date-input" class="form-control" value="">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="name-input">Name: </label> <?php //? Nombre?> 
-                                    <input type="text" id="name-input" class="form-control" name="name" placeholder="Type the name">
+                            <div class="form-group col-md-6" id="Title-Start-Timer">
+                                <label for="">Start Time:</label>
+                                <div class="input-group clockpicker" data-autoclose="true">
+                                    <input type="text" id="Start-time-input" class="form-control" value="">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="username-input">Username: </label><?php //? Usuario?>
-                                    <input type="text" id="username-input" class="form-control" name="username" placeholder="Type the username">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="">Limit Date: </label>
+                                <div class="input-group" data-autoclose="true">
+                                    <input type="date" id="Limit-date-input" class="form-control" value="">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="select-subarea">Subarea: </label> <?php //? subarea?>
-                                    <select name="subarea" id="select-subarea" class="form-control">
-                                        <option value="" disabled selected>Select subarea</option>
-                                        <option value="Tics">Tics</option>
-                                        <option value="Informatica">Informatica</option>
-                                        <option value="Sistemas">Sistemas</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="privileges-input">Role: </label> <?php //? Privilegios?>
-                                    <select name="privileges" id="privileges-input" class="form-control">
-                                        <option value="" disabled selected>Select role</option>
-                                        <option value="Scrum Master">Scrum Master</option>
-                                        <option value="Product Owner">Product Owner</option>
-                                        <option value="Backend">Backend</option>
-                                        <option value="Frontend">Frontend</option>
-                                    </select>
+                            <div class="form-group col-md-6" id="Title-End-Time">
+                                <label for="">Limit Time:</label>
+                                <div class="input-group clockpicker" data-autoclose="true">
+                                    <input type="text" id="Limit-time-input" class="form-control" value="">
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="phone-input">Phone: </label> <?php //? Contraseña?>
-                                    <input type="text" id="phone-input" class="form-control" name="phone" placeholder="Type the phone">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12" id="password-group">
-                                    <label for="password-input">Password: </label> <?php //? Contraseña?>
-                                    <input type="input" id="password-input" class="form-control" name="password" placeholder="Type the password">
-                                </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-1">
+                                <label for="finished-input">Finished: </label> <?php //? Nombre?> 
+                                <input type="checkbox" id="finished-input" class="form-control" name="responsible" placeholder="Type the finished">
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" id="button-add" class="btn btn-success">Add</button>
-                        <button type="button" id="button-Modify" class="btn btn-primary">Modify</button>
                         <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <?php //? FOOTER?>
-        <?php echo "$footer";?>
     </div>
+
+
+    <?php //? FOOTER?>
+    <?php echo "$footer";?>
+
     <?php //? Cargar js?>
     <?php echo "$ict_Mantenaince_Modal_js $SubMenu_js $Back_Button_js $FullCalendar_js $Bootstrap_js  $Popper_js $DataTables_js $Moment_js";?>
 </body>
