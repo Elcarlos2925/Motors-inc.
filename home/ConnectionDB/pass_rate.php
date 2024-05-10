@@ -7,7 +7,10 @@ function PassRateToday($connection){
         $queryPassRateToday = "SELECT * FROM passRateToday";
         $result = mysqli_query($connection,$queryPassRateToday);
         echo "
-        <h3>Pass Rate Today</h3>
+        <br>
+        <button class='btn btn-outline-primary float-right' onclick='modalAdd()'>+ add</button>
+        <br>
+        <br>
         <div class='table-container'>
             <table class='table table-secondary table-hover'>
                 <thead>

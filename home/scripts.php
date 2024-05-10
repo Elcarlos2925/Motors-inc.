@@ -34,5 +34,9 @@ $Load_Calendar_js="<script src='../static/js/Load_Calendar.js'></script>";
 $Mantenaince_Calendar_js="<script src='../static/js/Mantenaince_Calendar.js'></script>";
 $Back_Button_js="<script src='../static/js/back_button.js'></script>";
 $Edit_User_Modal_js="<script src='../static/js/editUserModal.js'></script>";
+$pass_Rate_Modal_js="<script src='../static/js/passRateModal.js'></script>";
+$ict_Mantenaince_Modal_js="<script src='../static/js/ictMantenainceModal.js'></script>";
+$equipment_Inventory_Modal_js="<script src='../static/js/equipmentInventoryModal.js'></script>";
+$pcbsLocation_Modal_js="<script src='../static/js/pcbsLocationModal.js'></script>";
 
 ?>
