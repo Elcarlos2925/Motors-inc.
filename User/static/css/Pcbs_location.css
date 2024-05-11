@@ -1,0 +1,74 @@
+  .title-container h1{
+    font-family:var(--font-bold);
+  }
+
+  /*?Content Container*/
+  .content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+  .pcbs-location-container{
+    background-color:var(--container-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    max-height:var(--container-height);
+    margin-bottom: 20px;
+    width: var(--container-width);
+    margin-right: 100px;
+  }
+
+   /*?BARA DE BUSQUEDA?*/
+.search-container-pcbs-location{
+    display: grid;
+    place-content: end;
+    margin: 10px 10px auto auto !important;/** Top Right Bottom left*/
+    margin-left: auto;
+  }
+
+  .search-container-pcbs-location form{
+    height: 50px;
+    width: 250px;
+    display: grid;
+    border:var(--size) var(--border);
+    place-items: center;
+    grid-template-columns: 50px 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-left: auto;
+  }
+
+  .search-container-pcbs-location .btn{
+    margin-left: auto;
+  }
+
+  .search-container-pcbs-location .Search-button-pcbs-location{
+    border-radius: 50%;
+    margin-left: 0;
+    width: 40px;
+    height: 40px;
+    background-color:var(--primary-color);
+    color:#fff;
+    border: none;
+  }
+
+  .search-container-pcbs-location input{
+  font-family: var(--font-ultralight);
+  font-size:small;
+  }
+
+  .search-container-pcbs-location .Search-input-pcbs-location{
+    width: 80%;
+    height: 80%;
+    border: none;
+  }
+
+  .table-container{
+    overflow-x: auto;
+    margin-top: 30px;
+    max-height: 560px;
+    overflow: auto;
+ }

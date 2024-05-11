@@ -1,0 +1,93 @@
+  .title-container h1{
+    font-family:var(--font-bold);
+  }
+  .title-options{
+    font-family:var(--font-bold);
+    text-align: center;
+    display: grid;
+    place-items: center;
+    justify-content: end;
+  }
+  /*?Content Container*/
+  .content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+  .ict-mantenaince-container{
+    background-color: var(--container-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 480px;
+    margin-bottom: 30px;
+    width: 98%/*1164px*/;
+  }
+ /*? Contenedor de las opciones*/
+ .options-container{
+    margin-top: 40px;
+  }
+  /*? Menú de ñas 4 opciones*/
+  .ict-mantenaince-container .menu-ict-option{
+    display: grid;
+    place-items: start;
+    border-bottom: calc(var(--size)/2) var(--border);
+  }
+
+  .ict-mantenaince-container .ict-options {
+    width: 60%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .ict-mantenaince-container .ict-options button {
+    height: 40px;
+    margin: 0;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .ict-mantenaince-container .ict-options button:hover {
+    background-color:var(--background-color);
+  }
+
+  /*? OPCIÓN 2 (Es el css de tabla así que no hice nada aquí xd)*/
+
+  /*?  Opcion 3 y 4*/
+  .ict-most-faulty-pins-container, .ict-total-cycles-container {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  .ict-most-faulty-pins-container form, .ict-total-cycles-container form{
+    font-size: 20px;
+    font-family:var(--font);
+    width: 80%;
+  }
+  .ict-most-faulty-pins-container label,
+  .ict-most-faulty-pins-container input,
+  .ict-most-faulty-pins-container select,
+  .ict-total-cycles-container label,
+  .ict-total-cycles-container input,
+  .ict-total-cycles-container select{
+    margin-bottom: 20px;
+}
+
+  #specific-fixure{
+    width: 97%;
+  }
+
+  .center{
+    display: grid;
+    place-items: center;
+  }
+
+  .table-container{
+    overflow-x: auto;
+    margin-top: 20px;
+    max-height: 500px;
+    overflow: auto;
+ }
