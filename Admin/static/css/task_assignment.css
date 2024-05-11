@@ -1,0 +1,39 @@
+  .title-container h1{
+    font-family: 'Telegraf Bold',sans-serif;
+  }
+
+  /*?Content Container*/
+  .content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+  .content-container .task-assignment-container{
+    display: grid;
+    place-items: start;
+    background-color: var(--container-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 130px;
+    margin-bottom: 20px;
+  }
+
+  .btn-go-to-calendar{
+    text-decoration: none;
+    font-family:var(--font);
+  }
+
+  .go-to-calendar-container{
+    width: 100%;
+  }
+
+  .table-container{
+    overflow-x: auto;
+    margin-top: 20px;
+    max-height: 580px;
+    overflow: auto;
+    width: 100%;
+ }

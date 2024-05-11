@@ -1,6 +1,7 @@
 <?php
     include 'links.php';
     include 'scripts.php';
+    include '../home/ConnectionDB/check_session.php';
 
     //? inicializar viariables
     $header='';

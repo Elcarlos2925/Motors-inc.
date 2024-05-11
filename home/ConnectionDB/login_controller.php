@@ -1,8 +1,16 @@
 <?php
-// Iniciar la sesión (asegúrate de hacer esto al principio de tus archivos PHP)
 session_start();
 
-// Llamar conexión a la base de datos
+if (isset($_SESSION['login']) && $_SESSION['login'] === true) {
+    if ($_SESSION['role'] == "Admin"){
+        header("location:../Admin/templates/Dashboard.php");
+        exit;
+    } elseif ($_SESSION['role'] == "User"){
+        header("location:../User/templates/Dashboard.php");
+        exit;
+    }
+}
+
 require("Connection.php");
 
 $connection = returnConnection();
@@ -12,15 +20,13 @@ $message_error = '';
 $uservalid = 0;
 $role = '';
 
+
 if (isset($_POST['LogIn'])) {
-    // Recuperar usuario y contraseña
     $ruser = $connection->real_escape_string($_POST['username']);
     $rpass = $connection->real_escape_string(($_POST['password']));
 
-    // consulta SQL
     $consult = "SELECT `name`, `password`, `role` FROM `user` WHERE `username` = '$ruser' ";
 
-    // Verificar las credenciales
     if ($result = $connection->query($consult)) {
         $message_error = '';
         while ($row = $result->fetch_array()) {
