@@ -1,0 +1,101 @@
+/*?Content Container*/
+  .content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+  .title-container h1{
+    font-family:var(--font-bold);
+  }
+
+  .pass-rate-container h3{
+    font-family:var(--font-bold);
+    text-align: center;
+  }
+
+.pass-rate-container{
+    background-color:var(--container-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    min-height: 480px;
+}
+
+.form-date-hour{
+    width: 80%;
+    display: grid;
+    place-content: center ;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.form-date-hour input{
+    margin-right: 25px;
+}
+
+.form-date-hour p{
+    font-family:var(--font);
+    text-align: center;
+}
+
+.p-date-hour{
+    text-align: center;
+    font-size: 17px;
+}
+
+.generate-report-pass-rate{
+    width: 80%;
+    border: none;
+    background-color:var(--primary-color);
+    color: var(--background-color);
+    font-family:var(--font);
+    font-size: 18px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.form-date-hour-form{
+    display: grid;
+    place-items: center;
+}
+
+.specific-model{
+    width: 50% !important;
+}
+
+.menu-pass-rate{
+    display: grid;
+    place-items: start;
+    border-bottom:calc(var(--size)/2)var(--border);
+}
+
+.menu-options{
+    width: 90%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+ .menu-options button{
+    height: 40px;
+    margin: 0;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu-options button:hover{
+  background-color: var(--background-color);
+}
+
+ .table-container{
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.chart{
+  max-width: 99%;
+  margin-bottom: 20px;
+}

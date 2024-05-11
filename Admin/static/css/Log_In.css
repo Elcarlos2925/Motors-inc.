@@ -1,0 +1,52 @@
+  body{
+    background-color:var(--container-color);
+    display: grid;
+    place-content: center;
+    place-items: center;
+    height: 98vh;
+  }
+
+  .form-logIn{
+    background-color:var(--primary-color);
+    display: grid;
+    place-items: center;
+    width: 500px;
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .form-logIn .form-row{
+    margin-bottom: 7px;
+  }
+
+  .form-logIn .form-row input{
+    font-family:var(--font);
+  }
+
+  .form-logIn, .form-logIn .form-group label{
+    font-family:var(--font);
+    color: white;
+  }
+
+  .mensaje-error{
+    font-family:var(--font-bold);
+  }
+
+  .password-container {
+    position: relative;
+}
+
+.password-input {
+    padding-right: 30px; /* Ajusta el espaciado a la derecha para el icono */
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px; /* Ajusta la posición del icono a la derecha */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 999999;
+    color: #000;
+}

@@ -1,0 +1,101 @@
+.title-container h1{
+    font-family:var(--font-bold);
+  }
+
+  /*?Content Container*/
+  .content-container{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    min-height: 600px;
+    padding: 10px;
+  }
+
+  /*?Equipment Inventory container?*/
+  .equipment-inventory-container{
+    background-color:var(--container-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    min-height: 650px;
+    margin-bottom: 20px;
+    width: 98%;
+    margin-right: 100px;
+  }
+
+  /*?BARA DE BUSQUEDA?*/
+.search-container-equipment-inventory{
+  display: grid;
+  place-content: end;
+  margin: 10px 10px auto auto !important;/** Top Right Bottom left*/
+  grid-template-columns: 70px 270px;
+  margin-left: auto;
+}
+
+.search-container-equipment-inventory form{
+    height: 50px;
+    width: 250px;
+    display: grid;
+    border:var(--size) var(--border);
+    place-items: center;
+    grid-template-columns: 50px 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin-left: auto;
+}
+
+.search-container-equipment-inventory .Search-button-equipment-inventory{
+  border-radius: 50%;
+  margin-left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #284B63;
+  color:#fff;
+  border: none;
+}
+
+.search-container-equipment-inventory input{
+font-family:var(--font-ultralight);
+font-size:small;
+}
+
+.search-container-equipment-inventory .Search-input-equipment-inventory{
+  width: 80%;
+  height: 80%;
+  border: none;
+}
+
+ /*?Menu de opciones?*/
+ .menu-equipment-inventory{
+    display: grid;
+    place-items: start;
+    border-bottom: calc(var(--size)/2) var(--border);
+  }
+
+ .menu-options{
+    width: 250px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+ }
+
+ .menu-options button{
+    height: 40px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+ .menu-options .inventory{
+    background-color:var(--background-color);
+ }
+
+ .menu-options .modify-inventory{
+    background-color:var(--container-color);
+ }
+
+ .table-container{
+  overflow-x: auto;
+  margin-top: 20px;
+  max-height: 500px;
+  overflow: auto;
+}
