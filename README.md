@@ -135,7 +135,7 @@
      <h4 align="justify" style="color:black;">- User authentication</h4>
      <p align="justify" style="color:black;">
         The system must have a module that allows entry to the application with
-        a username (email) and a password, depending on
+        a username and a password, depending on
         the assigned role will direct the user to the desired interface.
      </p>
      <h4 align="justify" style="color:black;">- Activity calendar</h4>
