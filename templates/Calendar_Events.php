@@ -50,7 +50,7 @@ include '../home/icons.php';
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="">Assigned to: </label>
-                                <input type="text" id="Title-task" class="form-control" placeholder="">
+                                <input type="text" id="Title-task" class="form-control" placeholder="" required minlength="1" maxlength="255">
                             </div>
                         </div>
 
@@ -95,7 +95,7 @@ include '../home/icons.php';
                             <div class="form-group">
                                 <div class="form-row">
                                     <label for="">Details: </label>
-                                    <textarea name="" id="Description" class="form-control" rows="4"></textarea>
+                                    <input name="" id="Description" class="form-control" rows="4" required minlength="1" maxlength="65535"></input>
                                 </div>
                             </div>
                             <div class="form-group">

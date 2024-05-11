@@ -77,39 +77,39 @@ include '../home/ConnectionDB/pcbs_location.php';
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="client-input">Client: </label> 
-                                <input type="text" id="client-input" class="form-control" name="client" placeholder="Type the client">
+                                <input type="text" id="client-input" class="form-control" name="client" placeholder="Type the client"  required minlength="1" maxlength="50" >
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="models-input">Models: </label> 
-                                <input type="text" id="models-input" class="form-control" name="models" placeholder="Type the models">
+                                <input type="text" id="models-input" class="form-control" name="models" placeholder="Type the models"  required minlength="1" maxlength="50">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="department-input">Department: </label> 
-                                <input type="text" id="department-input" class="form-control" name="department" placeholder="Type the department">
+                                <input type="text" id="department-input" class="form-control" name="department" placeholder="Type the department" required minlength="1" maxlength="50">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-10">
                                 <label for="expirationVerification-input">Expiration Verification: </label> 
-                                <input type="date" id="expirationVerification-input" class="form-control" name="expirationVerification" placeholder="Type the expiration verification">
+                                <input type="date" id="expirationVerification-input" class="form-control" name="expirationVerification" placeholder="Type the expiration verification" required minlength="1" maxlength="50">
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="status-input">Status: </label> 
-                                <input type="checkbox" id="status-input" class="form-control" name="status">
+                                <input type="checkbox" id="status-input" class="form-control" name="status" required minlength="1" maxlength="1">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="tipPcbTypele-input">Tip Pcb Typele: </label> 
-                                <input type="text" id="tipPcbTypele-input" class="form-control" name="tipPcbTypele" placeholder="Type the tip pcb typele">
+                                <input type="text" id="tipPcbTypele-input" class="form-control" name="tipPcbTypele" placeholder="Type the tip pcb typele" required minlength="1" maxlength="50">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="position-input">Position: </label> 
-                                <input type="text" id="position-input" class="form-control" name="position" placeholder="Type the position">
+                                <input type="text" id="position-input" class="form-control" name="position" placeholder="Type the position" required minlength="1" maxlength="50">
                             </div>
                         </div>
                     </div>

@@ -63,6 +63,7 @@ $(document).ready(function() {
     });
 
     $('#button-Modify').on('click', function() {
+        var id = $('#employeeid-input').val();
         var username = $('#username-input').val();
         var name = $('#name-input').val();
         var subarea = $('#select-subarea').val();
@@ -73,6 +74,7 @@ $(document).ready(function() {
             type: 'POST',
             url: '../home/ConnectionDB/CrudUser.php?action=modify',
             data: {
+                idUser: id,
                 username: username,
                 name: name,
                 subarea: subarea,

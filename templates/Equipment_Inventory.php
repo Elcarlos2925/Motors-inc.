@@ -85,73 +85,73 @@ include '../home/ConnectionDB/equipment_inventory.php';
                             <div class="form-row">
                                 <div class="form-group col-md-12" >
                                     <label for="name-input">Name: </label> 
-                                    <input type="text" id="name-input" class="form-control" name='name' placeholder="Type the name">
+                                    <input type="text" id="name-input" class="form-control" name='name' placeholder="Type the name" required minlength="1" maxlength="20">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6" >
                                     <label for="hostname-input">Host Name: </label> 
-                                    <input type="text" id="hostname-input" class="form-control" name='hostname' placeholder="Type the host name">
+                                    <input type="text" id="hostname-input" class="form-control" name='hostname' placeholder="Type the host name" required minlength="1" maxlength="20">
                                 </div>
                                 <div class="form-group col-md-6" >
                                     <label for="ipAddress-input">Ip Address: </label> 
-                                    <input type="text" id="ipAddress-input" class="form-control" name='ipAddress' placeholder="Type the ip Address">
+                                    <input type="text" id="ipAddress-input" class="form-control" name='ipAddress' placeholder="Type the ip Address" required minlength="1" maxlength="15">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6" >
                                     <label for="classification-input">Classification: </label> 
-                                    <input type="text" id="classification-input" class="form-control" name='classification' placeholder="Type the classification">
+                                    <input type="text" id="classification-input" class="form-control" name='classification' placeholder="Type the classification" required minlength="1" maxlength="15">
                                 </div>
                                 <div class="form-group col-md-6" >
                                     <label for="location-input">Location: </label> 
-                                    <input type="text" id="location-input" class="form-control" name='location' placeholder="Type the location">
+                                    <input type="text" id="location-input" class="form-control" name='location' placeholder="Type the location" required minlength="1" maxlength="10">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6" >
                                     <label for="department-input">Department: </label> 
-                                    <input type="text" id="department-input" class="form-control" name='department' placeholder="Type the name">
+                                    <input type="text" id="department-input" class="form-control" name='department' placeholder="Type the name" required minlength="1" maxlength="70">
                                 </div>
                                 <div class="form-group col-md-6" >
                                     <label for="assignedTo-input">Assigned To: </label> 
-                                    <input type="text" id="assignedTo-input" class="form-control" name='name' placeholder="Type the assigned to">
+                                    <input type="text" id="assignedTo-input" class="form-control" name='name' placeholder="Type the assigned to" required minlength="1" maxlength="50">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6" >
                                     <label for="trademark-input">Trademark: </label> 
-                                    <input type="text" id="trademark-input" class="form-control" name='trademark' placeholder="Type the trademark">
+                                    <input type="text" id="trademark-input" class="form-control" name='trademark' placeholder="Type the trademark" required minlength="1" maxlength="30">
                                 </div>
                                 <div class="form-group col-md-6" >
                                     <label for="model-input">Model: </label> 
-                                    <input type="text" id="model-input" class="form-control" name='model' placeholder="Type the model">
+                                    <input type="text" id="model-input" class="form-control" name='model' placeholder="Type the model" required minlength="1" maxlength="30">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12" >
                                     <label for="cpu-input">CPU: </label> 
-                                    <input type="text" id="cpu-input" class="form-control" name='cpu' placeholder="Type the cpu">
+                                    <input type="text" id="cpu-input" class="form-control" name='cpu' placeholder="Type the cpu" required minlength="1" maxlength="50">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6" >
                                     <label for="hddSize-input">HDD Size: </label> 
-                                    <input type="text" id="hddSize-input" class="form-control" name='hddSize' placeholder="Type the hdd size">
+                                    <input type="text" id="hddSize-input" class="form-control" name='hddSize' placeholder="Type the hdd size" required minlength="1" maxlength="15">
                                 </div>
                                 <div class="form-group col-md-6" >
                                     <label for="ramSize-input">RAM Size: </label> 
-                                    <input type="text" id="ramSize-input" class="form-control" name='ramSize' placeholder="Type the ram size">
+                                    <input type="text" id="ramSize-input" class="form-control" name='ramSize' placeholder="Type the ram size" required minlength="1" maxlength="15">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6" >
                                     <label for="serviceTag-input">Service Tag: </label> 
-                                    <input type="text" id="serviceTag-input" class="form-control" name='serviceTag' placeholder="Type the service tag">
+                                    <input type="text" id="serviceTag-input" class="form-control" name='serviceTag' placeholder="Type the service tag" required minlength="1" maxlength="10">
                                 </div>
                                 <div class="form-group col-md-6" >
                                     <label for="serialNumber-input">Serial Number: </label> 
-                                    <input type="text" id="serialNumber-input" class="form-control" name='serialNumber' placeholder="Type the serial number">
+                                    <input type="text" id="serialNumber-input" class="form-control" name='serialNumber' placeholder="Type the serial number" required minlength="1" maxlength="10">
                                 </div>
                             </div>
                         </div>

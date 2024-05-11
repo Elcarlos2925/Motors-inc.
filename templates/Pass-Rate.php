@@ -46,33 +46,33 @@
                         <div class="form-row">
                             <div class="form-group col-md-12" id="employeeid-group">
                                 <label for="model-input">Model: </label> <?php //? Id de empleado?>
-                                <input type="text" id="model-input" class="form-control" name="model" placeholder="Type the Model">
+                                <input type="text" id="model-input" class="form-control" name="model" placeholder="Type the Model" required minlength="1" maxlength="80">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">
                                 <label for="total-production-input">Total Production: </label> <?php //? Nombre?> 
-                                <input type="text" id="total-production-input" class="form-control" name="total-production" placeholder="Type the Total Production">
+                                <input type="number" id="total-production-input" class="form-control" name="total-production" placeholder="Type the Total Production" required minlength="1" maxlength="11">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="fr-input">FR: </label><?php //? Usuario?>
-                                <input type="text" id="fr-input" class="form-control" name="fr" placeholder="Type the FR">
+                                <input type="number" id="fr-input" class="form-control" name="fr" placeholder="Type the FR" required minlength="1" maxlength="11">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="ok-input">OK: </label><?php //? Usuario?>
-                                <input type="text" id="ok-input" class="form-control" name="ok" placeholder="Type the OK">
+                                <input type="number" id="ok-input" class="form-control" name="ok" placeholder="Type the OK" required minlength="1" maxlength="11">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="fr-percentage-input">FR%: </label><?php //? Usuario?>
-                                <input type="text" id="fr-percentage-input" class="form-control" name="fr-percentage" placeholder="Type the FR%">
+                                <input type="number" id="fr-percentage-input" class="form-control" name="fr-percentage" placeholder="Type the FR%" required minlength="1" maxlength="6">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="ok-percentage-input">OK% </label><?php //? Usuario?>
-                                <input type="text" id="ok-percentage-input" class="form-control" name="ok-percentage" placeholder="Type the OK%">
+                                <input type="number" id="ok-percentage-input" class="form-control" name="ok-percentage" placeholder="Type the OK%" required minlength="1" maxlength="6">
                             </div>
                         </div>
                     </div>
