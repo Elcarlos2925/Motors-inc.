@@ -7,6 +7,10 @@
     $footer='';
     $sidebar='';
 
+    session_start();
+    $nameUser = $_SESSION['username'];
+    $role = $_SESSION['role'];
+
     //?Dar valor de html al header
     $header="
         <header class='header-container'>
@@ -18,8 +22,8 @@
             <div class='user-container'>
                 <!--?Contenedor de usuario-->
                 <div class='Employee-name-role'>
-                    <p for='' class='Employee-name' id=''>Employee Name</p><!--?Nombre de Empleado-->
-                    <p for='' class='Employee-role' id=''>Employee Role</p><!--?Rol de Empleado-->
+                    <p for='' class='Employee-name' id=''>$nameUser</p><!--?Nombre de Empleado-->
+                    <p for='' class='Employee-role' id=''>$role</p><!--?Rol de Empleado-->
                 </div>
                 <div class='user-photo'>
                     <i class='fas fa-user fa-3x'></i>
@@ -63,7 +67,7 @@
                 </div>
                 <div class='logout-container'>
                     <div class='logout'>
-                        <a href='$Logout'><i class='fa-solid fa-arrow-right-from-bracket'></i>Logout</a>
+                        <a href='$Logout' ><i class='fa-solid fa-arrow-right-from-bracket'></i>Logout</a>
                     </div>
                 </div>
             </div>
