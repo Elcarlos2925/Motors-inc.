@@ -1,8 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 // Iniciar la sesión (asegúrate de hacer esto al principio de tus archivos PHP)
 session_start();
 
@@ -37,8 +33,18 @@ if (isset($_POST['LogIn'])) {
                 $_SESSION['login'] = true;
                 $_SESSION['username'] = $nameUser;
                 $_SESSION['role'] = $role;
+
+                if ($role == "Admin"){
+                    header("location:../Admin/templates/Dashboard.php");
+                }elseif ($role == "User"){
+                    header("location:../User/templates/Dashboard.php");
+                }else{
+                    $message_error .= "<div class='alert alert-danger'>
+                        <strong>Query Error</strong> Please contact support.
+                    </div>";
+                }
+
                 // Redirigir a la página de inicio
-                header("location:../templates/Dashboard.php");
                 $uservalid = 1;
             } else {
                 $message_error .= "<div class='alert alert-danger'>

@@ -104,9 +104,9 @@
 /*?Employee Name Role*/
 
 .Employee-name-role{
-  display: grid;
-  grid-template-rows: 50% 50%;
-  place-items: start;
+    display: grid;
+    grid-template-rows: 30% 30%;
+    text-align: end;
 }
 
 .Employee-name{
@@ -116,9 +116,8 @@
 }
 
 .Employee-role{
-  margin-top: 10px;
-  width: 100%;
-  font-family:var(--font);
+    width: 100%;
+    font-family:var(--font);
     font-size: medium;
 }
 
@@ -130,14 +129,14 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
+    margin-left: 20px;
 }
 
 /*?User Container*/
 .user-container{
     display: grid;
-    place-items: center;
-    margin-left: auto;
-    grid-template-columns: 50% 50%;
+    place-content: center;
+    grid-template-columns: 90% 10%;
 }
 
   /*? Sidebar*/
