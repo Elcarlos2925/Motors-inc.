@@ -1,5 +1,4 @@
 <?php
-include '../home/index.php';
 include '../home/scripts.php';
 include '../home/icons.php';
 include '../home/ConnectionDB/login_controller.php';
@@ -26,13 +25,28 @@ include '../home/ConnectionDB/login_controller.php';
                 <input type="text" placeholder="user name" class="form-control" name="username" id="username">
             </div>                
             <label for="">Password:</label>
-            <div class="form-row">
-                <input type="password" placeholder="password" class="form-control" name="password" id="password">
+            <div class="form-row password-container">
+                <input type="password" placeholder="password" class="form-control password-input" name="password" id="password" autocomplete="current-password">
+                <span class="eye-icon"><i class="far fa-eye"></i></span>
             </div>
             <div class="form-row">
                 <button class="form-control btn-info" type="submit" name="LogIn">Log In</button>
             </div>
         </div>
     </form>
+
+    <script>
+        document.querySelector('.eye-icon').addEventListener('click', function() {
+            var passwordField = document.querySelector('#password'); // Seleccionar el campo de contraseña directamente por su ID
+            this.classList.toggle('active');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                this.innerHTML = '<i class="far fa-eye-slash"></i>';
+            } else {
+                passwordField.type = 'password';
+                this.innerHTML = '<i class="far fa-eye"></i>';
+            }
+        });
+    </script>
 </body>
 </html>

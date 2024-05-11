@@ -100,8 +100,8 @@ include '../home/ConnectionDB/edit_user.php';
                                     <label for="select-subarea">Subarea: </label> <?php //? subarea?>
                                     <select name="subarea" id="select-subarea" class="form-control">
                                         <option value="" disabled selected>Select subarea</option>
+                                        <option value="Programming">Programming</option>
                                         <option value="Tics">Tics</option>
-                                        <option value="Informatica">Informatica</option>
                                         <option value="Sistemas">Sistemas</option>
                                     </select>
                                 </div>
@@ -109,10 +109,8 @@ include '../home/ConnectionDB/edit_user.php';
                                     <label for="privileges-input">Role: </label> <?php //? Privilegios?>
                                     <select name="privileges" id="privileges-input" class="form-control">
                                         <option value="" disabled selected>Select role</option>
-                                        <option value="Scrum Master">Scrum Master</option>
-                                        <option value="Product Owner">Product Owner</option>
-                                        <option value="Backend">Backend</option>
-                                        <option value="Frontend">Frontend</option>
+                                        <option value="Admin">Admin</option>
+                                        <option value="User">User</option>
                                     </select>
                                 </div>
                             </div>

@@ -32,3 +32,21 @@
   .mensaje-error{
     font-family:var(--font-bold);
   }
+
+  .password-container {
+    position: relative;
+}
+
+.password-input {
+    padding-right: 30px; /* Ajusta el espaciado a la derecha para el icono */
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px; /* Ajusta la posición del icono a la derecha */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 999999;
+    color: #000;
+}
