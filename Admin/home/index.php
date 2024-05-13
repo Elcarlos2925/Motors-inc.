@@ -1,4 +1,8 @@
 <?php
+
+error_reporting(0);
+ini_set('display_errors', 0);
+
     include 'links.php';
     include 'scripts.php';
     include '../home/ConnectionDB/check_session.php';
