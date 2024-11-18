@@ -113,10 +113,6 @@
   </tr>
 </table>
 
-<div align="center">
-    <img src="https://github.com/Elcarlos2925/Motors-inc/blob/Carlos/static/assets/img/integrantes.JPG" width="580" alt="integrantes del equipo" >
-</div>
-
 ## Functions
 
 <div align="center">
